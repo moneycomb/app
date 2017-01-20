@@ -1,0 +1,83 @@
+<template name="WizardSavings">
+  <div align="center" style="padding: 8px; background-color: #5fb7e5;">
+    <span style="font-size: 24px; color: white;">Set Savings Goal</span>
+  </div>
+
+    <div class="ui basic segment container">
+
+      <div class="ui stackable doubling grid">
+
+        <div class="seven wide column">
+          <div class="ui segments">
+
+            <div class="ui segment">
+              {{> CircleIcon color="#5fb7e5" image="/images/white/savings.png"}}
+              <h3>I want to save <span style="color: #5fb7e5;">${{value}}</span> per month</h3>
+
+              <div>
+                {{> React component=CellTargetSlider start=(value) min=0 max=(maxvalue) step=(step)}}
+              </div>
+
+              <div class="ui vertical buttons">
+
+              <button id="100" class="set-amount ui large button">$100</button>
+              <button id="250" class="set-amount ui large button">$200</button>
+              <button id="500" class="set-amount ui large  button">$500</button>
+              <button id="1000" class="set-amount ui large button">$1000</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="seven wide column">
+          <div align="center" class="ui segment">
+
+            <div class="ui small statistic">
+              <div class="value">
+                {{dollarFormat(newTarget)}}
+              </div>
+              <div class="label">
+                Original Spend Target
+              </div>
+            </div>
+            <br>
+            <div class="ui blue small statistic">
+              <div class="value">
+                - {{dollarFormat(value)}}
+              </div>
+              <div class="label">
+                Savings
+              </div>
+            </div>
+
+            <div class="ui divider"></div>
+
+            <div class="ui small statistic">
+              <div class="value">
+                {{dollarFormat(left)}}
+              </div>
+              <div class="label">
+                Adjusted Spend Target
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ui divider"></div>
+
+      <div align="center">
+        <div class="action-add-goal ui blue labeled icon button">
+          Set Savings Target
+          <i class="dollar icon"></i>
+        </div>
+      </div>
+
+    </div>
+</template>

@@ -1,0 +1,36 @@
+<template name="RecategorizeSelector">
+  {{#each cells}}
+    <div id="{{transId}}-{{abbrev}}" class="cat-icon" style="background-color: {{recatIColor}}; color: #ffffff;">
+      <img src="/images/white/{{abbrev}}.png" width="20"/>
+    </div>
+  {{/each}}
+
+  <div id="{{transId}}-o" class="cat-icon" style="padding-top: 12px; background-color: #424242; color: #ffffff;">
+    <img src="/images/white/o.png" width="20"/>
+  </div><br>
+
+  <!--
+  <div class="ui divider"></div>
+  <div id="{{transId}}-groceries" class="cat-icon" style="background-color: #424242; color: #ffffff;">
+    <img src="/images/white/groceries.png" width="15"/>
+  </div>
+  <div id="{{transId}}-h" class="cat-icon" style="background-color: #424242; color: #ffffff;">
+    <img src="/images/white/h.png" width="15"/>
+  </div>
+  <div id="{{transId}}-med" class="cat-icon" style="background-color: #424242; color: #ffffff;">
+    <img src="/images/white/med.png" width="15"/>
+  </div>
+  <div id="{{transId}}-gas" class="cat-icon" style="background-color: #424242; color: #ffffff;">
+    <img src="/images/white/gas.png" width="15"/>
+  </div>
+  <div id="{{transId}}-ed" class="cat-icon" style="background-color: #424242; color: #ffffff;">
+    <img src="/images/white/ed.png" width="15"/>
+  </div>
+
+  -->
+
+  <span style="font-size: 12px; color: #ffffff;">{{recatLabel}}</span>
+
+
+
+</template>

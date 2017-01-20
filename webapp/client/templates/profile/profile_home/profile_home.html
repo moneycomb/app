@@ -1,0 +1,38 @@
+<template name="ProfileHome">
+    {{> MobileMenuBar icon="ui circular settings icon" title="Settings" color="#26a69a"}}
+    <div class="ui basic segment container">
+        {{>AccountDeleteModal}}
+        <div class="ui three stackable centered doubling cards">
+            <div class="ui card">
+                {{>BasicProfile}}
+            </div>
+            <div class="ui card">
+                {{>FinancialProfile fp=(fp)}}
+            </div>
+            <div class="ui card">
+                <div class="content">
+                    <div class="header">
+                        <i class="large circular credit card icon"></i>
+                        Your Linked Accounts
+                    </div>
+                    <div class="ui divider"></div>
+                </div>
+                {{>AccountsCardList}}
+                <a href="/accounts">
+                    <div class="ui bottom attached button">
+                        <i class="credit card icon"></i>
+                        Manage Accounts
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="ui message">
+            {{>AccountActions}}
+        </div>
+
+    </div>
+
+</template>

@@ -1,0 +1,31 @@
+<template name="CategoryPreference">
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-content blue white-text">
+          <img src="/images/white/{{category.abbrev}}.png" width="100"/>
+          <span class="card-title">{{category.name}}</span>
+          <p>{{category.description}}</p>
+          <img src="/images/{{category.abbrev}}-status.png" width="50"/>
+        </div>
+
+        <div class="card-content blue darken-2 white-text">
+          Would you like to spend more, the same, or less in this category?
+        </div>
+
+        <div class="card-content">
+          {{> PodPref category=(category)}}
+        </div>
+
+        <div class="card-action">
+          <a class="next-step orange darken-4 resynch-accounts waves-effect waves-light btn">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="/images/{{category.abbrev}}-status.png" width="50"/>
+
+
+</template>

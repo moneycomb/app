@@ -1,0 +1,44 @@
+/*****************************************************************************/
+/* Speedometer: Style */
+/*****************************************************************************/
+/* @import compass */
+
+.chart-gauge {
+    width: 300px;
+    height: 120px;
+    padding: 0px auto;
+}
+
+.chart-color1 {
+    fill: #5fb7e5;
+}
+/*
+.chart-color2 {
+    fill: #ffd54f;
+}
+
+.chart-color3 {
+    fill: #ffc107;
+}
+*/
+
+.chart-color2 {
+    fill: #94EAFF;
+}
+
+.chart-color3 {
+    fill: #9e9e9e;
+}
+
+.chart-color4 {
+    fill: #FF73B4;
+}
+
+.chart-color5 {
+    fill: #ff4081;
+}
+
+.needle,
+.needle-center {
+    fill: #00897b;
+}

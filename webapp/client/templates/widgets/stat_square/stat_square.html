@@ -1,0 +1,13 @@
+<template name="StatSquare">
+  <div class="stat-square" style="background-color: {{bgcolor}};">
+    <div class="header" style="background-color: {{headerColor}};">
+      {{header}}
+    </div>
+    <div class="value" style="color: {{color}};"><span style="font-size: 16px">{{prefix}}</span>{{value}}</div>
+    {{#if labelWeight}}
+      <div class="label" style="font-weight: {{labelWeight}};">{{thisLabel}}</div>
+      {{else}}
+        <div class="label">{{thisLabel}}</div>
+      {{/if}}
+  </div>
+</template>

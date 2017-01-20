@@ -1,0 +1,126 @@
+<template name="InsightsHome">
+  <div class="insights-home ui container">
+
+{{#if Template.subscriptionsReady}}
+    <div class="ui stackable four cards">
+
+
+      <div class="ui teal card">
+        <div style="background-color: #26a69a;" class="content">
+          <div align="center" style="color: white;" class="header">Overall
+          Spending</div>
+        </div>
+        <div align="center" class="content">
+          <div class="ui small teal statistic">
+            <div class="value">
+              {{percentageFormat (overallSpend.percent)}}
+            </div>
+            <div class="label">
+              Spending( % of
+              Income
+              )
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <ul>
+            <li>You've spent {{dollarFormat (overallSpend.total)}} over the last 365 days</li>
+            <li>Gross income is {{dollarFormat (overallSpend.gi)}} / year</li>
+            <li>Typical households in your income range are spending between 25-35%</li>
+          </ul>
+        </div>
+
+        <div align="center" style="padding: 5px; color: white; background-color: #26a69a;" class="content">
+          <i class="pie chart icon"></i> MONEYCOMB
+          INSIGHT
+        </div>
+      </div>
+
+
+      <div class="ui teal card">
+        <div style="background-color: #26a69a;" class="content">
+          <div align="center" style="color: white;" class="header">Credit Cards</div>
+        </div>
+        <div align="center" class="content">
+          <div class="ui small teal statistic">
+            <div class="value">
+              {{percentageFormat (credit.creditratio)}}
+            </div>
+            <div class="label">
+              of your Credit
+              Card
+              Limit
+            </div>
+          </div>
+          </div>
+        <div class="content">
+
+          <ul>
+            <li>Your total outstanding credit card balance is {{dollarFormat(credit.totalCreditBalance)}}
+            </li>
+            <li>Your total combined credit card limit is {{dollarFormat(credit.totalCreditLimit)}}
+            </li>
+          </ul>
+        </div>
+
+        <div align="center" style="padding: 5px; color: white; background-color: #26a69a;" class="content">
+          <i class="pie chart icon"></i> MONEYCOMB
+          INSIGHT
+        </div>
+
+      </div>
+
+
+      <div class="ui teal card">
+        <div style="background-color: #26a69a;" class="content">
+          <div align="center" style="color: white;" class="header">Categorization</div>
+        </div>
+        <div align="center" class="content">
+
+          <div class="ui small teal statistic">
+            <div class="value">
+              {{percentageFormat (categorization.percent)}}
+            </div>
+            <div class="label">
+              Categorized
+            </div>
+          </div>
+
+          </div>
+        <div class="content">
+
+          <ul>
+            <li>{{categorization.categorized}} of {{categorization.total}} transactions have categories assigned.
+            </li>
+            <li>Manually categorize to make it higher</li>
+          </ul>
+        </div>
+
+        <div align="center" style="padding: 5px; color: white; background-color: #26a69a;" class="content">
+          <i class="pie chart icon"></i> MONEYCOMB
+          INSIGHT
+        </div>
+
+      </div>
+
+<!--
+      <div class="ui teal card">
+        <div class="content">
+          <div class="header">Eating
+          Out
+          Analysis</div>
+        </div>
+        <div class="content">
+          <ul>
+            <li>You've eaten out at {{eo.total}} establishments. {{eo.multiple}} of these have been repeats.</li>
+          </ul>
+        </div>
+      </div> -->
+
+    </div>
+
+  {{else}}
+  {{> Loading}}
+  {{/if}}
+  </div>
+</template>

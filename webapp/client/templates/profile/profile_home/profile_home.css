@@ -1,0 +1,18 @@
+/*****************************************************************************/
+/* ProfileHome: Style */
+/*****************************************************************************/
+.profile-home {
+    background: url(/images/profile-bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+
+.form .input-field .field .option{
+    font-size:18px;
+}

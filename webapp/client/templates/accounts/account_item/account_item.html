@@ -1,0 +1,80 @@
+<template name="AccountItem">
+    <div class="ui card">
+
+        <div class="ui {{syncingStatus}} dimmer">
+            <div class="ui text loader">Syncing
+                ...
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div align="center" class="header" style="font-size: 0.8em;">
+                <i class="large circular {{typeIcon}}"></i>
+                {{#if editmode}}
+                    <form class="ui form action-change">
+                        <div class="inline fields">
+                            <div class="fourteen wide field">
+                                <input name="name" type="text" value="{{meta.name}}">
+                            </div>
+                            <div class="two wide field">
+                                <i class="action-cancel remove icon"></i>
+                            </div>
+                        </div>
+                    </form>
+                {{else}}
+                    {{meta.name}}
+                    <i class="popup-help action-edit white tiny write icon" data-content="Edit account name"></i>
+                {{/if}}
+            </div>
+        </div>
+        <div class="centered content">
+            <div class="meta">
+                {{numberFormat(numTransactions)}} transactions
+            </div>
+
+        </div>
+
+        <div style="padding: 2px;" class="center aligned content">
+
+            <!--- <i class="large visa icon"></i>  -->
+
+            <div class="ui secondary teal mini statistic">
+                <div class="value">
+                    {{dollarFormat (actualBalance)}}
+                </div>
+                <div class="label">
+                    Balance
+                </div>
+            </div>
+
+            {{#if isCreditCard}}
+                <div class="popup-help ui secondary teal mini statistic"
+                     data-content="Your credit limit - your current balance">
+                    <div class="value">
+                        {{dollarFormat (balance.available)}}
+                    </div>
+                    <div class="label">
+                        Available
+                    </div>
+                </div>
+            {{/if}}
+
+        </div>
+        <div class="centered content">
+            <button class="action-transactions ui button">
+                <i class="grid layout icon"></i> View Transactions
+            </button>
+        </div>
+        <div class="action-remove ui bottom attached button">
+            <i class="remove icon"></i>
+            Delete
+        </div>
+
+       <!-- <div class="meta">Last Sync: {{humanDate (lastSync)}}</div> -->
+
+
+    </div>
+
+</template>
+

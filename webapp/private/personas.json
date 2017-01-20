@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Cutting Edge",
+    "image": "cuttingedge.png",
+    "number": 1,
+    "description": "Cutting Edge is someone on the forefront of technology.  You know what's going on before anyone else.  You are a designer of the future, putting together all the pieces of the puzzle before anyone knows what the picture is.  You enjoy sci-fi films, the latest in tech and push the envelope in everything you do.",
+    "allocations": [
+      {
+        "category": "eo",
+        "percentage": 0.2
+      },
+      {
+        "category": "ds",
+        "percentage": 0.2
+      },
+      {
+        "category": "r",
+        "percentage": 0.06
+      },
+      {
+        "category": "t",
+        "percentage": 0.08
+      },
+      {
+        "category": "e",
+        "percentage": 0.14
+      },
+      {
+        "category": "s",
+        "percentage": 0.32
+      }
+    ]
+  },
+  {
+    "name": "The Warrior",
+    "image": "warrior.png",
+    "number": 2,
+    "description": "Marathons, 5Ks, hitting yoga class, whatever it is--if it's active you live it.  A fitness enthusiast with a healthy, active lifestyle is what you're all about. Whether it's exploring a remote mountain top range, pushing your own internal limits or just being lost for awhile: you love it!",
+    "allocations": [
+      {
+        "category": "eo",
+        "percentage": 0.16
+      },
+      {
+        "category": "ds",
+        "percentage": 0.15
+      },
+      {
+        "category": "r",
+        "percentage": 0.15
+      },
+      {
+        "category": "t",
+        "percentage": 0.09
+      },
+      {
+        "category": "e",
+        "percentage": 0.06
+      },
+      {
+        "category": "s",
+        "percentage": 0.39
+      }
+    ]
+  },
+  {
+    "name": "The Guru",
+    "image": "guru.png",
+    "number": 3,
+    "description": "You are what is.  Socially conscious, internationally aware, leaving your mark but not much of a carbon footprint.  You have a full passport,  but can't stand still.  Exploring everything the world has to offer in a responsible, sustainable way is what you're all about.",
+    "allocations": [
+      {
+        "category": "eo",
+        "percentage": 0.15
+      },
+      {
+        "category": "ds",
+        "percentage": 0.15
+      },
+      {
+        "category": "r",
+        "percentage": 0.1
+      },
+      {
+        "category": "t",
+        "percentage": 0.15
+      },
+      {
+        "category": "e",
+        "percentage": 0.1
+      },
+      {
+        "category": "s",
+        "percentage": 0.35
+      }
+    ]
+  },
+  {
+    "name": "Trendsetter",
+    "image": "trendsetter.png",
+    "number": 4,
+    "description": "You know how to get dirty, but why?  The finer things in life are finer for a reason.  You love the high culture of a modern society.  Not a follower, you are a trendsetter. Find you, and you find what’s happening now.",
+    "allocations": [
+      {
+        "category": "eo",
+        "percentage": 0.23
+      },
+      {
+        "category": "ds",
+        "percentage": 0.1
+      },
+      {
+        "category": "r",
+        "percentage": 0.1
+      },
+      {
+        "category": "t",
+        "percentage": 0.1
+      },
+      {
+        "category": "e",
+        "percentage": 0.07
+      },
+      {
+        "category": "s",
+        "percentage": 0.4
+      }
+    ]
+  },
+  {
+    "name": "The Good Life",
+    "image": "goodlife.png",
+    "number": 5,
+    "description": "Hardworking, honest and fun; you enjoy life to the fullest.  Fancy places and names don't mean much to you.  Life is not about what you accumulate, but about all the great fun and stories you leave behind.  Living life to the max, you focus on the here and now, not a distant future.",
+    "allocations": [
+      {
+        "category": "eo",
+        "percentage": 0.23
+      },
+      {
+        "category": "ds",
+        "percentage": 0.17
+      },
+      {
+        "category": "r",
+        "percentage": 0.09
+      },
+      {
+        "category": "t",
+        "percentage": 0.08
+      },
+      {
+        "category": "e",
+        "percentage": 0.1
+      },
+      {
+        "category": "s",
+        "percentage": 0.33
+      }
+    ]
+  }
+]

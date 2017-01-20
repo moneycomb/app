@@ -1,0 +1,446 @@
+<template name="Main">
+
+  <!-- TOP BAR -->
+  <div style="padding:0px;" class="mobile only row">
+    <div style="background-color: #26a69a;" class="mobile-menu-bar">
+      <div class="mobile-menu-item">
+        {{welcomemsg}}
+      </div>
+    </div>
+  </div>
+
+  {{#if Template.subscriptionsReady}}
+
+    <!--
+    <div align="center">
+      <div class="ui compact small menu">
+        <a id="t7" class="change-timeframe item"
+           style="color:{{tfColor "t7"}}; background-color: {{tfbgColor "t7"}};">
+          last<br>week
+        </a>
+        <a id="t30" class="change-timeframe item"
+           style="color:{{tfColor "t30"}}; background-color: {{tfbgColor "t30"}};">
+          last<br>month
+        </a>
+        <a id="t90" class="change-timeframe item"
+           style="color:{{tfColor "t90"}}; background-color: {{tfbgColor "t90"}};">
+          last<br>90 days
+        </a>
+        <a id="t365" class="change-timeframe item"
+           style="color:{{tfColor "t365"}}; background-color: {{tfbgColor "t365"}};">
+          last<br>year
+        </a>
+      </div>
+    </div>
+
+
+    {{>HMMarker amount=100}}
+-->
+
+    <div class="ui basic segment container">
+      <!-- {{#if noLinkedAccounts}}
+                <div class="ui icon pink message">
+                    <i class="animated circular inverted pink pulse infinite credit card icon"></i>
+                    <div class="content">
+                        <div class="header">
+                            Link your spending acccounts.
+                        </div>
+                        <p>MoneyComb works by automatically capturing your spending from the credit card and bank accounts you use the most. While you can still look around and explore,
+                            MoneyComb is far more useful if you link!</p>
+                        <a href="/accounts">
+                            <button class="ui pink button">
+                                Link Accounts
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            {{/if}} -->
+
+      <div style="margin: 0px; padding: 2px;" class="three stackable doubling ui cards">
+
+
+        {{#if noLinkedAccounts}}
+
+          <div class="ui card">
+            <div align="center" style="overflow:hidden; position: relative;" class="content">
+              <div class="header"><i class="animated pink inverted pulse infinite circular credit card icon"></i>
+                Spending Accounts
+              </div>
+              <div class="ui divider"></div>
+              <div align="center">
+                <h2 style="color: pink;">No Accounts Linked</h2>
+                <p style="color: pink;">MoneyComb works by automatically capturing your spending from the credit card
+                  and bank accounts you use the most. While you can still look around and explore,
+                  MoneyComb is far more useful if you link!</p>
+              </div>
+            </div>
+            <a href="/accounts">
+              <div class="ui bottom attached pink button">
+                <i class="pointing right icon"></i> Link Accounts
+              </div>
+            </a>
+
+          </div>
+
+
+        {{else}}
+
+          <div class="ui card">
+            {{#if haveReviewItems}}
+              <div style="overflow:hidden; position: relative;" class="content">
+                <div class="header"><i
+                    class="animated pink inverted pulse infinite circular check icon"></i>Review Your
+                  Spending
+                </div>
+                <div class="meta">Confirm recent spending</div>
+                <div class="ui divider"></div>
+
+                <div align="center">
+                  <div class="ui tag labels">
+                    <div class="flylabel ui large label">
+                      {{numToReview}}<br>transactions left
+                    </div>
+                  </div>
+                </div>
+                {{>CallsToAction}}
+              </div>
+            {{else}}
+              <div class="content">
+                <div class="header"><i class="circular dollar icon"></i>Recent Spending
+                </div>
+                <div class="meta">Your
+                recent
+                spending</div>
+                <div class="ui divider"></div>
+                <div class="ui divided link list">
+
+
+                  {{#each last10Trans}}
+                    <a href="/transaction/{{_id}}" class="ui item">
+
+                      <div class="content">
+                        {{> CategoryHex color=(cellColor (cell)) width=30 category=(cell)}}
+                        {{name}}<br><span class="very-tiny-text">{{humanDate(date)}}</span>
+                        <div class="right floated meta">
+                          <div style="color: {{cellColor (cell)}};"
+                               class="ui horizontal label">{{dollarFormat(amount)}}</div>
+                        </div>
+                      </div>
+                    </a>
+                  {{/each}}
+                </div>
+              </div>
+            {{/if}}
+            <div class="action-help-evaluate ui bottom attached button">
+              Learn
+              more
+              ...
+            </div>
+          </div>
+
+
+
+        {{/if}}
+
+
+
+        {{#if planIsNotSet}}
+
+          <div class="ui card">
+            <div align="center" style="overflow:hidden; position: relative;" class="content">
+
+
+              <div class="header"><i class="animated pink inverted pulse infinite circular dollar icon"></i> Spending
+                Plan
+              </div>
+              <div class="ui divider"></div>
+              <div align="center">
+                <h2 style="color: pink;">Plan not set</h2>
+                <p style="color: pink;">To get the most out of MoneyComb, you need to set a spending plan to see how you
+                  are doing against
+                  your goals. It takes just a few minutes</p>
+
+              </div>
+
+            </div>
+
+            <a href="/spendsetter/wizard/start">
+              <div class="ui bottom attached pink button">
+                <i class="pointing right icon"></i> Set My Spending Plan
+              </div>
+            </a>
+
+
+          </div>
+
+        {{else}}
+          <div class="ui card">
+            <div align="center" style="overflow:hidden; position: relative;" class="content">
+
+              <div class="header">
+                <i class="circular dollar icon"></i>{{dollarFormat
+                  (totalOverUnder)}} {{totalOverUnderLabel}} </div>
+              <div class="meta">your
+              target
+              of {{dollarFormat(totalTarget)}} over {{periodString}}</div>
+              <div class="ui divider"></div>
+              <div align="center" style="width:100px;">
+                <i class="large light grey caret down icon"></i></div>
+              <div id="#container2">
+                <div>
+                  {{> Speedometer speed=(mpSpendSpeed)}}
+                </div>
+              </div>
+              <div class="meta" align="center">Speed: {{mpSpendSpeed}} (100 = target)</div>
+              <div class="ui divider"></div>
+              <div class="content" align="center">
+                {{> Moneycomb (moneyCombOptions)}}
+              </div>
+              <a href="/spendsetter">
+                <div class="ui bottom attached button">
+                  <i class="pie chart icon"></i>
+                  Adjust Plan
+                </div>
+              </a>
+
+            </div>
+
+
+          </div>
+
+
+        {{/if}}
+
+        <!--<div class="ui card">
+          <div style="overflow:hidden; position: relative;" class="content">
+            <div class="header"><i class="circular idea icon"></i> Spend Suggestion</div>
+            <div class="meta">Ideas to spend less & enjoy more</div>
+          </div>
+          <div align="center" class="content">
+          </div>
+          <div class="action-help-ss ui bottom attached button">
+            Learn more...
+          </div>
+        </div> -->
+        {{>SpendSuggestionCard (randomFeatured)}}
+
+      </div>
+
+
+      <div class="ui divider"></div>
+
+      <div style="margin: 0px; padding: 2px;" class="six stackable doubling ui cards">
+        {{#each cells}}
+          {{>CellStatusLine noshowtarget=(planIsNotSet) cell=(name) perioddays=(perioddays) abbrev=(abbrev) overunder=(remaining (abbrev)) spent=(spent (abbrev)) spent90=(spent90 (abbrev)) color=(CColor) occurance=(occurance) countLast30=(countLast30) ouColor=(remainingColor (abbrev)) target=(target (abbrev))}}
+        {{/each}}
+      </div>
+
+
+      <div class="three stackable doubling ui cards">
+
+        <div class="ui card">
+          <div style="overflow:hidden; position: relative;" class="content">
+            <div class="header">
+              <i class="circular heart icon"></i>Sweet Spot Locator
+            </div>
+            <div class="meta">Your
+            enjoyment
+            return on
+            $
+            spent</div>
+            <div class="ui divider"></div>
+            <!---
+                    <div align="center" class="content">
+                        {{>React component=SatisfactionChart}}
+                    </div> -->
+            {{#if planIsNotSet}}
+              <div align="center">
+                <i class="ui massive circular disabled question icon"></i><br>
+                <span style="font-size: 20px; color:#dddddd;">Available after at least one account is <a
+                    href="/accounts">linked</a> and <a href="/spendsetter/wizard/start">plan is set</a>.</span>
+              </div>
+            {{else}}
+              {{>OverallStatus tf=(currentTimeFrame) periodString=(periodString)}}
+              <div align="center">
+                <a class="ui blue empty circular label"></a> UNDER
+                <a class="ui pink empty circular label"></a> OVER
+                <a class="ui grey empty circular label"></a> CURRENT
+              </div>
+            {{/if}}
+          </div>
+          <!---<div class="action-help-ssl ui bottom attached button"> -->
+          <a href="http://www.mymoneycomb.com/test-ssl" class="ui bottom attached button">
+            Learn more...
+          </a>
+        </div>
+
+
+        <div class="ui card">
+          <div style="overflow:hidden; position: relative;" class="content">
+            {{#if haveQuizResults}}
+              <div class="header"><i class="circular group icon"></i> My Money Mindset</div>
+            {{else}}
+              <div class="header"><i class="circular question icon"></i> Discover Your Money Mindset</div>
+              <div class="meta">Take
+              the
+              Mindset
+              Quiz
+              Now</div>
+
+            {{/if}}
+          </div>
+          <div align="center" class="content">
+            {{#if haveQuizResults}}
+              <span style="font-weight: 700; color: {{aspectColor
+                  (primaryaspect.aspect1)}}">{{primaryaspect.aspect1}}</span>
+              <!-- <span style="font-weight: 700; color: {{aspectColor
+                  (primaryaspect.aspect2)}}">{{primaryaspect.aspect2}}</span>
+                               -->
+              {{>MMSDonut}}
+              <a href="/profile/quiz">
+                <button class="ui button">
+                  Re-take Quiz
+                </button>
+              </a>
+
+            {{else}}
+              <br><br>
+              <img src="/images/MMset.png"/>
+              <br>
+              <a href="/profile/quiz" class="proceed ui button">
+                Take Quiz
+              </a>
+            {{/if}}
+          </div>
+          <div class="action-help-mms ui bottom attached button">
+            Learn
+            more
+            ...
+          </div>
+
+
+
+
+          {{> HelpSpendSuggestionModal}}
+          {{> HelpMoneyMindsetModal}}
+          {{> HelpMyMoneyCombModal}}
+          {{> HelpRatingModal}}
+          {{> HelpSweetSpotLocatorModal}}
+
+        </div>
+
+
+        {{#if noLinkedAccounts}}
+
+          <div class="ui card">
+            {{#if haveReviewItems}}
+              <div style="overflow:hidden; position: relative;" class="content">
+                <div class="header"><i
+                    class="animated pink inverted pulse infinite circular check icon"></i>Review Your
+                  Spending
+                </div>
+                <div class="meta">Easily
+                review & confirm
+                recent
+                spending</div>
+                <div class="ui divider"></div>
+
+                <div align="center">
+                  <div class="ui tag labels">
+                    <div class="flylabel ui large label">
+                      {{numToReview}}<br>transactions left
+                    </div>
+                  </div>
+                </div>
+                {{>CallsToAction}}
+              </div>
+            {{else}}
+              <div class="content">
+                <div class="header"><i class="circular dollar icon"></i>Recent Spending
+                </div>
+                <div class="meta">Your
+                recent
+                spending</div>
+                <div class="ui divider"></div>
+                <div class="ui divided link list">
+
+
+                  {{#each last10Trans}}
+                    <a href="/transaction/{{_id}}" class="ui item">
+
+                      <div class="content">
+                        {{> CategoryHex color=(cellColor (cell)) width=30 category=(cell)}}
+                        {{name}}<br><span class="very-tiny-text">{{humanDate(date)}}</span>
+                        <div class="right floated meta">
+                          <div style="color: {{cellColor (cell)}};"
+                               class="ui horizontal label">{{dollarFormat(amount)}}</div>
+                        </div>
+                      </div>
+                    </a>
+                  {{/each}}
+                </div>
+              </div>
+            {{/if}}
+            <div class="action-help-evaluate ui bottom attached button">
+              Learn
+              more
+              ...
+            </div>
+          </div>
+
+
+
+
+
+
+
+        {{else}}
+          <div class="ui card">
+            <div style="overflow:hidden; position: relative;" class="content">
+              <div class="header"><i class="circular credit card icon"></i> Accounts</div>
+              <div class="meta">Your
+              linked
+              spending
+              accounts</div>
+            </div>
+            {{> AccountsCardList}}
+            <a href="/accounts">
+              <div class="ui bottom attached button">
+                Manage
+                Accounts
+              </div>
+            </a>
+          </div>
+
+        {{/if}}
+
+
+      </div>
+      <!--
+                  <div align="center" class="ui message">
+                      <a class="ui empty circular label" style="background-color: #fdd835;"></a><span
+                          class="legend-text-style">Eating Out</span>
+                      <a class="ui empty circular label" style="background-color: #ffb300;"></a><span
+                          class="legend-text-style">Digital Services</span>
+                      <a class="ui empty circular label" style="background-color: #fb8c00;"></a><span
+                          class="legend-text-style">Recharge</span>
+                      <a class="ui empty circular label" style="background-color: #00695c;"></a><span
+                          class="legend-text-style">Travel</span>
+                      <a class="ui empty circular label" style="background-color: #26a69a;"></a><span
+                          class="legend-text-style">Entertainment</span>
+                      <a class="ui empty circular label" style="background-color: #80cbc4;"></a><span
+                          class="legend-text-style">Shopping</span>
+                  </div> -->
+
+      <!--- <div align="center" class="ui message">
+                {{lastSyncedString}}<br>
+                <a class="action-sync-all"><i class="large {{getRecentSpending}} icon"></i> UPDATE</a>
+            </div> -->
+    </div>
+  {{else}}
+    {{> Loading }}
+
+  {{/if}}
+
+</template>

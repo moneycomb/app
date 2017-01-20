@@ -1,0 +1,62 @@
+<template name="MoneyMindset">
+  {{# if Template.subscriptionsReady}}
+
+    {{> MobileMenuBar title=(progressString) color="#4db6ac"}}
+
+    <div style="margin: 14px;">
+
+      <div class="ui segment question">
+        {{onboardingQ.question}}
+      </div>
+
+      {{#each onboardingChoices}}
+        {{#if image}}
+          <div class="answer-block">
+
+            <div id="{{number}}" class="answer quiz-answer" style="background-color: {{currentAnswer}};">
+              <div class="answer-image">
+                <img width="30" height="30" src="/images/ob/{{image}}.png"/>
+              </div>
+              <div class="answer-text">
+                {{choice}}
+              </div>
+            </div>
+
+          </div>
+
+
+        {{else}}
+          <div class="answer-block">
+            <div id="{{number}}" class="answer quiz-answer"
+                 style="background-color: {{currentAnswer}};">
+              <div class="answer-text">
+                {{choice}}
+              </div>
+
+            </div>
+          </div>
+        {{/if}}
+
+      {{/each}}
+
+      <div align="center" style="padding-left: 0px; padding-right: 0px;" class="ui basic segment">
+        <button id="backward" class="ui  {{prev_button_color}} button"><i class="left arrow icon"></i> Previous
+        </button>
+
+        {{#if last_question}}
+          <!-- <button id="advance" class="ui disabled button">Next <i class="right arrow icon"></i></button> -->
+          <div id="to-explain" class="ui teal right labeled icon button">
+            View Results
+          </div>
+        {{else}}
+          <button id="advance" class="ui {{button_color}} button">{{button_text}} <i class="right arrow icon"></i>
+          </button>
+        {{/if}}
+      </div>
+
+    </div>
+    {{else}}
+    {{> Loading}}
+
+  {{/if}}
+</template>

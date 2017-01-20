@@ -1,0 +1,83 @@
+<template name="TAnalysis">
+  <div class="ui container">
+
+    <div class="ui inverted blue segment">
+      <div class="ui inverted blue menu">
+        <a class="active item">
+          <i class="pie chart icon"></i> Spend Stats
+        </a>
+        <a class="item">
+          <i class="calculator icon"></i> Tradeoff Calculator
+        </a>
+        <a class="item">
+          Debt Payoff Tool
+        </a>
+        <a class="item action-analyze">
+          ANALYZE TRANS
+        </a>
+
+      </div>
+
+    </div>
+
+    {{#if Template.subscriptionsReady}}
+
+      <div class="ui grid">
+
+
+        <div class="eight wide column">
+          <div class="ui basic segments">
+            <div class="ui yellow inverted segment"><h4>Spend Statistics</h4></div>
+            <div class="ui segment">
+              <h4>Spend statistics go here</h4>
+              <table class="ui celled table">
+                {{#each cells}}
+                  <tr>
+                    <td>{{name}}</td>
+                    <td class="center aligned">{{>CircleLabel icon=(icon) value=(lastPeriodCount (abbrev)) label="times"}}
+                    <br><span class="tiny-text">per {{period}}</span>
+                    </td>
+                    <td>{{average (abbrev)}}</td>
+                  </tr>
+                {{/each}}
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="eight wide column">
+          <div class="ui segments">
+            <div class="ui yellow inverted segment"><h4>Trade Off Calculator</h4></div>
+            <div class="ui segment">
+              <table class="ui celled table">
+                {{#each cells}}
+                  <tr>
+                    <td><a class="ui teal circular label"><i class="{{icon}}"></i></a> {{name}}</td>
+                    <td><a class="ui teal empty circular label"></a>
+                      <a class="ui yellow empty circular label"></a>
+                      <a class="ui yellow empty circular label"></a>
+                      <a class="ui grey empty circular label"></a></td>
+                    <td>
+                  {{#each t2ttom}}
+                      {{this}}<br>
+                    {{/each}}
+                    </td>
+                  </tr>
+                {{/each}}
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    {{/if}}
+
+
+    {{>Tradeoffs}}
+
+  </div>
+
+
+</template>

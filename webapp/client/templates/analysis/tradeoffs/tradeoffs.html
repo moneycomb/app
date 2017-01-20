@@ -1,0 +1,120 @@
+<template name="Tradeoffs">
+  <div class="tradeoffs">
+
+
+    <div class="ui segments">
+      <div class="ui yellow inverted segment">Transaction
+      to
+      Trasaction</div>
+      <div class="ui segment">
+
+
+        <table class="ui celled table">
+          <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            {{#each tomkeys}}
+              <th>{{this}}</th>
+            {{/each}}
+          </tr>
+          </thead>
+          <tbody>
+          {{#each cells}}
+            <tr class="center aligned">
+              <td>{{name}}</td>
+              <td><i class="{{icon}}"></i></td>
+              {{#each t2ttom}}
+                <td>
+                  {{>TradeoffStat color=(color) value=(this) label="trans"}}
+                </td>
+              {{/each}}
+            </tr>
+          {{/each}}
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+
+    <div class="ui segments">
+      <div class="ui yellow inverted segment">Transaction
+      to
+      Daily
+      Spend</div>
+      <div class="ui segment">
+
+
+        <table class="ui celled table">
+          <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            {{#each tomkeys}}
+              <th>{{this}}</th>
+            {{/each}}
+          </tr>
+          </thead>
+          <tbody>
+          {{#each cells}}
+            <tr class="center aligned">
+              <td>{{name}}</td>
+              <td><i class="{{icon}}"></i></td>
+              {{#each t2dtom}}
+                <td><span class="tiny-text">{{this}}</span></td>
+              {{/each}}
+            </tr>
+          {{/each}}
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+
+    <div class="ui segments">
+      <div class="ui yellow inverted segment">Daily Spend to Daily Spend
+        </div>
+      <div class="ui segment">
+
+
+        <table class="ui celled table">
+          <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            {{#each tomkeys}}
+              <th>{{this}}</th>
+            {{/each}}
+          </tr>
+          </thead>
+          <tbody>
+          {{#each cells}}
+            <tr class="center aligned">
+              <td>{{name}}</td>
+              <td><i class="{{icon}}"></i></td>
+              {{#each d2dtom}}
+                <td><span class="tiny-text">{{this}}</span></td>
+              {{/each}}
+            </tr>
+          {{/each}}
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+</template>

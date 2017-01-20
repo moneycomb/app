@@ -1,0 +1,14 @@
+/*****************************************************************************/
+/* CircleIcon: Style */
+/*****************************************************************************/
+.hm-marker {
+    display: inline-block;
+    padding-top: 8px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #212121;
+}

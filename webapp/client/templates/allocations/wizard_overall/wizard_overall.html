@@ -1,0 +1,80 @@
+<template name="WizardOverall">
+
+    <div align="center" style="padding: 8px; background-color: #848484;">
+        <span style="font-size: 24px; color: white;"><i class="large circular magic icon"></i> Spend Wizard</span>
+    </div>
+
+    <div class="ui basic segment container">
+
+        <div class="ui three centered stackable doubling cards">
+
+            <div class="ui card">
+                <div class="content">
+                    <div class="header">Analysis of Recent Spending</div>
+                    <div class="meta">It is critical to set a good monthly target for total spending number across
+                        the six MoneyComb cells.
+                    </div>
+                </div>
+                <div align="center" class="content">
+                    <img class="ui small image" src="/images/mc80.png"/>
+                </div>
+                <div class="content">Based on our analysis of the accounts you've linked, you average
+                    <strong>${{currentspend}}/
+                        month</strong> on
+                    these 6 MoneyComb categories.
+                </div>
+
+            </div>
+            <div class="ui card">
+                <div class="content">
+                    <div class="header">Adjust and Set Spending Target</div>
+                    <div class="meta">We use your average past spending to start, but you can adjust these amounts to meet your goals
+                    </div>
+                </div>
+                <div align="center" class="content">
+                    <div class="ui mini statistic">
+                        <div class="label">
+                            Your Average Monthly Spending
+                        </div>
+                        <div class="value">
+                            {{dollarFormat(currentspend)}}
+                        </div>
+                    </div>
+                </div>
+                <div align="center" class="content">
+                    <div>
+                        {{> React component=CellTargetSlider start=(newTarget) min=0 max=(targetupperbound) step=50}}
+                    </div>
+                    <div class="ui statistic">
+                        <div class="value">
+                            {{dollarFormat(value)}}
+                        </div>
+                        <div class="label">
+                            each month
+                        </div>
+                    </div>
+                    <button class="ui button action-set-cells">Set as Monthly Target</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui divider"></div>
+        <p style="color: #9e9e9e;">Note: Average MoneyComb users with your income range usually spend between
+            <strong>${{fpinfo.low}} and ${{fpinfo.high}}</strong> per month in these six categories.</p>
+        <div class="ui divider"></div>
+
+
+    <div class="ui message">
+        <i class="circular idea icon"></i>
+        <div class="header">MoneyComb Tip</div>
+        The key to savings is setting the right Monthly Target.
+        For example, to save $100, set your target $100 <strong>below your Average Monthly Spending Target</strong>.
+        <p>If your average spending total looks low, go to our Category Checker and review your latest transactions. This
+        will quickly improve the accuracy of this amount!</p>
+
+    </div>
+
+    </div>
+
+
+</template>

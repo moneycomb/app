@@ -1,0 +1,22 @@
+<template name="HiveCard">
+  <div class="ui card">
+    <div style="background-color: #848484; color:white;" class="content">
+      <div style="color:white;" class="header"><i class="large users icon"></i> Your Hive</div>
+       {{members}} people, including you
+    </div>
+    <div class="fluid image"><img src="/images/masterhive.png"/></div>
+    <div class="content">
+      <div style="color:teal;" class="header">DESCRIPTION</div>
+      {{description}}
+    </div>
+    <div class="very-tiny-text content">NOTE: As more people join MoneyComb, your "hive" will get more focused on people like you:
+        your income range, status, age, etc. Note that <strong>Everyones</strong> individual information is anonymous and combined, and there will
+    always be at least 10 members in your hive.
+    </div>
+    <div class="extra content">
+      <div class="very-very-tiny-text">{{name}}</div>
+    </div>
+  </div>
+</template>
+
+

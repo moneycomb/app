@@ -1,0 +1,35 @@
+<template name="MoneyCombCell">
+
+<path
+    d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+    id="r-back" stroke="{{fill}}" stroke-width="6" fill-opacity="{{bgopacity}}" fill="{{fill}}"
+    sketch:type="MSShapeGroup"></path>
+<g id="r-status" transform="translate(19.000000, 0.000000)" sketch:type="MSShapeGroup">
+  <circle id="status5" fill="{{status5}}" cx="32" cy="75" r="8"></circle>
+  <path d="M-6.66133815e-15,74 L63,74 L53.8095438,90 L9.19045623,90 L-6.43929354e-15,74 Z"
+        fill="{{bottom}}" id="bot"></path>
+  <rect id="top" fill="{{top}}" x="5" y="0" width="54" height="10 "></rect>
+  <rect id="status-1" fill="{{status1}}" x="4" y="83" width="53" height="2"></rect>
+  <path d="M54,74 L61,74 L54,85 L49 L54,74 Z" id="status-2" fill="{{status2}}"></path>
+  <polygon id="status-3" fill="{{status3}}" transform="translate(48, 1) rotate(-329.000000) translate(-65, -12.788012) " points="80 6.49385913 86.9592933 17.3235629 58.2486767 25 "></polygon>
+
+  <circle id="status4" fill="{{status4}}" cx="60" cy="44" r="7"></circle>
+
+</g>
+
+<image id="{{cell}}-i" style="{{e.icon}}" sketch:type="MSBitmapLayer" x="25" y="15" width="50" height="50"
+       xlink:href="{{iconimage}}"></image>
+<path
+    d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+    id="r-hex" stroke="{{stroke}}" stroke-width="6" sketch:type="MSShapeGroup"></path>
+<text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+      sketch:alignment="middle" fill="#FFFFFF">
+  <tspan x="24.312" y="51">{{text1}}</tspan>
+</text>
+  <text id="r-status-text" sketch:type="MSTextLayer" text-anchor="middle" font-family="Helvetica" font-size="8" font-weight="bold"
+        sketch:alignment="middle" fill="#FFFFFF">
+    <tspan x="50" y="82">{{text2}}</tspan>
+  </text>
+
+
+</template>

@@ -1,0 +1,49 @@
+<template name="CellStatus">
+  <svg id="cell-status" width={{width}} viewBox="0 0 346 231
+  " version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <defs>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+      <feOffset dx="3" dy="-7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix"
+                     result="shadowMatrixOuter1"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="cellstatus-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="cellstatus" sketch:type="MSLayerGroup" transform="translate(-16.000000, -18.000000)">
+      <rect id="frame" sketch:type="MSShapeGroup" x="0" y="0" width="377" height="270"></rect>
+      <rect id="fill" stroke="#F6A623" fill-opacity="0.6" fill="{{status.fill_color}}" sketch:type="MSShapeGroup" x="110" y="{{status.start_y}}"
+            width="245" height="{{status.height}}"></rect>
+      <rect id="backgroundfill" stroke="#F6A623" fill-opacity="0.2" fill="#FFA000" sketch:type="MSShapeGroup" x="110"
+            y="30" width="245" height="214"></rect>
+      <path
+          d="M358,133.267949 L358,21 L108,21 L108,249 L358,249 L358,136.732051 L296.5,243.253175 L171.5,243.253175 L109,135 L171.5,26.7468245 L296.5,26.7468245 L358,133.267949 Z"
+          id="mask" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+      <polygon id="hex-inner" stroke="{{status.stroke}}" stroke-width="12" sketch:type="MSShapeGroup"
+               transform="translate(230.000000, 133.000000) rotate(-270.000000) translate(-230.000000, -133.000000) "
+               points="230 8 338.253175 70.5 338.253175 195.5 230 258 121.746825 195.5 121.746825 70.5 "></polygon>
+      <text id="remain" opacity="0.5" sketch:type="MSTextLayer" font-family="Helvetica" font-size="18" font-weight="260"
+            sketch:alignment="middle" fill="#000000">
+        <tspan x="199.976" y="185">of ${{budget}}</tspan>
+        <tspan x="190.157" y="207">remaining</tspan>
+      </text>
+      <text id="budget" sketch:type="MSTextLayer" text-anchor="middle" font-family="Helvetica" font-size="64" font-weight="260"
+            sketch:alignment="middle" fill="{{status.font_color}}">
+        <tspan x="230" y="152">${{styledRemaining}}</tspan>
+      </text>
+      <polygon id="smallhex" stroke="#FFA000" stroke-width="12" fill="#FFA000" filter="url(#filter-1)"
+               sketch:type="MSShapeGroup"
+               transform="translate(85.500000, 133.500000) rotate(-270.000000) translate(-85.500000, -133.500000) "
+               points="85.5 71 139.626588 102.25 139.626588 164.75 85.5 196 31.3734123 164.75 31.3734123 102.25 "></polygon>
+      <image id="image" sketch:type="MSBitmapLayer" x="47" y="98" width="76" height="76"
+             xlink:href="/images/white/{{category}}.png"/>
+    </g>
+  </g>
+  </svg>
+</template>
+

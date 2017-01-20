@@ -1,0 +1,22 @@
+<template name="ManageHome">
+  <div class="ui container">
+    <div class="ui grid container">
+      <div class="ui segments">
+        <div class="ui inverted secondary grey segment">
+          {{>ProfileNav activeFlag="profile"}}
+        </div>
+
+        <h2>Tags</h2>
+        {{#each tags}}
+          <a class="ui label">{{name}}<i class="icon close"></i></a>
+        {{/each}}
+
+        <h3>SubCells</h3>
+        {{#each subcells}}
+          {{name}}<br>
+        {{/each}}
+
+      </div>
+    </div>
+  </div>
+</template>

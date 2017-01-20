@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Gear and Gadgets",
+    "parent": "s",
+    "abbrev": "gg",
+    "occurance": "gear and gadget purchases"
+  },
+
+  {
+    "name": "Clothes",
+    "parent": "s",
+    "abbrev": "cl",
+    "occurance": "Clothing, Shoes, Accessories"
+  },
+
+
+  {
+    "name": "Hobbies",
+    "parent": "s",
+    "abbrev": "ho",
+    "occurance": "Hobby equipment and supplies"
+  },
+
+
+  {
+    "name": "Housing",
+    "parent": "o",
+    "abbrev": "h",
+    "occurance": "Rent, Mortgage, Insurance, Utilities, Fees"
+  },
+
+  {
+    "name": "Education",
+    "parent": "o",
+    "abbrev": "ed",
+    "occurance": "Tuitions, supplies and fees"
+  },
+
+  {
+    "name": "Medical",
+    "parent": "o",
+    "abbrev": "med",
+    "occurance": "Healthcare, Medical, Dentist, Eyecare"
+  },
+
+  {
+    "name": "Transportation",
+    "parent": "o",
+    "abbrev": "tr",
+    "occurance": "Getting from point A to B..loans, leases, insurance, parking, taxis, trains, tolls and parking"
+  },
+
+  {
+    "name": "Gifts",
+    "parent": "o",
+    "abbrev": "gi",
+    "occurance": "Gifts"
+  },
+
+  {
+    "name": "Charity",
+    "parent": "o",
+    "abbrev": "ch",
+    "occurance": "Charity"
+  },
+
+  {
+    "name": "Breakfast",
+    "parent": "eo",
+    "abbrev": "br",
+    "occurance": "breakfast out"
+  },
+
+  {
+    "name": "Lunch",
+    "parent": "eo",
+    "abbrev": "lu",
+    "occurance": "lunch out"
+  },
+
+  {
+    "name": "Dinner",
+    "parent": "eo",
+    "abbrev": "di",
+    "occurance": "dinner out"
+  },
+
+  {
+    "name": "Family Visit",
+    "parent": "t",
+    "abbrev": "fam",
+    "occurance": "Visits to family"
+  },
+
+  {
+    "name": "Weekend Getaway",
+    "parent": "t",
+    "abbrev": "wga",
+    "occurance": "Weekends / Short Trips"
+  },
+
+  {
+    "name": "Local / Stayaction",
+    "parent": "t",
+    "abbrev": "loc",
+    "occurance": "Weekends / Short Trips"
+  },
+
+  {
+    "name": "International",
+    "parent": "t",
+    "abbrev": "int",
+    "occurance": "Long"
+  },
+
+  {
+    "name": "Outdoor Adventure",
+    "parent": "t",
+    "abbrev": "tadv",
+    "occurance": "Long"
+  },
+
+  {
+    "name": "Resting and Relaxing",
+    "parent": "t",
+    "abbrev": "trel",
+    "occurance": "Long"
+  }
+
+]
+
+
+

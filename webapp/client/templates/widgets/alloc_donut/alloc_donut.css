@@ -1,0 +1,21 @@
+/*****************************************************************************/
+/* AllocDonut: Style */
+/*****************************************************************************/
+.alloc-donut {
+}
+
+.c3-legend-background {
+    stroke-width: 0px;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.c3-legend-item text {
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.c3-chart-arc text {
+    font-size: 10px;
+}

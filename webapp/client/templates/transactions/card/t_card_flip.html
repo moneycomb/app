@@ -1,0 +1,66 @@
+<template name="TCard2">
+  <div id="{{id}}" class="ui shape">
+    <div class="sides">
+      <div class="active side">
+        <div class="ui card">
+          <div class="content">
+            <div style="font-size: 1.3em" class="right floated meta">$2300</div>
+            <a class="header">Pablo's Taco Palace</a>
+            <div class="meta">
+              <span class="date">3 days ago</span>
+            </div>
+            <div class="description">
+              Wells
+              Fargo
+              Visa
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              {{> CircleIcon color="#ffa000" image="/images/white/e.png"}}
+              {{> CircleIcon color="#ffa000" image="/images/white/s.png"}}
+            </a>
+          </div>
+          <div align="center" style="color: white; background-color: #ffa000" class="extra content">
+            ENTERTAINMENT <i id="f{{id}}" class="flip-card retweet icon"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="side">
+        <div class="ui card">
+          <div class="content">
+            <div style="font-size: 1.0em" class="right floated meta">$2299.52</div>
+            <a class="header">Pablo's Taco Palace</a>
+            <div class="meta">
+              <span class="date">4/11/16</span>
+            </div>
+            <div class="description">
+              RATING: 5
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              {{> RecategorizeSelector tid=(_id)}}
+            </a>
+            </div>
+          <div class="extra content">
+            <div class="ui mini icon buttons">
+              <button class="ui button"><i class="edit icon"></i></button>
+              <button class="ui button"><i class="eye icon"></i></button>
+              <button class="ui button"><i class="tags icon"></i></button>
+            </div>
+          </div>
+          <div align="center" style="color: white; background-color: #424242" class="extra content">
+            ENTERTAINMENT <i id="f{{id}}" class="flip-card retweet icon"></i>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+</template>
+

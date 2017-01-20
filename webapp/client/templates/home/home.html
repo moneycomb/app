@@ -1,0 +1,38 @@
+<template name="Home">
+
+  <div class="home">
+
+    <div class="ui container">
+
+{{#if Template.subscriptionsReady}}
+
+
+      <div align="center">
+        {{#linkTo route="signin"}}
+          <button class="huge teal ui button">Log in
+          </button>
+        {{/linkTo}}
+
+        <br>
+        <br>
+
+
+        {{#linkTo route="register"}}
+          <button class="huge teal ui button">Sign Up
+          </button>
+        {{/linkTo}}
+
+        <!--
+        <button class="demo-mode huge teal ui button">Demo
+        </button>
+        -->
+      </div>
+
+  {{else}}
+  {{>Loading}}
+  {{/if}}
+
+    </div>
+  </div>
+
+</template>

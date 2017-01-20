@@ -1,0 +1,41 @@
+<template name="AccountsCardList">
+    {{#if Template.subscriptionsReady}}
+      {{#if have_credit_accounts}}
+        <div class="content">
+            <div class="meta">Credit Cards</div>
+            {{#each credit_accounts}}
+                <a href="/account/{{_id}}">
+                <span style="background-color: #848484;"
+                   class="ui empty circular label"></span> {{cleanAccountName(meta.name)}}</a>
+                <br>
+            {{/each}}
+
+        </div>
+      {{/if}}
+      {{#if have_checking_accounts}}
+        <div class="content">
+
+            <div class="meta">Checking Accounts</div>
+            {{#each checking_accounts}}
+                <a style="background-color: {{cellColor (currentcell)}};"
+                   class="ui empty circular label"></a> {{cleanAccountName(meta.name)}}
+                <br>
+            {{/each}}
+        </div>
+      {{/if}}
+        {{#if have_savings_accounts}}
+        <div class="content">
+            <div class="meta">Savings Accounts</div>
+
+            {{#each savings_accounts}}
+                <a style="background-color: {{cellColor (currentcell)}};"
+                   class="ui empty circular label"></a> {{cleanAccountName(meta.name)}}
+                <br>
+            {{/each}}
+        </div>
+          {{/if}}
+    {{else}}
+        {{> Loading}}
+    {{/if}}
+
+</template>

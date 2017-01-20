@@ -1,0 +1,12 @@
+<template name="MobileMenuBar">
+  <div style="padding:0px;" class="mobile only row">
+    <div style="background-color: {{color}};" class="mobile-menu-bar">
+      <div class="mobile-menu-item">
+          {{#if icon}}
+            <i class="{{icon}}"></i>
+          {{/if}}
+        {{title}}
+      </div>
+    </div>
+  </div>
+</template>

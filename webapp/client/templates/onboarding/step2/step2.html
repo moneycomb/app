@@ -1,0 +1,64 @@
+<template name="Step2">
+  <script src="https://cdn.plaid.com/link/stable/link-initialize.js"></script>
+  {{> MobileMenuBar title="Step 2 of 2 - Link Your Accounts" color="#26a69a"}}
+  {{> MobileMenuSubBar tsize="16px" tcolor="white" title="Securely link credit card and bank accounts you use for daily spending. We auto-categorize your spending so you see where your money is going." color="#4db6ac"}}
+
+
+  {{#if Template.subscriptionsReady}}
+
+    <div class="ui basic segment container">
+
+      {{#if haveAccounts}}
+
+        <div class="full-width" align="center">
+          <div align="left">
+            {{>AccountsSegment}}
+          </div>
+        </div>
+        <p></p>
+        <div align="center">
+          {{> AccountsAddButton label="Link Another"}}
+          <div class="proceed ui large teal icon button">
+            Done
+          </div>
+        </div>
+
+      {{else}}
+        <div align="center">
+          <div align="center">
+            <div align="left">
+              {{>AccountsSegment}}
+            </div>
+          </div>
+          <br>
+          {{> AccountsAddButton}}
+          <button class="linklater large ui button">Link Accounts Later</button>
+          <p>
+            <a href="https://www.mymoneycomb.com/securelink">Why Linking Matters</a></p>
+        </div>
+      {{/if}}
+
+      <div class="ui message">
+        Fun fact: simply tracking purchases often leads to a 10% reduction in spending. Pretty cool. And we'll do much more than that!
+      </div>
+
+      <div class="ui message">
+        <h5><i class="lock icon"></i> Dedicated to your Privacy & Security.</h5>
+        <p class="very-tiny-text">
+        <ul>
+          <li>Bank-level encryption</li>
+          <li>Account linking powered by Plaid Technologies, trusted by Venmo, PayPal, Betterment, others</li>
+          <li>At no time do we have direct access to accounts</li>
+        </ul>
+
+        </p>
+      </div>
+
+
+    </div>
+
+  {{else}}
+    {{>Loading}}
+  {{/if}}
+
+</template>

@@ -1,0 +1,21 @@
+<template name="ManageSubcells">
+  <div class="manage-subcells">
+    <h2>Here:</h2>
+
+
+
+
+
+    <div class="ui compact menu">
+      <div class="ui simple dropdown item">
+        Dropdown
+        <i class="dropdown icon"></i>
+        <div class="menu">
+{{#each subcells (cell)}}
+          <div class="item">{{name}}</div>
+{{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

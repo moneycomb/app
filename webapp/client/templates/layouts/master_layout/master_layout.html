@@ -1,0 +1,8 @@
+<template name="MasterLayout">
+  {{> Navigation}}
+  <div style="margin-top: 50px;" class="pusher">
+      {{> sAlert template='sAlertCustom'}}
+      {{> yield}}
+      {{> Footer}}
+  </div>
+</template>

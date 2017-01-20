@@ -1,0 +1,32 @@
+<template name="DebtsList">
+  <div class="ui container debts-list">
+    <div class="ui blue center aligned inverted segment">
+      <div class="ui inverted blue menu">
+        <a class="item action-profile">
+          <i class="user icon"></i> Profile >
+        </a>
+        <a class="active item">Your Loans and Debt</a>
+      </div>
+
+    </div>
+
+    {{#if Template.subscriptionsReady}}
+
+
+        <div class="ui basic center aligned segment">
+
+          <div class="ui two cards">
+            {{#each debts}}
+              {{> DebtsItem}}
+            {{/each}}
+
+            {{> DebtsAdd}}
+
+          </div>
+
+        </div>
+    {{else}}
+      {{>Loading}}
+    {{/if}}
+  </div>
+</template>

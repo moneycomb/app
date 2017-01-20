@@ -1,0 +1,74 @@
+<template name="TestHome">
+  <h1>Test</h1>
+  <div>
+    {{> React component=SpendTrend}}
+  </div>
+
+  <div class="ui container">
+
+
+
+      <img src="http://res.cloudinary.com/moneycomb/image/upload/v1473426288/cells/merge.png"/>
+
+      <img src="http://res.cloudinary.com/moneycomb/image/upload/c_scale,e_grayscale,o_60,w_40/v1473598409/images/spendlimit.png"/>
+
+      {{> TransactionHex cell="h" color="#848484" size=50}}
+      {{> TransactionHex cell="gas" color="#848484" size=50}}
+      {{> TransactionHex cell="k" color="#848484" size=50}}
+      {{> TransactionHex cell="gi" color="#848484" size=50}}
+      {{> TransactionHex cell="fd" color="#848484" size=50}}
+
+
+<div class="ui six doubling stackable cards">
+  {{> TCard name="Pablos Taco Shack" rating=0 cell="eo" amount=20.34}}
+  {{> TCard name="Time Warner Cable" rating=1 cell="ds" amount=0.34}}
+  {{> TCard name="Ticketmaster" rating=5 cell="e" amount=19.34}}
+  {{> TCard name="United Airlines" rating=0 cell="t" amount=2.34}}
+  {{> TCard name="Target #445" rating=3 cell="s" amount=1000.34}}
+  {{> TCard name="Scissors Salon and Nails" rating=10 cell="r" amount=300.34}}
+</div>
+
+
+    <!--
+    <div>
+      {{> React component=TransactionCard}}
+    </div>
+
+    <div>
+      {{> React component=ActivityCounter used=10 total=8 color="red"}}
+    </div>
+-->
+
+
+
+    <div>
+      {{> React component=SweetSpot}}
+    </div>
+<!--
+    <div>
+      {{> React component=TransactionCard}}
+    </div>
+-->
+
+    <div class="ui segment">
+
+<!--
+    <div>
+      {{> React component=TransactionList}}
+    </div>
+-->
+
+    </div>
+
+   <!-- {{> PictureHex width=300 bordercolor="#ffa000" image="/images/MCSnowboarder.jpg"}} -->
+
+      <a href="/spend"><button class="ui huge button">SPEND!</button></a>
+
+
+      <div class="ui tall stacked segment">
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      </div>
+
+  </div>
+
+</template>

@@ -1,0 +1,174 @@
+<template name="CellsDetail">
+    <div class="flex-column-bar">
+        <div style="color: {{cellColor (abbrev)}}; background-color: {{cellColor (abbrev)}};"
+             class="flex-row-item">
+            <div style="padding: 0px;"
+                 align="center">{{> CellHeader width=300 title=(name) cell=(abbrev) color=(LightenDarkenColor (cellColor (abbrev)) -20)}}
+            </div>
+        </div>
+    </div>
+
+    <div class="ui basic segment container">
+
+        {{# if Template.subscriptionsReady}}
+            <div class="ui three stackable doubling cards">
+                <div class="ui card">
+                    <div class="content">
+                        <div class="header">Spend Stats</div>
+                        <div class="meta">over {{periodString}}</div>
+                    </div>
+                    <div class="content">
+                        <div class="ui two stackable cards">
+                            <div class="ui card">
+
+                                <div class="ui tiny statistic">
+                                    <div style="color: white; background-color:{{cellColor (abbrev)}};" class="label">
+                                        SPENT
+                                    </div>
+                                    <div style="color: {{cellColor (abbrev)}};" class="value">
+                                        ${{spentThisPeriod}}
+                                    </div>
+                                    <div class="label">
+                                        {{periodString}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="ui card">
+                                <div class="ui tiny statistic">
+                                    <div style="color: white; background-color:{{cellColor (abbrev)}};" class="label">
+                                        TARGET
+                                    </div>
+                                    <div style="color: {{cellColor (abbrev)}};" class="value">
+                                        ${{targetBudget}}
+                                    </div>
+                                    <div class="label">
+                                        {{periodString}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ui card">
+                                <div class="ui tiny statistic">
+                                    <div style="color: white; background-color:{{tOverUnderColor}};" class="label">
+                                        {{tOverUnderLabel}}
+                                    </div>
+                                    <div style="color: {{tOverUnderColor}};" class="value">
+                                        ${{tOverUnderAmount}}
+                                    </div>
+                                    <div class="label">
+                                        {{periodString}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="ui card">
+                                <div class="ui tiny statistic">
+                                    <div style="color: white; background-color:{{cellColor (abbrev)}};" class="label">
+                                        ACTIVITY
+                                    </div>
+                                    <div style="color: {{cellColor (abbrev)}};" class="value">
+                                        {{countLast30}}
+                                    </div>
+                                    <div class="label">
+                                        {{occurance}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="content">
+                        <div class="meta">Top Spending over last 365 days:</div>
+                        {{#each places (abbrev)}}
+                            <a style="background-color: {{cellColor (cell)}};"
+                               class="ui empty circular label"></a> {{name}} - {{dollarFormat(total)}}
+                            <br>
+                        {{/each}}
+                    </div>
+
+
+                </div>
+                <div class="ui card">
+                    <div class="content">
+                        <div class="header">Spend Trend</div>
+                        <div class="meta">over {{periodString}}</div>
+                    </div>
+                    <div align="center" class="content">
+                        {{>Speedometer speed=(spendSpeed)}}
+                    </div>
+                    <div style="padding-left: 14px; padding-right: 14px;">
+                    {{> SpendTrend color=(cellColor (abbrev)) sDate=(periodStart) eDate=(periodEnd) sTgt=0 eTgt=(targetBudget) periodInDays=(tPeriodInDays) spend=(spendSeries) interaction=true}}
+                        </div>
+
+                    <div align="center">
+                        <button id="t7" class="change-timeframe circular ui icon button"
+                                style="color:{{tfColor "t7"}}; background-color: {{tfbgColor "t7"}};">
+                            &nbsp; &nbsp; 7 <i class="icon calendar"></i>
+                        </button>
+                        <button id="t30" class="change-timeframe circular ui icon button"
+                                style="color:{{tfColor "t30"}}; background-color: {{tfbgColor "t30"}};">
+                            &nbsp;30 <i class="icon calendar"></i>
+                        </button>
+                        <button id="t90" class="change-timeframe circular ui icon button"
+                                style="color:{{tfColor "t90"}}; background-color: {{tfbgColor "t90"}};">
+                            &nbsp;90 <i class="icon calendar"></i>
+                        </button>
+                        <button id="t365" class="change-timeframe circular ui icon button"
+                                style="color:{{tfColor "t365"}}; background-color: {{tfbgColor "t365"}};">
+                            365 <i class="icon calendar"></i>
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="ui card">
+                    <div class="content">
+                        <div class="header">Spend Suggestion</div>
+                        <div class="meta">Spend Less, Enjoy More</div>
+                    </div>
+                    {{> SpendSuggestions featured=(featured) cellName=(name) bgcolor=(cellColor (abbrev)) periodphrase=(periodString) isUnder=(tIsUnder)}}
+                </div>
+            </div>
+
+
+            {{#if Template.subscriptionsReady}}
+                <div class="ui one cards">
+                    <div class="ui card">
+
+                        <div class="content">
+                            <div class="five stackable ui cards">
+
+
+                                {{#each transactions}}
+                                    {{> TCard}}
+                                {{/each}}
+
+                            </div>
+                            <div class="ui divider"></div>
+                            <div class="ui center aligned basic segment">
+                                <div class="load-more ui huge button">Load More</div>
+                            </div>
+
+                            <!--
+                            {{> TransactionsList description=(name) timeframe=(timeframe) bgcolor=(cellColor (abbrev)) showbar=true selector=(selector)}} -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+            {{else}}
+                {{> Loading}}
+            {{/if}}
+        {{else}}
+            {{> Loading}}
+        {{/if}}
+
+    </div>
+
+</template>

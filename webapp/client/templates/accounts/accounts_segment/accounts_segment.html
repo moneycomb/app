@@ -1,0 +1,15 @@
+<template name="AccountsSegment">
+      {{#if Template.subscriptionsReady}}
+            <div class="ui divided list">
+          {{#each accounts}}
+            <div class="item">
+              <div class="ui small grey horizontal label">LINKED</div>
+              {{meta.name}}
+            </div>
+          {{/each}}
+        </div>
+      {{else}}
+        {{>Loading}}
+      {{/if}}
+
+</template>

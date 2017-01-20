@@ -1,0 +1,45 @@
+<template name="WizardSummary">
+  <div align="center" style="padding: 8px; background-color: #848484;">
+    <span style="font-size: 24px; color: white;"><i class="large circular check icon"></i> Spend Wizard</span>
+  </div>
+
+  <div class="ui basic segment container">
+
+    <div class="ui three centered stackable doubling cards">
+
+      <div class="ui card">
+        <div class="content">
+          <div class="header">
+            Spending Plan: ${{newTotal}}
+          </div>
+          <div class="meta">per 30 days</div>
+        </div>
+        <div class="content">
+          {{>React component=AllocationPlan data=(allocations)}}
+
+        </div>
+        <div class="content">
+          <a class="ui empty circular label" style="background-color: #fdd835;"></a><span
+            class="legend-text-style">Eating Out</span>
+          <a class="ui empty circular label" style="background-color: #ffb300;"></a><span
+            class="legend-text-style">Digital Services</span>
+          <a class="ui empty circular label" style="background-color: #fb8c00;"></a><span
+            class="legend-text-style">Recharge</span>
+          <a class="ui empty circular label" style="background-color: #00695c;"></a><span
+            class="legend-text-style">Travel</span>
+          <a class="ui empty circular label" style="background-color: #26a69a;"></a><span
+            class="legend-text-style">Entertainment</span>
+          <a class="ui empty circular label" style="background-color: #80cbc4;"></a><span
+            class="legend-text-style">Shopping</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui basic center aligned segment">
+      <div>
+      </div>
+        <button class="ui save-and-proceed large button action-previous">GO TO YOUR HOME PAGE</button>
+    </div>
+
+  </div>
+</template>

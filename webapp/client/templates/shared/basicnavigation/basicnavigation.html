@@ -1,0 +1,63 @@
+<template name="BasicNavigation">
+  <div class="ui page grid">
+    <div class="computer tablet only row">
+      <div class="ui grey inverted menu top fixed navbar">
+        <a href="http://www.mymoneycomb.com/"><img class="logo" style="padding-left:20px; padding-top: 8px;"
+                                                   align="middle"
+                                                   src="/images/logo.png"
+                                                   width="200"/></a>
+
+      </div>
+    </div>
+    <div class="mobile only narrow row">
+      <div class="ui grey inverted top fixed navbar menu">
+        <a href="http://www.mymoneycomb.com/"><img class="logo" style="padding-left:20px; padding-top: 14px;"
+                                                   align="middle"
+                                                   src="/images/logo.png"
+                                                   width="150"/></a>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!--
+    <div class="ui middle aligned page grid">
+      <div class="computer tablet only row">
+        <div class="ui grey inverted stackable fixed menu navbar">
+
+          <a href="http://www.mymoneycomb.com/"><img class="logo" style="padding-left:20px; padding-top: 14px;"
+                                                     align="middle"
+                                                     src="/images/logo.png"
+                                                     width="200"/></a>
+          <div class="right menu">
+            <a class="item" href="/dashboard">DASHBOARD</a>
+            <a class="item" href="/moneypot">MY MONEYCOMB</a>
+            <a class="item" href="/spendsetter">SPENDSETTER</a>
+            <a class="item" href="{{pathFor "transactions.home"}}">EVALUATE+</a>
+            <a class="item" href="/myprofile">PROFILE</a>
+            {{> atNavButton}}
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile only narrow row">
+
+        <div class="ui grey inverted stackable fixed menu navbar">
+          <a class="item" href="http://www.mymoneycomb.com/"><img src="/images/icon.png"/></a>
+          <a class="item" href="/dashboard">DASHBOARD</a>
+          <a class="item" href="/moneypot">MY MONEYCOMB</a>
+          <a class="item" href="/spendsetter">SPENDSETTER</a>
+          <a class="item" href="{{pathFor "transactions.home"}}">EVALUATE+</a>
+          <a class="item" href="/myprofile">PROFILE</a>
+          {{> atNavButton}}
+        </div>
+      </div>
+
+    </div>
+    -->
+
+</template>

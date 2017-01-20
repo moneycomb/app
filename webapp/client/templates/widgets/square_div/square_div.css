@@ -1,0 +1,23 @@
+/*****************************************************************************/
+/* SquareDiv: Style */
+/*****************************************************************************/
+.square-div {
+    background-color: #5fb7e5;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: center;
+    overflow-wrap: break-word;
+    margin: 1px;
+    padding: 3px;
+    display: inline-block;
+
+}
+
+.square-div .value {
+    font-size: 24px;
+}
+
+.square-div .label {
+    font-size: 12px;
+}
+

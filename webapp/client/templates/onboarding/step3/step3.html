@@ -1,0 +1,64 @@
+<template name="Step3">
+
+
+  {{#if notcomplete}}
+
+    {{> MobileMenuBar title="Please Wait...Categorizing Your Spending" color="#26a69a"}}
+
+    <div class="ui center aligned basic segment">
+      <img src="/spinners/spinner2.gif"/>
+    </div>
+
+    <div class="ui container">
+      <!-- <div>
+        {{> React component=ProgressBar color="#26a69a" completed=(currentprogressPct)}}
+      </div> -->
+      <div style="margin: 10px;" align="center">
+
+        <span style="font-size: 48px; font-weight:300; color:#9e9e9e;">{{currentprogessPct}}% Complete</span>
+        <!--- <span style="font-size: 64px; font-weight:300; color:#9e9e9e;">{{currentprogess}} of {{totalTransactions}}</span> -->
+      </div>
+
+      <br>
+      <div style="font-size: 20px; color: #848484;" class="ui message">
+        <img class="ui middle aligned mini image" src="/images/teal/bee.png"/>
+        Our bees are busy collecting and automatically categorizing your spending transactions into
+        MoneyComb's six key spending categories. This should take less than 1 minute.
+      </div>
+    </div>
+
+  {{else}}
+
+    {{> MobileMenuBar title="Categorization Complete" color="#26a69a"}}
+  <div class="ui center aligned basic segment">
+    <h2 style="font-size: 48px; font-weight:300; color:#9e9e9e;">
+      <strong>{{currentUser.profile.transactions.total}}</strong> transactions</h2>
+    <h3 style="font-weight:300; color:#9e9e9e;">analyzed and optimized for happiness</h3>
+
+  {{#if lowInfo}}
+
+  <div class="ui icon message">
+    <i class="info circle icon"></i>
+    <div class="content">
+      <div class="header">
+        Please
+        Note
+      </div>
+      <p>At this point, we do not have either large enough number of transactions or categorization
+        percent to make a meaningful plan right out of the gate. Sometimes your account provider takes
+        some time to provide a full list of transactions, up to 4-8 hours at times. You can proceed and sync
+        transactions later, but just a warning our suggested plans and insight will likely be a bit off to start!
+      </p>
+    </div>
+  </div>
+
+  {{/if}}
+
+    <a href="/dashboard" class="proceed ui huge teal icon button">
+      Go to My Home Page
+    </a>
+  </div>
+
+  {{/if}}
+
+</template>

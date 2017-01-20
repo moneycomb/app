@@ -1,0 +1,78 @@
+<template name="AccountsDetail">
+
+    {{#if Template.subscriptionsReady}}
+
+        {{> MobileMenuBar title=(account.meta.name) color="#26a69a"}}
+
+        <div class="ui basic segment container">
+
+            <div class="ui centered grid">
+                <div class="four wide column">
+                    <div class="ui small pink statistic">
+                        <div class="value">
+                            {{dollarFormat (account.balance.current)}}
+                        </div>
+                        <div class="label">
+                            Balance
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="four wide column">
+
+                    <div class="ui small grey statistic">
+                        <div class="value">
+                            {{dollarFormat (account.balance.available)}}
+                        </div>
+                        <div class="label">
+                            Available
+                        </div>
+                    </div>
+
+                </div>
+                <div class="four wide column">
+                    <div class="ui small grey statistic">
+                        <div class="value">
+                            {{numTransactions}}
+                        </div>
+                        <div class="label">
+                            Transactions
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                {{ > React component=CProgressBar color="#FF4081" width=1 value=(account.balance.current) total=(account.meta.limit)}}
+            </div>
+
+            <div class="ui divider"></div>
+
+            <!--
+        <div>
+            {{> React component=TransactionList selector=(selector)}}
+        </div> -->
+
+            <div class="ui stackable five cards">
+                {{#each transactions}}
+                    {{> TCard}}
+                {{/each}}
+            </div>
+
+            <div class="ui divider"></div>
+            <div class="ui center aligned basic segment">
+                <div class="load-more ui huge button">Load More</div>
+            </div>
+
+            <!-- {{> TransactionsList description=(meta.name) selector=(selector)}} -->
+
+        </div>
+
+    {{else}}
+
+        {{> Loading}}
+
+    {{/if}}
+
+</template>

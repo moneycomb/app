@@ -1,0 +1,84 @@
+#container
+{
+    height:400px;
+    width:400px;
+    position:relative;
+}
+
+#image
+{
+    position:absolute;
+    left:0;
+    top:0;
+}
+#text
+{
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:50px;
+    font-weight:bold;
+    font-weight: 300;
+    left: 0;
+    text-align:center;
+    top: 10px;
+    width: 100%
+}
+
+.catlabel
+{
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:48px;
+    font-weight:bold;
+    left:0px;
+    bottom:0px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 4px;
+    color: white;
+    width: 100%
+}
+
+.ratingslabel
+{
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:48px;
+    font-weight:bold;
+    left:0px;
+    bottom:15px;
+    font-size: 16px;
+    color: white;
+    width: 100%
+}
+
+.editpanel
+{
+    color:white;
+    font-size:48px;
+    font-weight:bold;
+    left:0px;
+    top:5px;
+    padding: 16px;
+    font-size: 12px;
+    text-align:center;
+    color: white;
+    width: 100%
+}
+
+.extra-icons
+{
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:48px;
+    font-weight:bold;
+    left:0px;
+    bottom:8px;
+    font-size: 12px;
+    color: white;
+    width: 100%
+}

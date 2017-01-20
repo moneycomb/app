@@ -1,0 +1,35 @@
+#at-nav-button: {
+    background: #ffa000;
+    color: #ffa000;
+}
+
+/*
+.item {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+*/
+
+
+.ui.page.grid{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+.navbar {
+
+    font-family: 'Lato';
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    color: #424242;
+    height: 50px;
+}
+
+
+

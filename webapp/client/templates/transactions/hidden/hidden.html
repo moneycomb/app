@@ -1,0 +1,32 @@
+<template name="Hidden">
+  <div class="ui container">
+    {{>EvaluateNav activeFlag="ignored"}}
+
+    {{#if Template.subscriptionsReady}}
+
+      <div class="ui large message">
+        <div class="ui divided items">
+          <div class="item">
+            <div class="content">
+              {{> CategoryHex color="#848484" width=60 category="ignore"}}
+            </div>
+            <div class="middle aligned content">
+              <h1 style="color: #848484;">Ignored (or "Hiddden") Transactions</h1>
+              These are transactions are ignored from all spending calculations. If you change your mind, click on the
+              "Show" icon on the
+              transaction card below.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui five stackable cards">
+        {{#each transactions}}
+          {{>TransactionCard}}
+        {{/each}}
+      </div>
+    {{else}}
+      {{>Loading}}
+    {{/if}}
+  </div>
+</template>

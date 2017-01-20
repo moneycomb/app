@@ -1,0 +1,107 @@
+<template name="OldTransactionsDetail">
+    <div class="ui basic center aligned segment container">
+
+        <div class="two ui centered stackable doubling cards">
+
+            <div class="ui card" style="width: 480px; height: 600px;">
+                <div class="content" style="color:white; background-color: #848484;">
+                    <div class="ui grid">
+
+                        <div class="two wide column">
+                            {{> CircleIcon color=(cellColor (transaction.cell)) icon=(transactionIcon) image=(thisImage)}}
+                        </div>
+                        <div class="fourteen wide column">
+                            {{#if editmode}}
+                                <form class="ui form action-change">
+
+                                    <div class="inline fields">
+                                        <div class="fourteen wide field">
+                                            <input name="name" type="text" value="{{cleanName (transaction.name)}}">
+                                        </div>
+                                        <div class="two wide field">
+                                            <i class="action-cancel remove icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            {{else}}
+                                <h2 class="header">{{cleanName (transaction.name)}} <i
+                                        class="action-edit white small write icon"></i></h2>
+                            {{/if}}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div align="center"
+                     style="padding: 0px; color: white; background-color: {{cellColor (transaction.cell)}};"
+                     class="content">
+
+                </div>
+
+                <div align="center" class="content">
+                    {{#if adjustmode}}
+                        <form class="ui form action-change-adjust">
+                            <div class="inline fields">
+                                <div class="six wide field">
+                                    <input type="text" name="amount" value="{{transaction.amount}}">
+                                </div>
+                                <div class="one wide field">
+                                    <i class="action-change checkmark icon"></i>
+                                    <i class="action-cancel remove icon"></i>
+                                </div>
+                            </div>
+                        </form>
+
+                    {{else}}
+                        <h1 style="color: #848484;"> ${{numberWithCommas(transaction.amount)}}<i
+                                class="action-adjust white small adjust icon"></i></h1>
+                    {{/if}}
+                </div>
+
+                <div align="center" class="content">
+                    Rating:
+                    <div class="ui huge star rating" data-rating="{{rating}}" data-max-rating="5">
+                        <i id="1" class="action-rate star icon"></i>
+                        <i id="2" class="action-rate star icon"></i>
+                        <i id="3" class="action-rate star icon"></i>
+                        <i id="4" class="action-rate star icon"></i>
+                        <i id="5" class="action-rate star icon"></i>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h2 style="color: #848484;"><i class="calendar icon"></i>
+                        {{shortDate (transaction.date)}}</h2>
+                </div>
+
+                {{#if transaction.hasLocation}}
+                    <div class="content">
+                        <h2 style="color: #848484;"><i class="marker icon"></i> {{transaction.Location}}</h2>
+                    </div>
+                {{/if}}
+
+                <div style="background-color: #eeeeee;" class="content">
+                    <h4 style="color: #5fb7e5;">{{transaction.transactionAccount}}</h4>
+                </div>
+                <!--  <div style="background-color: #eeeeee;" class="content">
+                <span style="color: #5fb7e5;">Cat Level: {{transaction.categorizationLevel}}</span>
+            </div> -->
+
+          {{> TransactionCard}}
+
+            </div>
+            <!--
+        <div class="ui small compact menu">
+          <a class="item">
+            <i class="inactive file text icon"></i>
+            Note
+          </a>
+          <a class="{{hideunhide}} item">
+            <i class="{{hideunhideicon}} icon"></i>
+            {{hideunhidetext}}
+          </a>
+        </div>
+-->
+        </div>
+    </div>
+</template>

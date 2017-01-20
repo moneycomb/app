@@ -1,0 +1,19 @@
+/*****************************************************************************/
+/* CircleLabel: Style */
+/*****************************************************************************/
+.circle-label {
+    display: inline-fblock;
+    padding-top: 15px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #ffa00;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    line-height: 70%;
+}
+
+.cl-tiny {
+    font-size: 12px;
+}

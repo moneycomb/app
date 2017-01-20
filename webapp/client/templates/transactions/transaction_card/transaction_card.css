@@ -1,0 +1,37 @@
+/*****************************************************************************/
+/* TransactionCard: Style */
+/*****************************************************************************/
+#tcbackground {
+    background-color: #ffb300;
+}
+
+.action-rate {
+    color: #ffa000;
+}
+
+.transaction-card {
+}
+
+.transaction-amount {
+    font-size: 36px;
+    font-weight: 300;
+    color: #848484;
+    display:inline-block;
+    padding: 0px;
+}
+
+.transaction-pie {
+    display:inline-block;
+    padding-top: 8px;
+}
+
+.amount-widget-line {
+    margin:0px;
+    line-height:10px;
+}
+
+.amount-widget-line > * {
+    vertical-align: middle;
+    line-height: normal;
+}
+

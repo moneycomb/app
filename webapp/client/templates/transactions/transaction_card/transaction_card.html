@@ -1,0 +1,96 @@
+<template name="TransactionCard">
+
+    <div id="{{_id}}" class="ui card transaction-card">
+
+        <div id="tcbackground"
+             style="padding: 0.3em; background-color: {{selectedColor (transactionIconColor)}};"
+             class="action-details content">
+            <span
+                    class="action-categorize">{{> CircleIcon color=(transactionIconColor) icon=(transactionIcon) image=(thisImage)}}</span>
+            <span class="transaction-name" style="font-size:14px; color:#ffffff;">{{shortCleanName (name)}}</span>
+
+        </div>
+        <div class="action-categorize center aligned content"
+             style="padding: 2px; color: white; background-color: {{transactionIconColor}};">
+            change cell
+        </div>
+
+        <div id="recat-{{_id}}" class="recat-box center aligned content"
+             style="padding: 0px; display: none; background-color: #cccccc">
+            {{> RecategorizeSelector cell=(cell) tid=(_id)}}
+        </div>
+        <!--
+    <div id="recat2-{{_id}}" class="recat-box center aligned content"
+         style="padding: 0px; display: none; background-color: #cccccc">
+      {{> SubCellSelector cell=(cell) tid=(_id)}}
+    </div>
+-->
+
+        <div align="center" style="padding: 0px;" class="content">
+            <div class="amount-widget-line">
+                <span class="transaction-amount">${{numberWithCommas(roundedAmount)}}</span>
+                {{#if eligibleToRate}}
+                    <span style="padding: 0px;" class="transaction-pie">
+                        {{>PiePiece id=(_id) spent=(roundedAmount) show=(eligibleToRate) target=(target_for_cell) color=(transactionIconColor)}}
+                    </span>
+                {{else}}
+                    <div style="height: 45px; width: 47px;"></div>
+                {{/if}}
+            </div>
+        </div>
+
+        <div align="center" style="padding: 0px;" class="content">
+            {{transDate}}
+        </div>
+
+            <!-- {{#if eligibleToRate}} -->
+        <div class="right floated meta">
+
+                <i id="1" style="color: {{transactionIconColor}};" class="action-rate large frown icon"></i>
+
+
+                <i id="2" style="color: {{transactionIconColor}};" class="action-rate large meh icon"></i>
+
+                <i id="3" style="color: {{transactionIconColor}};" class="action-rate large smile icon"></i>
+        </div>
+            <!-- {{/if}} -->
+        <!--<div class="center aligned content" style="color: {{transactionIconColor}}; padding:2px;">
+              {{textCategory}}
+            </div> -->
+        <!--<div class="center aligned content" style="padding:2px;">
+        {{transDate}}
+      </div> -->
+        <div class="extra content">
+            <!-- <span class="right floated">
+        <a class="action-hide right floated"><i class="{{hideUnhideIcon}}"></i> {{hideUnhideText}}</a>
+      </span> -->
+            <!--
+        {{#if selected}}
+          <i class="action-select ui left floated checkmark box icon label"></i>
+        {{else}}
+          <i class="action-select ui left floated square outline icon label"></i>
+        {{/if}} -->
+            <!-- <a class="right floated ui label"><i class="action-flip retweet icon"></i></a> -->
+
+                <i class="right floated ui file text icon"></i>
+        </div>
+
+        <!--  <div class="action-reviewed center aligned content"
+                 style="padding: 2px; color: white; background-color: {{transactionIconColor}};">
+                confirm - looks good
+            </div> -->
+
+        {{#if needsReview}}
+            <div class="action-reviewed ui bottom attached button">
+                <i class="check icon"></i>
+                Confirm
+            </div>
+        <!-- {{else}}
+            <div style="background-color:{{transactionIconColor}};" class="ui bottom attached button">
+            </div> -->
+        {{/if}}
+
+
+    </div>
+
+</template>

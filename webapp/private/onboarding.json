@@ -1,0 +1,217 @@
+[
+  {
+    "question": "If you were a punctuation mark, which mark would you be?",
+    "choices": [
+      {
+        "number": 1,
+        "choice": "!",
+        "image": "amber.ce.q7"
+      },
+      {
+        "number": 2,
+        "choice": ".",
+        "image": "amber.ex.q7"
+      },
+      {
+        "number": 3,
+        "choice": "...",
+        "image": "amber.zm.q7"
+      },
+      {
+        "number": 4,
+        "choice": "?",
+        "image": "amber.hl.q7"
+      },
+      {
+        "number": 5,
+        "choice": "h",
+        "image": "amber.sp.q7"
+      }
+    ],
+    "active": true,
+    "number": 1,
+    "group": 3,
+    "color": "#212121",
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement best describes your spending behavior in the following category: \"Eating Out -- Restaurants, fast food, fast casual, bars, and other nightlife.\"",
+    "choices": [
+      {
+        "number": 1,
+        "choice": "I am more of a takeout, fast casual type of person"
+      },
+      {
+        "number": 2,
+        "choice": "I do it on occasion, but is not a big priority for me"
+      },
+      {
+        "number": 3,
+        "choice": "I rarely eat out"
+      },
+      {
+        "number": 4,
+        "choice": "It is a big part of what I love to do"
+      },
+      {
+        "number": 5,
+        "choice": "It usually involves drinks at the bar"
+      }
+    ],
+    "active": true,
+    "number": 2,
+    "group": 3,
+    "color": "#212121",
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement best describes your spending behavior in the following category: \"Eating Out -- Restaurants, fast food, fast casual, bars, and other nightlife.\"",
+    "choices": [
+      {
+        "number": 1,
+        "choice": "I am more of a takeout, fast casual type of person"
+      },
+      {
+        "number": 2,
+        "choice": "I do it on occasion, but is not a big priority for me"
+      },
+      {
+        "number": 3,
+        "choice": "I rarely eat out"
+      },
+      {
+        "number": 4,
+        "choice": "It is a big part of what I love to do"
+      },
+      {
+        "number": 5,
+        "choice": "It usually involves drinks at the bar"
+      }
+    ],
+    "active": true,
+    "number": 3,
+    "group": 3,
+    "color": "#212121",
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement best describes your spending behavior in the following category: \"Eating Out -- Restaurants, fast food, fast casual, bars, and other nightlife.\"",
+    "choices": [
+      {
+        "number": 1,
+        "choice": "I am more of a takeout, fast casual type of person"
+      },
+      {
+        "number": 2,
+        "choice": "I do it on occasion, but is not a big priority for me"
+      },
+      {
+        "number": 3,
+        "choice": "I rarely eat out"
+      },
+      {
+        "number": 4,
+        "choice": "It is a big part of what I love to do"
+      },
+      {
+        "number": 5,
+        "choice": "It usually involves drinks at the bar"
+      }
+    ],
+    "active": true,
+    "number": 4,
+    "group": 3,
+    "color": "#212121",
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement best describes your spending behavior in the following category: \"Eating Out -- Restaurants, fast food, fast casual, bars, and other nightlife.\"",
+    "choices": [
+      {
+        "number": 1,
+        "choice": "I am more of a takeout, fast casual type of person"
+      },
+      {
+        "number": 2,
+        "choice": "I do it on occasion, but is not a big priority for me"
+      },
+      {
+        "number": 3,
+        "choice": "I rarely eat out"
+      },
+      {
+        "number": 4,
+        "choice": "It is a big part of what I love to do"
+      },
+      {
+        "number": 5,
+        "choice": "It usually involves drinks at the bar"
+      }
+    ],
+    "active": true,
+    "number": 5,
+    "group": 3,
+    "color": "#212121",
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement best describes your spending behavior in the following category: \"Eating Out -- Restaurants, fast food, fast casual, bars, and other nightlife.\"",
+    "choices": [
+      {
+        "number": 1,
+        "choice": "I am more of a takeout, fast casual type of person"
+      },
+      {
+        "number": 2,
+        "choice": "I do it on occasion, but is not a big priority for me"
+      },
+      {
+        "number": 3,
+        "choice": "I rarely eat out"
+      },
+      {
+        "number": 4,
+        "choice": "It is a big part of what I love to do"
+      },
+      {
+        "number": 5,
+        "choice": "It usually involves drinks at the bar"
+      }
+    ],
+    "active": true,
+    "number": 6,
+    "group": 3,
+    "color": "#212121",
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement best describes your spending behavior in the following category: \"Eating Out -- Restaurants, fast food, fast casual, bars, and other nightlife.\"",
+    "choices": [
+      {
+        "number": 1,
+        "choice": "I am more of a takeout, fast casual type of person"
+      },
+      {
+        "number": 2,
+        "choice": "I do it on occasion, but is not a big priority for me"
+      },
+      {
+        "number": 3,
+        "choice": "I rarely eat out"
+      },
+      {
+        "number": 4,
+        "choice": "It is a big part of what I love to do"
+      },
+      {
+        "number": 5,
+        "choice": "It usually involves drinks at the bar"
+      }
+    ],
+    "active": true,
+    "number": 7,
+    "group": 3,
+    "color": "#212121",
+    "type": "multiple-choice"
+  }
+]

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="364px" height="346px" viewBox="0 0 364 346" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>mcgroup-blank</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="moneycomb-blank" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="mcgroup-blank" sketch:type="MSLayerGroup" transform="translate(-3.000000, 6.000000)" stroke-width="10" fill-opacity="0.5">
+            <polygon id="cell_icon" stroke="#0D51A0" fill="#0E51A0" sketch:type="MSShapeGroup" points="185 105.300493 238.4049 136.150246 238.4049 197.849754 185 228.699507 131.5951 197.849754 131.5951 136.150246 "></polygon>
+            <g id="cell_icon-+-Bitmap" transform="translate(60.844444, 0.000000)" stroke="#9012FE" fill="#9012FE" sketch:type="MSShapeGroup">
+                <polygon id="cell_icon" points="61.6666667 0 115.071567 30.8497537 115.071567 92.5492611 61.6666667 123.399015 8.26176677 92.5492611 8.26176677 30.8497537 "></polygon>
+            </g>
+            <g id="cell_icon-+-Bitmap" transform="translate(0.000000, 105.300493)" stroke="#BD0FE1" fill="#BD0FE1" sketch:type="MSShapeGroup">
+                <polygon id="cell_icon" points="61.6666667 0 115.071567 30.8497537 115.071567 92.5492611 61.6666667 123.399015 8.26176677 92.5492611 8.26176677 30.8497537 "></polygon>
+            </g>
+            <g id="cell_icon-+-Bitmap" transform="translate(60.844444, 210.600985)" stroke="#4990E2" fill="#4990E2" sketch:type="MSShapeGroup">
+                <polygon id="cell_icon" points="61.6666667 -2.84217094e-14 115.071567 30.8497537 115.071567 92.5492611 61.6666667 123.399015 8.26176677 92.5492611 8.26176677 30.8497537 "></polygon>
+            </g>
+            <g id="cell_icon-+-Bitmap" transform="translate(184.177778, 210.600985)" stroke="#2DC8A5" fill="#2DC8A5" sketch:type="MSShapeGroup">
+                <polygon id="cell_icon" points="61.6666667 -2.84217094e-14 115.071567 30.8497537 115.071567 92.5492611 61.6666667 123.399015 8.26176677 92.5492611 8.26176677 30.8497537 "></polygon>
+            </g>
+            <g id="cell_icon-+-Bitmap" transform="translate(246.666667, 105.300493)" stroke="#7ED321" fill="#7ED321" sketch:type="MSShapeGroup">
+                <polygon id="cell_icon" points="61.6666667 0 115.071567 30.8497537 115.071567 92.5492611 61.6666667 123.399015 8.26176677 92.5492611 8.26176677 30.8497537 "></polygon>
+            </g>
+            <g id="cell_icon-+-Bitmap" transform="translate(184.177778, 0.000000)" stroke="#417505" fill="#417505" sketch:type="MSShapeGroup">
+                <polygon id="cell_icon" points="61.6666667 0 115.071567 30.8497537 115.071567 92.5492611 61.6666667 123.399015 8.26176677 92.5492611 8.26176677 30.8497537 "></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

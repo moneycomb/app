@@ -1,0 +1,17 @@
+.mobile-menu-subbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    align-items: stretch;
+    color: white;
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.mobile-menu-subitem {
+    flex-grow: 1;
+    align-items: stretch;
+    align-self: center;
+    padding: 8px;
+}

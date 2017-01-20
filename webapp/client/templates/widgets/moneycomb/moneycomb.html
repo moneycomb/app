@@ -1,0 +1,64 @@
+<template name="Moneycomb">
+
+  {{#if Template.subscriptionsReady}}
+
+    <svg id='fullmc' width="{{width}}" viewBox="0 0 274 285" version="1.1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+      <g id="full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dashboard_hex" sketch:type="MSLayerGroup" transform="translate(4.000000, 3.000000)">
+          <g id="center-g" class="select-core" transform="translate(79.310606, 92.328767)">
+            <path
+                d="M104.378788,47.1712329 L79.2840909,90.6207951 L29.094697,90.6207951 L4,47.1712329 L29.094697,3.72167067 L79.2840909,3.72167067 L104.378788,47.1712329 L104.378788,47.1712329 Z"
+                id="center-back" stroke="{{center.fill.color}}" stroke-width="6" fill="{{center.fill.color}}"
+                fill-opacity="{{center.bgopacity}}" sketch:type="MSShapeGroup"></path>
+            <!--<rect id="center-fill" stroke="{{overundercolor}}" fill-opacity="{{center.fill.opacity}}"
+                  fill="{{center.fill.color}}" sketch:type="MSShapeGroup"
+                  x="5.68939394" y="{{center.fill.position}}" width="96" height="{{center.fill.height}}"></rect> -->
+            <path
+                d="M0.689393939,0.671232877 L108.689394,0.671232877 L108.689394,93.6712329 L0.689393939,93.6712329 L0.689393939,0.671232877 Z M104.378788,47.4495622 L79.2840909,90.8991244 L29.094697,90.8991244 L4,47.4495622 L29.094697,4 L79.2840909,4 L104.378788,47.4495622 Z"
+                id="mask" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <image id="icon" style="{{center.icon}}" sketch:type="MSBitmapLayer" x="29" y="22" width="51" height="51"
+                   xlink:href="/images/white/o.png"></image>
+            <path
+                d="M104.378788,47.1712329 L79.2840909,90.6207951 L29.094697,90.6207951 L4,47.1712329 L29.094697,3.72167067 L79.2840909,3.72167067 L104.378788,47.1712329 L104.378788,47.1712329 Z"
+                id="center-hex" stroke="{{center.fill.color}}" stroke-width="6" fill-opacity="0.6" fill="{{center.fill.color}}"
+                sketch:type="MSShapeGroup"></path>
+            <text id="center-text" sketch:type="MSTextLayer" text-anchor="middle" font-family="Helvetica" font-size="24" font-weight="260"
+                  sketch:alignment="middle" fill="#FFFFFF">
+              <tspan x="53" y="49"></tspan>
+            </text>
+            <text id="center-text" sketch:type="MSTextLayer" text-anchor="middle" font-family="Helvetica" font-size="14" font-weight="300"
+                  sketch:alignment="middle" fill="#FFFFFF">
+              <tspan x="53" y="67"></tspan>
+            </text>
+          </g>
+          <g id="s" class="select-cell" transform="translate(0.000000, 48.000000)">
+            {{>MoneyCombCell fill=(fillcolor.s) cell="s" status3=(statuscolor.s) stroke=(strokecolor.s) top=(topcolor.s) bottom=(botcolor.s) bgopacity=(s.bgopacity) iconimage=(s.iconimage) text1=(s.text1) text2=(s.text2)}}
+          </g>
+          <g id="e" class="select-cell" transform="translate(0.000000, 143.000000)">
+            {{>MoneyCombCell fill=(fillcolor.e) cell="e" stroke=(strokecolor.e) status3=(statuscolor.e) top=(topcolor.e) bottom=(botcolor.e) bgopacity=(e.bgopacity) iconimage=(e.iconimage) text1=(e.text1) text2=(e.text2)}}
+          </g>
+          <g id="t" class="select-cell" transform="translate(83.000000, 191.000000)">
+            {{>MoneyCombCell fill=(fillcolor.t) cell="t" stroke=(strokecolor.t) status3=(statuscolor.t) top=(topcolor.t) bottom=(botcolor.t) bgopacity=(t.bgopacity) iconimage=(t.iconimage) text1=(t.text1) text2=(t.text2)}}
+
+          </g>
+          <g id="r" class="select-cell" transform="translate(166.000000, 143.000000)">
+            {{>MoneyCombCell fill=(fillcolor.r) cell="r" stroke=(strokecolor.r) status3=(statuscolor.r) top=(topcolor.r) bottom=(botcolor.r) bgopacity=(r.bgopacity) iconimage=(r.iconimage) text1=(r.text1) text2=(r.text2)}}
+          </g>
+          <g id="ds" class="select-cell" transform="translate(166.000000, 48.000000)">
+            {{>MoneyCombCell fill=(fillcolor.ds) cell="ds" stroke=(strokecolor.ds) status3=(statuscolor.ds) top=(topcolor.ds) bottom=(botcolor.ds) bgopacity=(ds.bgopacity) iconimage=(ds.iconimage) text1=(ds.text1) text2=(ds.text2)}}
+          </g>
+          <g id="eo" class="select-cell" transform="translate(83.000000, 0.000000)">
+            {{>MoneyCombCell fill=(fillcolor.eo) cell="eo" stroke=(strokecolor.eo) status3=(statuscolor.eo) top=(topcolor.eo) bottom=(botcolor.eo) bgopacity=(eo.bgopacity) iconimage=(eo.iconimage) text1=(eo.text1) text2=(eo.text2)}}
+          </g>
+        </g>
+      </g>
+    </svg>
+  {{else}}
+    {{>Loading}}
+
+  {{/if}}
+
+</template>
+
+

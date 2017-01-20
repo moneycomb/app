@@ -1,0 +1,66 @@
+<template name="DebtsItem">
+  <div class="ui card debts-item"
+       data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+
+    {{#if editDebt}}
+
+      {{>updateDebtForm}}
+
+    {{else}}
+
+      <div style="background-color: #0d71bb" class="content">
+        <div class="header">{{name}}</div>
+        <div class="meta">
+          <span class="right floated"><i class="car icon"></i> {{type}}</span></div>
+      </div>
+
+
+      <div class="left aligned content">
+    <span class="right floated">
+      <a class="ui blue circular label">${{balance}}</a>
+      <div class="debts-item value">${{balance}}</div>
+    </span>
+        <i class="dollar icon"></i>
+        Balance
+      </div>
+
+      <div class="left aligned content">
+    <span class="right floated">
+       <a class="ui blue circular label">${{current_payment}}</a>
+    </span>
+        <i class="dollar icon"></i>
+        Current Payment
+      </div>
+
+      <div class="left aligned content">
+    <span class="right floated">
+       <a class="ui blue circular label">{{interest_rate}}%</a>
+    </span>
+        Interest Rate
+      </div>
+
+      <div class="left aligned content">
+    <span class="right floated">
+      {{payoff_date}}
+    </span>
+        <i class="calendar icon"></i>
+        Payoff date
+      </div>
+
+
+      <div class="ui two bottom attached buttons">
+        <div class="action-edit ui blue button">
+          <i class="write icon"></i>
+          Edit
+        </div>
+        <div class="ui secondary button">
+          <i class="trash icon"></i>
+          Delete
+        </div>
+      </div>
+
+    {{/if}}
+  </div>
+
+
+</template>

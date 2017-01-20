@@ -1,0 +1,78 @@
+<template name="TCard">
+
+    <div class="ui card">
+
+        <div style="padding: 8px;" class="content">
+            <span style="align-content: center" class="action-edit">
+                <!--{{> CircleIcon color=(cellColor(cell)) image=(image(cell))}} -->
+                {{> TransactionHex cell=(cellImg(cell)) color=(cellColor(cell)) size=30}}
+
+            </span>
+            <span style="font-size: 14px;" class="header">{{cleanName(name)}}</span>
+            <a class="action-edit ui right corner label">
+                <i class="ui edit icon"></i>
+            </a>
+            <div style="font-size: 10px; padding: 0px;" class="meta">
+                {{humanDate(date)}}
+            </div>
+        </div>
+        {{#if editMode}}
+            <div align="center" style="background-color: {{cellColor2(cell)}}; opacity: 0.8;" class="content">
+                <div style="padding: 12px;">
+                    {{> RecatHex}}
+                </div>
+            </div>
+        {{else}}
+            <div class="image">
+
+
+                <img style="opacity: 0.6;" class="ui image"
+                     src="http://res.cloudinary.com/moneycomb/image/upload/b_rgb:{{cellColor2(cell)}},c_scale,e_grayscale,h_320,o_65,w_480/v1472741537/cells/{{cellImg(cell)}}.png"/>
+                <p id="text">
+                    {{dollarFormat(amount)}}</p>
+                <div class="extra-icons">
+                    {{#if hasReceipt}}
+                        <i class="right floated ui file text icon"></i>
+                    {{/if}}
+                    {{#if hasTag}}
+                        <i class="right floated ui tag icon"></i>
+                    {{/if}}
+                    {{#if isManual}}
+                        <i class="right floated ui circle icon"></i>
+                    {{/if}}
+                </div>
+
+                <div align="center" class="ratingslabel">
+                    <i class="subtract-from-rating ui empty heart icon"></i>
+                    {{curRating}}
+                    <i class="add-to-rating ui heart icon"></i>
+                </div>
+                <div align="center" style="background-color: {{cellColor(c)}}" class="catlabel">
+                    {{cellName(c)}}
+                </div>
+
+
+            </div>
+        {{/if}}
+        <!--
+        <div align="center" style="padding: 0px; color:white; background-color:{{cellColor(cell)}};" class="content">
+            {{#if true}}
+                <i class="left floated ui file text icon"></i>
+            {{/if}}
+            {{#if hasTag}}
+                <i class="left floated ui tag icon"></i>
+            {{/if}}
+            <i class="action-edit right floated ui edit icon"></i>
+        </div>
+        -->
+
+        {{#if toReview}}
+            <div class="action-reviewed ui bottom attached button">
+                <i class="check icon"></i>
+                Confirm
+            </div>
+        {{/if}}
+    </div>
+
+</template>
+

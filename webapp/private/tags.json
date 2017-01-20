@@ -1,0 +1,77 @@
+[
+  {
+    "name": "New",
+    "group": 1
+  },
+  {
+    "name": "Fun",
+    "group": 1
+  },
+  {
+    "name": "Required",
+    "group": 1
+  },
+  {
+    "name": "Personal",
+    "group": 2
+  },
+  {
+    "name": "Work",
+    "group": 2
+  },
+  {
+    "name": "Friends",
+    "group": 2
+  },
+  {
+    "name": "Experience",
+    "group": 3
+  },
+  {
+    "name": "Thing",
+    "group": 3
+  },
+  {
+    "name": "Kids",
+    "group": 4
+  },
+  {
+    "name": "For me",
+    "group": 4
+  },
+  {
+    "name": "For him",
+    "group": 4
+  },
+  {
+    "name": "For her",
+    "group": 4
+  },
+  {
+    "name": "Local",
+    "group": 5
+  },
+  {
+    "name": "Green",
+    "group": 5
+  },
+  {
+    "name": "Pets",
+    "group": 6
+  },
+  {
+    "name": "Parents",
+    "group": 6
+  },
+  {
+    "name": "Gifts",
+    "group": 7
+  },
+  {
+    "name": "Giving",
+    "group": 7
+  }
+]
+
+
+

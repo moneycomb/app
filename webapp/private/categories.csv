@@ -1,0 +1,603 @@
+category_id,meta,category,type,pod
+10000000,10,Bank Fees,special,bf
+10001000,10,"Bank Fees,Overdraft",special,bf
+10002000,10,"Bank Fees,ATM",special,bf
+10003000,10,"Bank Fees,Late Payment",special,bf
+10004000,10,"Bank Fees,Fraud Dispute",special,bf
+10005000,10,"Bank Fees,Foreign Transaction",special,bf
+10006000,10,"Bank Fees,Wire Transfer",special,bf
+10007000,10,"Bank Fees,Insufficient Funds",special,bf
+10008000,10,"Bank Fees,Cash Advance",special,bf
+10009000,10,"Bank Fees,Excess Activity",special,bf
+11000000,11,Cash Advance,special,
+12000000,12,Community,place,
+12001000,12,"Community,Animal Shelter",place,
+12002000,12,"Community,Assisted Living Services",place,
+12002001,12,"Community,Assisted Living Services,Facilities and Nursing Homes",place,
+12002002,12,"Community,Assisted Living Services,Caretakers",place,
+12003000,12,"Community,Cemetery",place,
+12004000,12,"Community,Courts",place,
+12005000,12,"Community,Day Care and Preschools",place,
+12006000,12,"Community,Disabled Persons Services",place,
+12007000,12,"Community,Drug and Alcohol Services",place,
+12008000,12,"Community,Education",place,
+12008001,12,"Community,Education,Vocational Schools",place,
+12008002,12,"Community,Education,Tutoring and Educational Services",place,
+12008003,12,"Community,Education,Primary and Secondary Schools",place,
+12008004,12,"Community,Education,Fraternities and Sororities",place,
+12008005,12,"Community,Education,Driving Schools",place,
+12008006,12,"Community,Education,Dance Schools",place,
+12008007,12,"Community,Education,Culinary Lessons and Schools",place,
+12008008,12,"Community,Education,Computer Training",place,
+12008009,12,"Community,Education,Colleges and Universities",place,
+12008010,12,"Community,Education,Art School",place,
+12008011,12,"Community,Education,Adult Education",place,
+12009000,12,"Community,Government Departments and Agencies",place,
+12010000,12,"Community,Government Lobbyists",place,
+12011000,12,"Community,Housing Assistance and Shelters",place,
+12012000,12,"Community,Law Enforcement",place,
+12012001,12,"Community,Law Enforcement,Police Stations",place,
+12012002,12,"Community,Law Enforcement,Fire Stations",place,
+12012003,12,"Community,Law Enforcement,Correctional Institutions",place,
+12013000,12,"Community,Libraries",place,
+12014000,12,"Community,Military",place,
+12015000,12,"Community,Organizations and Associations",place,
+12015001,12,"Community,Organizations and Associations,Youth Organizations",place,
+12015002,12,"Community,Organizations and Associations,Environmental",place,
+12015003,12,"Community,Organizations and Associations,Charities and Non-Profits",place,
+12016000,12,"Community,Post Offices",place,
+12017000,12,"Community,Public and Social Services",place,
+12018000,12,"Community,Religious",place,
+12018001,12,"Community,Religious,Temple",place,
+12018002,12,"Community,Religious,Synagogues",place,
+12018003,12,"Community,Religious,Mosques",place,
+12018004,12,"Community,Religious,Churches",place,
+12019000,12,"Community,Senior Citizen Services",place,
+12019001,12,"Community,Senior Citizen Services,Retirement",place,
+13000000,13,Food and Drink,place,eo
+13001000,13,"Food and Drink,Bar",place,eo
+13001001,13,"Food and Drink,Bar,Wine Bar",place,eo
+13001002,13,"Food and Drink,Bar,Sports Bar",place,eo
+13001003,13,"Food and Drink,Bar,Hotel Lounge",place,eo
+13002000,13,"Food and Drink,Breweries",place,eo
+13003000,13,"Food and Drink,Internet Cafes",place,eo
+13004000,13,"Food and Drink,Nightlife",place,eo
+13004001,13,"Food and Drink,Nightlife,Strip Club",place,eo
+13004002,13,"Food and Drink,Nightlife,Night Clubs",place,eo
+13004003,13,"Food and Drink,Nightlife,Karaoke",place,eo
+13004004,13,"Food and Drink,Nightlife,Jazz and Blues Cafe",place,eo
+13004005,13,"Food and Drink,Nightlife,Hookah Lounges",place,eo
+13004006,13,"Food and Drink,Nightlife,Adult Entertainment",place,eo
+13005000,13,"Food and Drink,Restaurants",place,eo
+13005001,13,"Food and Drink,Restaurants,Winery",place,eo
+13005002,13,"Food and Drink,Restaurants,Vegan and Vegetarian",place,eo
+13005003,13,"Food and Drink,Restaurants,Turkish",place,eo
+13005004,13,"Food and Drink,Restaurants,Thai",place,eo
+13005005,13,"Food and Drink,Restaurants,Swiss",place,eo
+13005006,13,"Food and Drink,Restaurants,Sushi",place,eo
+13005007,13,"Food and Drink,Restaurants,Steakhouses",place,eo
+13005008,13,"Food and Drink,Restaurants,Spanish",place,eo
+13005009,13,"Food and Drink,Restaurants,Seafood",place,eo
+13005010,13,"Food and Drink,Restaurants,Scandinavian",place,eo
+13005011,13,"Food and Drink,Restaurants,Portuguese",place,eo
+13005012,13,"Food and Drink,Restaurants,Pizza",place,eo
+13005013,13,"Food and Drink,Restaurants,Moroccan",place,eo
+13005014,13,"Food and Drink,Restaurants,Middle Eastern",place,eo
+13005015,13,"Food and Drink,Restaurants,Mexican",place,eo
+13005016,13,"Food and Drink,Restaurants,Mediterranean",place,eo
+13005017,13,"Food and Drink,Restaurants,Latin American",place,eo
+13005018,13,"Food and Drink,Restaurants,Korean",place,eo
+13005019,13,"Food and Drink,Restaurants,Juice Bar",place,eo
+13005020,13,"Food and Drink,Restaurants,Japanese",place,eo
+13005021,13,"Food and Drink,Restaurants,Italian",place,eo
+13005022,13,"Food and Drink,Restaurants,Indonesian",place,eo
+13005023,13,"Food and Drink,Restaurants,Indian",place,eo
+13005024,13,"Food and Drink,Restaurants,Ice Cream",place,eo
+13005025,13,"Food and Drink,Restaurants,Greek",place,eo
+13005026,13,"Food and Drink,Restaurants,German",place,eo
+13005027,13,"Food and Drink,Restaurants,Gastropub",place,eo
+13005028,13,"Food and Drink,Restaurants,French",place,eo
+13005029,13,"Food and Drink,Restaurants,Food Truck",place,eo
+13005030,13,"Food and Drink,Restaurants,Fish and Chips",place,eo
+13005031,13,"Food and Drink,Restaurants,Filipino",place,eo
+13005032,13,"Food and Drink,Restaurants,Fast Food",place,eo
+13005033,13,"Food and Drink,Restaurants,Falafel",place,eo
+13005034,13,"Food and Drink,Restaurants,Ethiopian",place,eo
+13005035,13,"Food and Drink,Restaurants,Eastern European",place,eo
+13005036,13,"Food and Drink,Restaurants,Donuts",place,eo
+13005037,13,"Food and Drink,Restaurants,Distillery",place,eo
+13005038,13,"Food and Drink,Restaurants,Diners",place,eo
+13005039,13,"Food and Drink,Restaurants,Dessert",place,eo
+13005040,13,"Food and Drink,Restaurants,Delis",place,eo
+13005041,13,"Food and Drink,Restaurants,Cupcake Shop",place,eo
+13005042,13,"Food and Drink,Restaurants,Cuban",place,eo
+13005043,13,"Food and Drink,Restaurants,Coffee Shop",place,eo
+13005044,13,"Food and Drink,Restaurants,Chinese",place,eo
+13005045,13,"Food and Drink,Restaurants,Caribbean",place,eo
+13005046,13,"Food and Drink,Restaurants,Cajun",place,eo
+13005047,13,"Food and Drink,Restaurants,Cafe",place,eo
+13005048,13,"Food and Drink,Restaurants,Burrito",place,eo
+13005049,13,"Food and Drink,Restaurants,Burgers",place,eo
+13005050,13,"Food and Drink,Restaurants,Breakfast Spot",place,eo
+13005051,13,"Food and Drink,Restaurants,Brazilian",place,eo
+13005052,13,"Food and Drink,Restaurants,Barbecue",place,eo
+13005053,13,"Food and Drink,Restaurants,Bakery",place,eo
+13005054,13,"Food and Drink,Restaurants,Bagel Shop",place,eo
+13005055,13,"Food and Drink,Restaurants,Australian",place,eo
+13005056,13,"Food and Drink,Restaurants,Asian",place,eo
+13005057,13,"Food and Drink,Restaurants,American",place,eo
+13005058,13,"Food and Drink,Restaurants,African",place,eo
+13005059,13,"Food and Drink,Restaurants,Afghan",place,eo
+14000000,14,Healthcare,place,
+14001000,14,"Healthcare,Healthcare Services",place,
+14001001,14,"Healthcare,Healthcare Services,Psychologists",place,
+14001002,14,"Healthcare,Healthcare Services,Pregnancy and Sexual Health",place,
+14001003,14,"Healthcare,Healthcare Services,Podiatrists",place,
+14001004,14,"Healthcare,Healthcare Services,Physical Therapy",place,
+14001005,14,"Healthcare,Healthcare Services,Optometrists",place,
+14001006,14,"Healthcare,Healthcare Services,Nutritionists",place,
+14001007,14,"Healthcare,Healthcare Services,Nurses",place,
+14001008,14,"Healthcare,Healthcare Services,Mental Health",place,
+14001009,14,"Healthcare,Healthcare Services,Medical Supplies and Labs",place,
+14001010,14,"Healthcare,Healthcare Services,Hospitals, Clinics and Medical Centers",place,
+14001011,14,"Healthcare,Healthcare Services,Emergency Services",place,
+14001012,14,"Healthcare,Healthcare Services,Dentists",place,
+14001013,14,"Healthcare,Healthcare Services,Counseling and Therapy",place,
+14001014,14,"Healthcare,Healthcare Services,Chiropractors",place,
+14001015,14,"Healthcare,Healthcare Services,Blood Banks and Centers",place,
+14001016,14,"Healthcare,Healthcare Services,Alternative Medicine",place,
+14001017,14,"Healthcare,Healthcare Services,Acupuncture",place,
+14002000,14,"Healthcare,Physicians",place,
+14002001,14,"Healthcare,Physicians,Urologists",place,
+14002002,14,"Healthcare,Physicians,Respiratory",place,
+14002003,14,"Healthcare,Physicians,Radiologists",place,
+14002004,14,"Healthcare,Physicians,Psychiatrists",place,
+14002005,14,"Healthcare,Physicians,Plastic Surgeons",place,
+14002006,14,"Healthcare,Physicians,Pediatricians",place,
+14002007,14,"Healthcare,Physicians,Pathologists",place,
+14002008,14,"Healthcare,Physicians,Orthopedic Surgeons",place,
+14002009,14,"Healthcare,Physicians,Ophthalmologists",place,
+14002010,14,"Healthcare,Physicians,Oncologists",place,
+14002011,14,"Healthcare,Physicians,Obstetricians and Gynecologists",place,
+14002012,14,"Healthcare,Physicians,Neurologists",place,
+14002013,14,"Healthcare,Physicians,Internal Medicine",place,
+14002014,14,"Healthcare,Physicians,General Surgery",place,
+14002015,14,"Healthcare,Physicians,Gastroenterologists",place,
+14002016,14,"Healthcare,Physicians,Family Medicine",place,
+14002017,14,"Healthcare,Physicians,Ear, Nose and Throat",place,
+14002018,14,"Healthcare,Physicians,Dermatologists",place,
+14002019,14,"Healthcare,Physicians,Cardiologists",place,
+14002020,14,"Healthcare,Physicians,Anesthesiologists",place,
+15000000,15,Interest,special,
+15001000,15,"Interest,Interest Earned",special,
+15002000,15,"Interest,Interest Charged",special,bf
+16000000,16,Payment,special,
+16001000,16,"Payment,Credit Card",special,
+16002000,16,"Payment,Rent",special,
+16003000,16,"Payment,Loan",special,
+17000000,17,Recreation,place,
+17001000,17,"Recreation,Arts and Entertainment",place,ae
+17001001,17,"Recreation,Arts and Entertainment,Theatrical Productions",place,ae
+17001002,17,"Recreation,Arts and Entertainment,Symphony and Opera",place,ae
+17001003,17,"Recreation,Arts and Entertainment,Sports Venues",place,ae
+17001004,17,"Recreation,Arts and Entertainment,Social Clubs",place,ae
+17001005,17,"Recreation,Arts and Entertainment,Psychics and Astrologers",place,ae
+17001006,17,"Recreation,Arts and Entertainment,Party Centers",place,ae
+17001007,17,"Recreation,Arts and Entertainment,Music and Show Venues",place,ae
+17001008,17,"Recreation,Arts and Entertainment,Museums",place,ae
+17001009,17,"Recreation,Arts and Entertainment,Movie Theatres",place,ae
+17001010,17,"Recreation,Arts and Entertainment,Fairgrounds and Rodeos",place,ae
+17001011,17,"Recreation,Arts and Entertainment,Entertainment",place,ae
+17001012,17,"Recreation,Arts and Entertainment,Dance Halls and Saloons",place,ae
+17001013,17,"Recreation,Arts and Entertainment,Circuses and Carnivals",place,ae
+17001014,17,"Recreation,Arts and Entertainment,Casinos and Gaming",place,ae
+17001015,17,"Recreation,Arts and Entertainment,Bowling",place,ae
+17001016,17,"Recreation,Arts and Entertainment,Billiards and Pool",place,ae
+17001017,17,"Recreation,Arts and Entertainment,Art Dealers and Galleries",place,ae
+17001018,17,"Recreation,Arts and Entertainment,Arcades and Amusement Parks",place,ae
+17001019,17,"Recreation,Arts and Entertainment,Aquarium",place,ae
+17002000,17,"Recreation,Athletic Fields",place,hr
+17003000,17,"Recreation,Baseball",place,hr
+17004000,17,"Recreation,Basketball",place,hr
+17005000,17,"Recreation,Batting Cages",place,hr
+17006000,17,"Recreation,Boating",place,hr
+17007000,17,"Recreation,Campgrounds and RV Parks",place,hr
+17008000,17,"Recreation,Canoes and Kayaks",place,hr
+17009000,17,"Recreation,Combat Sports",place,hr
+17010000,17,"Recreation,Cycling",place,hr
+17011000,17,"Recreation,Dance",place,hr
+17012000,17,"Recreation,Equestrian",place,hr
+17013000,17,"Recreation,Football",place,hr
+17014000,17,"Recreation,Go Carts",place,hr
+17015000,17,"Recreation,Golf",place,hr
+17016000,17,"Recreation,Gun Ranges",place,hr
+17017000,17,"Recreation,Gymnastics",place,hr
+17018000,17,"Recreation,Gyms and Fitness Centers",place,hr
+17019000,17,"Recreation,Hiking",place,hr
+17020000,17,"Recreation,Hockey",place,hr
+17021000,17,"Recreation,Hot Air Balloons",place,hr
+17022000,17,"Recreation,Hunting and Fishing",place,hr
+17023000,17,"Recreation,Landmarks",place,hr
+17023001,17,"Recreation,Landmarks,Monuments and Memorials",place,hr
+17023002,17,"Recreation,Landmarks,Historic Sites",place,hr
+17023003,17,"Recreation,Landmarks,Gardens",place,hr
+17023004,17,"Recreation,Landmarks,Buildings and Structures",place,hr
+17024000,17,"Recreation,Miniature Golf",place,hr
+17025000,17,"Recreation,Outdoors",place,hr
+17025001,17,"Recreation,Outdoors,Rivers",place,hr
+17025002,17,"Recreation,Outdoors,Mountains",place,hr
+17025003,17,"Recreation,Outdoors,Lakes",place,hr
+17025004,17,"Recreation,Outdoors,Forests",place,hr
+17025005,17,"Recreation,Outdoors,Beaches",place,hr
+17026000,17,"Recreation,Paintball",place,hr
+17027000,17,"Recreation,Parks",place,hr
+17027001,17,"Recreation,Parks,Playgrounds",place,hr
+17027002,17,"Recreation,Parks,Picnic Areas",place,hr
+17027003,17,"Recreation,Parks,Natural Parks",place,hr
+17028000,17,"Recreation,Personal Trainers",place,hr
+17029000,17,"Recreation,Race Tracks",place,hr
+17030000,17,"Recreation,Racquet Sports",place,hr
+17031000,17,"Recreation,Racquetball",place,hr
+17032000,17,"Recreation,Rafting",place,hr
+17033000,17,"Recreation,Recreation Centers",place,hr
+17034000,17,"Recreation,Rock Climbing",place,hr
+17035000,17,"Recreation,Running",place,hr
+17036000,17,"Recreation,Scuba Diving",place,hr
+17037000,17,"Recreation,Skating",place,hr
+17038000,17,"Recreation,Skydiving",place,hr
+17039000,17,"Recreation,Snow Sports",place,hr
+17040000,17,"Recreation,Soccer",place,hr
+17041000,17,"Recreation,Sports and Recreation Camps",place,hr
+17042000,17,"Recreation,Sports Clubs",place,hr
+17043000,17,"Recreation,Stadiums and Arenas",place,hr
+17044000,17,"Recreation,Swimming",place,hr
+17045000,17,"Recreation,Tennis",place,hr
+17046000,17,"Recreation,Water Sports",place,hr
+17047000,17,"Recreation,Yoga and Pilates",place,hr
+17048000,17,"Recreation,Zoo",place,hr
+18000000,18,Service,place,
+18001000,18,"Service,Advertising and Marketing",place,
+18001001,18,"Service,Advertising and Marketing,Writing, Copywriting and Technical Writing",place,
+18001002,18,"Service,Advertising and Marketing,Search Engine Marketing and Optimization",place,
+18001003,18,"Service,Advertising and Marketing,Public Relations",place,
+18001004,18,"Service,Advertising and Marketing,Promotional Items",place,
+18001005,18,"Service,Advertising and Marketing,Print, TV, Radio and Outdoor Advertising",place,
+18001006,18,"Service,Advertising and Marketing,Online Advertising",place,
+18001007,18,"Service,Advertising and Marketing,Market Research and Consulting",place,
+18001008,18,"Service,Advertising and Marketing,Direct Mail and Email Marketing Services",place,
+18001009,18,"Service,Advertising and Marketing,Creative Services",place,
+18001010,18,"Service,Advertising and Marketing,Advertising Agencies and Media Buyers",place,
+18003000,18,"Service,Art Restoration",place,
+18004000,18,"Service,Audiovisual",place,
+18005000,18,"Service,Automation and Control Systems",place,
+18006000,18,"Service,Automotive",place,
+18006001,18,"Service,Automotive,Towing",place,
+18006002,18,"Service,Automotive,Motorcycle, Moped and Scooter Repair",place,
+18006003,18,"Service,Automotive,Maintenance and Repair",place,
+18006004,18,"Service,Automotive,Car Wash and Detail",place,p
+18006005,18,"Service,Automotive,Car Appraisers",place,
+18006006,18,"Service,Automotive,Auto Transmission",place,
+18006007,18,"Service,Automotive,Auto Tires",place,
+18006008,18,"Service,Automotive,Auto Smog Check",place,
+18006009,18,"Service,Automotive,Auto Oil and Lube",place,
+18007000,18,"Service,Business and Strategy Consulting",place,
+18008000,18,"Service,Business Services",place,
+18008001,18,"Service,Business Services,Printing and Publishing",place,
+18009000,18,"Service,Cable",special,ds
+18010000,18,"Service,Chemicals and Gasses",place,
+18011000,18,"Service,Cleaning",place,p
+18012000,18,"Service,Computers",place,
+18012001,18,"Service,Computers,Maintenance and Repair",place,
+18012002,18,"Service,Computers,Software Development",place,
+18013000,18,"Service,Construction",place,
+18013001,18,"Service,Construction,Specialty",place,
+18013002,18,"Service,Construction,Roofers",place,
+18013003,18,"Service,Construction,Painting",place,
+18013004,18,"Service,Construction,Masonry",place,
+18013005,18,"Service,Construction,Infrastructure",place,
+18013006,18,"Service,Construction,Heating, Ventilating and Air Conditioning",place,
+18013007,18,"Service,Construction,Electricians",place,
+18013008,18,"Service,Construction,Contractors",place,
+18013009,18,"Service,Construction,Carpet and Flooring",place,
+18013010,18,"Service,Construction,Carpenters",place,
+18014000,18,"Service,Credit Counseling and Bankruptcy Services",place,
+18015000,18,"Service,Dating and Escort",place,
+18016000,18,"Service,Employment Agencies",place,
+18017000,18,"Service,Engineering",place,
+18018000,18,"Service,Entertainment",place,
+18018001,18,"Service,Entertainment,Media",place,
+18019000,18,"Service,Events and Event Planning",place,
+18020000,18,"Service,Financial",place,
+18020001,18,"Service,Financial,Taxes",place,
+18020002,18,"Service,Financial,Student Aid and Grants",place,
+18020003,18,"Service,Financial,Stock Brokers",place,
+18020004,18,"Service,Financial,Loans and Mortgages",place,
+18020005,18,"Service,Financial,Holding and Investment Offices",place,
+18020006,18,"Service,Financial,Fund Raising",place,
+18020007,18,"Service,Financial,Financial Planning and Investments",place,
+18020008,18,"Service,Financial,Credit Reporting",place,
+18020009,18,"Service,Financial,Collections",place,
+18020010,18,"Service,Financial,Check Cashing",place,bf
+18020011,18,"Service,Financial,Business Brokers and Franchises",place,
+18020012,18,"Service,Financial,Banking and Finance",place,
+18020013,18,"Service,Financial,ATMs",place,bf
+18020014,18,"Service,Financial,Accounting and Bookkeeping",place,
+18021000,18,"Service,Food and Beverage",place,
+18021001,18,"Service,Food and Beverage,Distribution",place,
+18021002,18,"Service,Food and Beverage,Catering",place,
+18022000,18,"Service,Funeral Services",place,
+18023000,18,"Service,Geological",place,
+18024000,18,"Service,Home Improvement",place,
+18024001,18,"Service,Home Improvement,Upholstery",place,
+18024002,18,"Service,Home Improvement,Tree Service",place,
+18024003,18,"Service,Home Improvement,Swimming Pool Maintenance and Services",place,p
+18024004,18,"Service,Home Improvement,Storage",place,
+18024005,18,"Service,Home Improvement,Roofers",place,
+18024006,18,"Service,Home Improvement,Pools and Spas",place,p
+18024007,18,"Service,Home Improvement,Plumbing",place,
+18024008,18,"Service,Home Improvement,Pest Control",place,
+18024009,18,"Service,Home Improvement,Painting",place,
+18024010,18,"Service,Home Improvement,Movers",place,
+18024011,18,"Service,Home Improvement,Mobile Homes",place,
+18024012,18,"Service,Home Improvement,Lighting Fixtures",place,
+18024013,18,"Service,Home Improvement,Landscaping and Gardeners",place,
+18024014,18,"Service,Home Improvement,Kitchens",place,
+18024015,18,"Service,Home Improvement,Interior Design",place,
+18024016,18,"Service,Home Improvement,Housewares",place,
+18024017,18,"Service,Home Improvement,Home Inspection Services",place,
+18024018,18,"Service,Home Improvement,Home Appliances",place,
+18024019,18,"Service,Home Improvement,Heating, Ventilation and Air Conditioning",place,
+18024020,18,"Service,Home Improvement,Hardware and Services",place,
+18024021,18,"Service,Home Improvement,Fences, Fireplaces and Garage Doors",place,
+18024022,18,"Service,Home Improvement,Electricians",place,
+18024023,18,"Service,Home Improvement,Doors and Windows",place,
+18024024,18,"Service,Home Improvement,Contractors",place,
+18024025,18,"Service,Home Improvement,Carpet and Flooring",place,
+18024026,18,"Service,Home Improvement,Carpenters",place,
+18024027,18,"Service,Home Improvement,Architects",place,
+18025000,18,"Service,Household",place,
+18026000,18,"Service,Human Resources",place,
+18027000,18,"Service,Immigration",place,
+18028000,18,"Service,Import and Export",place,
+18029000,18,"Service,Industrial Machinery and Vehicles",place,
+18030000,18,"Service,Insurance",special,
+18031000,18,"Service,Internet Services",digital,ds
+18032000,18,"Service,Leather",place,
+18033000,18,"Service,Legal",place,
+18034000,18,"Service,Logging and Sawmills",place,
+18035000,18,"Service,Machine Shops",place,
+18036000,18,"Service,Management",place,
+18037000,18,"Service,Manufacturing",place,
+18037001,18,"Service,Manufacturing,Apparel and Fabric Products",place,
+18037002,18,"Service,Manufacturing,Chemicals and Gasses",place,
+18037003,18,"Service,Manufacturing,Computers and Office Machines",place,
+18037004,18,"Service,Manufacturing,Electrical Equipment and Components",place,
+18037005,18,"Service,Manufacturing,Food and Beverage",place,
+18037006,18,"Service,Manufacturing,Furniture and Fixtures",place,
+18037007,18,"Service,Manufacturing,Glass Products",place,
+18037008,18,"Service,Manufacturing,Industrial Machinery and Equipment",place,
+18037009,18,"Service,Manufacturing,Leather Goods",place,
+18037010,18,"Service,Manufacturing,Metal Products",place,
+18037011,18,"Service,Manufacturing,Nonmetallic Mineral Products",place,
+18037012,18,"Service,Manufacturing,Paper Products",place,
+18037013,18,"Service,Manufacturing,Petroleum",place,
+18037014,18,"Service,Manufacturing,Plastic Products",place,
+18037015,18,"Service,Manufacturing,Rubber Products",place,
+18037016,18,"Service,Manufacturing,Service Instruments",place,
+18037017,18,"Service,Manufacturing,Textiles",place,
+18037018,18,"Service,Manufacturing,Tobacco",place,
+18037019,18,"Service,Manufacturing,Transportation Equipment",place,
+18037020,18,"Service,Manufacturing,Wood Products",place,
+18038000,18,"Service,Media Production",place,
+18039000,18,"Service,Metals",place,
+18040000,18,"Service,Mining",place,
+18040001,18,"Service,Mining,Coal",place,
+18040002,18,"Service,Mining,Metal",place,
+18040003,18,"Service,Mining,Non-Metallic Minerals",place,
+18041000,18,"Service,News Reporting",place,
+18042000,18,"Service,Oil and Gas",place,
+18043000,18,"Service,Packaging",place,
+18044000,18,"Service,Paper",place,
+18045000,18,"Service,Personal Care",place,p
+18045001,18,"Service,Personal Care,Tattooing",place,p
+18045002,18,"Service,Personal Care,Tanning Salons",place,p
+18045003,18,"Service,Personal Care,Spas",place,p
+18045004,18,"Service,Personal Care,Skin Care",place,p
+18045005,18,"Service,Personal Care,Piercing",place,p
+18045006,18,"Service,Personal Care,Massage Clinics and Therapists",place,p
+18045007,18,"Service,Personal Care,Manicures and Pedicures",place,p
+18045008,18,"Service,Personal Care,Laundry and Garment Services",place,p
+18045009,18,"Service,Personal Care,Hair Salons and Barbers",place,p
+18045010,18,"Service,Personal Care,Hair Removal",place,p
+18046000,18,"Service,Petroleum",place,
+18047000,18,"Service,Photography",place,
+18048000,18,"Service,Plastics",place,
+18049000,18,"Service,Rail",place,
+18050000,18,"Service,Real Estate",place,
+18050001,18,"Service,Real Estate,Real Estate Development and Title Companies",place,
+18050002,18,"Service,Real Estate,Real Estate Appraiser",place,
+18050003,18,"Service,Real Estate,Real Estate Agents",place,
+18050004,18,"Service,Real Estate,Property Management",place,
+18050005,18,"Service,Real Estate,Corporate Housing",place,
+18050006,18,"Service,Real Estate,Commercial Real Estate",place,
+18050007,18,"Service,Real Estate,Building and Land Surveyors",place,
+18050008,18,"Service,Real Estate,Boarding Houses",place,
+18050009,18,"Service,Real Estate,Apartments, Condos and Houses",place,
+18050010,18,"Service,Real Estate,Rent",special,
+18051000,18,"Service,Refrigeration and Ice",place,
+18052000,18,"Service,Renewable Energy",place,
+18053000,18,"Service,Repair Services",place,
+18054000,18,"Service,Research",place,
+18055000,18,"Service,Rubber",place,
+18056000,18,"Service,Scientific",place,
+18057000,18,"Service,Security and Safety",place,
+18058000,18,"Service,Shipping and Freight",place,
+18059000,18,"Service,Software Development",place,
+18060000,18,"Service,Storage",place,
+18061000,18,"Service,Subscription",place,ds
+18062000,18,"Service,Tailors",place,
+18063000,18,"Service,Telecommunication Services",place,ds
+18064000,18,"Service,Textiles",place,
+18065000,18,"Service,Tourist Information and Services",place,t
+18066000,18,"Service,Transportation",place,
+18067000,18,"Service,Travel Agents and Tour Operators",place,t
+18068000,18,"Service,Utilities",special,
+18068001,18,"Service,Utilities,Water",special,
+18068002,18,"Service,Utilities,Sanitary and Waste Management",special,
+18068003,18,"Service,Utilities,Heating, Ventilating, and Air Conditioning",place,
+18068004,18,"Service,Utilities,Gas",special,
+18068005,18,"Service,Utilities,Electric",special,
+18069000,18,"Service,Veterinarians",place,
+18070000,18,"Service,Water and Waste Management",place,
+18071000,18,"Service,Web Design and Development",place,
+18072000,18,"Service,Welding",place,
+18073000,18,"Service,Agriculture and Forestry",place,
+18073001,18,"Service,Agriculture and Forestry,Crop Production",place,
+18073002,18,"Service,Agriculture and Forestry,Forestry",place,
+18073003,18,"Service,Agriculture and Forestry,Livestock and Animals",place,
+18073004,18,"Service,Agriculture and Forestry,Services",place,
+18074000,18,"Service,Art and Graphic Design",place,
+19000000,19,Shops,place,s
+19001000,19,"Shops,Adult",place,s
+19002000,19,"Shops,Antiques",place,s
+19003000,19,"Shops,Arts and Crafts",place,s
+19004000,19,"Shops,Auctions",place,s
+19005000,19,"Shops,Automotive",place,s
+19005001,19,"Shops,Automotive,Used Car Dealers",place,s
+19005002,19,"Shops,Automotive,Salvage Yards",place,s
+19005003,19,"Shops,Automotive,RVs and Motor Homes",place,s
+19005004,19,"Shops,Automotive,Motorcycles, Mopeds and Scooters",place,s
+19005005,19,"Shops,Automotive,Classic and Antique Car",place,s
+19005006,19,"Shops,Automotive,Car Parts and Accessories",place,s
+19005007,19,"Shops,Automotive,Car Dealers and Leasing",place,s
+19006000,19,"Shops,Beauty Products",place,s
+19007000,19,"Shops,Bicycles",place,s
+19008000,19,"Shops,Boat Dealers",place,s
+19009000,19,"Shops,Bookstores",place,s
+19010000,19,"Shops,Cards and Stationery",place,s
+19011000,19,"Shops,Children",place,s
+19012000,19,"Shops,Clothing and Accessories",place,s
+19012001,19,"Shops,Clothing and Accessories,Women's Store",place,s
+19012002,19,"Shops,Clothing and Accessories,Swimwear",place,s
+19012003,19,"Shops,Clothing and Accessories,Shoe Store",place,s
+19012004,19,"Shops,Clothing and Accessories,Men's Store",place,s
+19012005,19,"Shops,Clothing and Accessories,Lingerie Store",place,s
+19012006,19,"Shops,Clothing and Accessories,Kids' Store",place,s
+19012007,19,"Shops,Clothing and Accessories,Boutique",place,s
+19012008,19,"Shops,Clothing and Accessories,Accessories Store",place,s
+19013000,19,"Shops,Computers and Electronics",place,s
+19013001,19,"Shops,Computers and Electronics,Video Games",place,s
+19013002,19,"Shops,Computers and Electronics,Mobile Phones",place,s
+19013003,19,"Shops,Computers and Electronics,Cameras",place,s
+19014000,19,"Shops,Construction Supplies",place,s
+19015000,19,"Shops,Convenience Stores",place,s
+19016000,19,"Shops,Costumes",place,s
+19017000,19,"Shops,Dance and Music",place,s
+19018000,19,"Shops,Department Stores",place,s
+19019000,19,"Shops,Digital Purchase",digital,s
+19020000,19,"Shops,Discount Stores",place,s
+19021000,19,"Shops,Electrical Equipment",place,s
+19022000,19,"Shops,Equipment Rental",place,s
+19023000,19,"Shops,Flea Markets",place,s
+19024000,19,"Shops,Florists",place,s
+19025000,19,"Shops,Food and Beverage Store",place,s
+19025001,19,"Shops,Food and Beverage Store,Specialty",place,s
+19025002,19,"Shops,Food and Beverage Store,Health Food",place,s
+19025003,19,"Shops,Food and Beverage Store,Farmers Markets",place,s
+19025004,19,"Shops,Food and Beverage Store,Beer, Wine and Spirits",place,s
+19026000,19,"Shops,Fuel Dealer",place,s
+19027000,19,"Shops,Furniture and Home Decor",place,s
+19028000,19,"Shops,Gift and Novelty",place,s
+19029000,19,"Shops,Glasses and Optometrist",place,s
+19030000,19,"Shops,Hardware Store",place,s
+19031000,19,"Shops,Hobby and Collectibles",place,s
+19032000,19,"Shops,Industrial Supplies",place,s
+19033000,19,"Shops,Jewelry and Watches",place,s
+19034000,19,"Shops,Luggage",place,s
+19035000,19,"Shops,Marine Supplies",place,s
+19036000,19,"Shops,Music, Video and DVD",place,s
+19037000,19,"Shops,Musical Instruments",place,s
+19038000,19,"Shops,Newsstands",place,s
+19039000,19,"Shops,Office Supplies",place,s
+19040000,19,"Shops,Outlet",place,s
+19040001,19,"Shops,Outlet,Women's Store",place,s
+19040002,19,"Shops,Outlet,Swimwear",place,s
+19040003,19,"Shops,Outlet,Shoe Store",place,s
+19040004,19,"Shops,Outlet,Men's Store",place,s
+19040005,19,"Shops,Outlet,Lingerie Store",place,s
+19040006,19,"Shops,Outlet,Kids' Store",place,s
+19040007,19,"Shops,Outlet,Boutique",place,s
+19040008,19,"Shops,Outlet,Accessories Store",place,s
+19041000,19,"Shops,Pawn Shops",place,s
+19042000,19,"Shops,Pets",place,s
+19043000,19,"Shops,Pharmacies",place,s
+19044000,19,"Shops,Photos and Frames",place,s
+19045000,19,"Shops,Shopping Centers and Malls",place,s
+19046000,19,"Shops,Sporting Goods",place,s
+19047000,19,"Shops,Supermarkets and Groceries",place,s
+19048000,19,"Shops,Tobacco",place,s
+19049000,19,"Shops,Toys",place,s
+19050000,19,"Shops,Vintage and Thrift",place,s
+19051000,19,"Shops,Warehouses and Wholesale Stores",place,s
+19052000,19,"Shops,Wedding and Bridal",place,s
+19053000,19,"Shops,Wholesale",place,s
+19054000,19,"Shops,Lawn and Garden",place,s
+20000000,20,Tax,special,
+20001000,20,"Tax,Refund",special,
+20002000,20,"Tax,Payment",special,
+21000000,21,Transfer,special,
+21001000,21,"Transfer,Internal Account Transfer",special,
+21002000,21,"Transfer,ACH",special,
+21003000,21,"Transfer,Billpay",special,
+21004000,21,"Transfer,Check",special,
+21005000,21,"Transfer,Credit",special,
+21006000,21,"Transfer,Debit",special,
+21007000,21,"Transfer,Deposit",special,
+21007001,21,"Transfer,Deposit,Check",special,
+21007002,21,"Transfer,Deposit,ATM",special,
+21008000,21,"Transfer,Keep the Change Savings Program",special,
+21009000,21,"Transfer,Payroll",special,
+21009001,21,"Transfer,Payroll,Benefits",special,
+21010000,21,"Transfer,Third Party",special,
+21010001,21,"Transfer,Third Party,Venmo",special,
+21010002,21,"Transfer,Third Party,Square Cash",special,
+21010003,21,"Transfer,Third Party,Square",special,
+21010004,21,"Transfer,Third Party,PayPal",special,
+21010005,21,"Transfer,Third Party,Dwolla",special,
+21010006,21,"Transfer,Third Party,Coinbase",special,
+21010007,21,"Transfer,Third Party,Chase QuickPay",special,
+21010008,21,"Transfer,Third Party,Acorns",special,
+21010009,21,"Transfer,Third Party,Digit",special,
+21010010,21,"Transfer,Third Party,Betterment",special,
+21010011,21,"Transfer,Third Party,Plaid",special,
+21011000,21,"Transfer,Wire",special,
+21012000,21,"Transfer,Withdrawal",special,
+21012001,21,"Transfer,Withdrawal,Check",special,
+21012002,21,"Transfer,Withdrawal,ATM",special,
+21013000,21,"Transfer,Save As You Go",special,
+22000000,22,Travel,place,t
+22001000,22,"Travel,Airlines and Aviation Services",special,t
+22002000,22,"Travel,Airports",place,t
+22003000,22,"Travel,Boat",place,t
+22004000,22,"Travel,Bus Stations",place,t
+22005000,22,"Travel,Car and Truck Rentals",place,t
+22006000,22,"Travel,Car Service",place,t
+22006001,22,"Travel,Car Service,Ride Share",special,t
+22007000,22,"Travel,Charter Buses",place,t
+22008000,22,"Travel,Cruises",special,t
+22009000,22,"Travel,Gas Stations",place,t
+22010000,22,"Travel,Heliports",place,t
+22011000,22,"Travel,Limos and Chauffeurs",place,t
+22012000,22,"Travel,Lodging",place,t
+22012001,22,"Travel,Lodging,Resorts",place,t
+22012002,22,"Travel,Lodging,Lodges and Vacation Rentals",place,t
+22012003,22,"Travel,Lodging,Hotels and Motels",place,t
+22012004,22,"Travel,Lodging,Hostels",place,t
+22012005,22,"Travel,Lodging,Cottages and Cabins",place,t
+22012006,22,"Travel,Lodging,Bed and Breakfasts",place,t
+22013000,22,"Travel,Parking",place,t
+22014000,22,"Travel,Public Transportation Services",place,t
+22015000,22,"Travel,Rail",place,t
+22016000,22,"Travel,Taxi",special,t
+22017000,22,"Travel,Tolls and Fees",special,t
+22018000,22,"Travel,Transportation Centers",place,t

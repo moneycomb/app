@@ -1,0 +1,61 @@
+<template name="ShowCell">
+  <div class="ui container">
+    {{>EvaluateNav activeFlag=(cell)}}
+
+
+    <div style="position: relative; overflow:hidden;" class="ui large message">
+      <a style="background-color: #9e9e9e;" class="action-help-spendcard ui right corner label">
+        <i class="help icon"></i>
+      </a>
+      <div class="ui divided items">
+        <div class="item">
+          <div class="content">
+            {{> CategoryHex color=(cellColor (cell.abbrev)) width=60 category=(cell.abbrev)}}
+          </div>
+          <div class="middle aligned content">
+            <h1 style="color: {{cellColor (cell.abbrev)}};">{{GHcellName (cell.abbrev)}}</h1>
+            {{cell.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui large message">
+
+
+
+      </div>
+
+<!--
+    <div class="ui eight item stackable menu">
+      <a href="/cells/show/{{cell}}" class="item">{{> CategoryHex color="#848484" width=80 category=(cell)}}</a>
+      {{#each subcells}}
+        <a href="/cells/show/{{parentCell}}/{{abbrev}}"
+           class="item">{{> CategoryHex color="#848484" width=50 category=(abbrev)}}{{name}}</a>
+      {{/each}}
+      <a href="/cells/show/{{parentCell}}/o" class="item">
+        {{> CategoryHex color="#848484" width=50 category="o"}}
+        Other...
+      </a>
+
+    </div>
+-->
+
+
+    <div class="six stackable ui cards">
+      {{#each transactions}}
+        {{> TransactionCard}}
+      {{/each}}
+    </div>
+
+    <div class="ui divider"></div>
+    <div class="ui center aligned basic segment">
+      <div class="load-more ui massive button">Load
+      More</div>
+    </div>
+
+    {{> TransactionCardModal}}
+    {{> HelpRatingModal}}
+  </div>
+
+</template>

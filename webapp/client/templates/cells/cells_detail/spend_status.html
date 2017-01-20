@@ -1,0 +1,29 @@
+<template name="SpendStatus">
+
+
+  <div class="ui center aligned basic segments">
+
+    <div class="ui center aligned horizontal segments" style="background-color: {{color}}; color:white;">
+      <div class="ui segment" style="background-color: white; color:{{color}};">
+        {{> SquareDiv width="100" text=(targetPD) subtext="target rate per day" color=(color)}}
+      </div>
+      <div class="ui segment" style="background-color: white; color:{{color}};">
+        {{> SquareDiv width="100" text=(actualPD) subtext="actual per day" color=(color)}}
+      </div>
+
+    </div>
+    <div class="ui center aligned horizontal segments" style="background-color: white; color:{{color}};">
+
+      <div class="ui segment">
+        {{> SquareDiv width="100" text=(tcount) subtext=(occurance) color=(color)}}
+      </div>
+      <div class="ui segment" style="background-color: white; color:{{color}};">
+        {{> SquareDiv width="100" text=(average) subtext="average purchase" color=(color)}}
+      </div>
+    </div>
+
+
+  </div>
+
+
+</template>

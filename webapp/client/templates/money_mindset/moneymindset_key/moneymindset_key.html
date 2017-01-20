@@ -1,0 +1,25 @@
+<template name="MoneyMindsetKey">
+  {{#if Template.subscriptionsReady}}
+    <div class="ui container">
+
+      <div class="ui inverted secondary grey segment">
+        {{>HelpNav activeFlag="mms"}}
+      </div>
+
+      <div class="ui segment">
+
+        <div class="ui items">
+          {{#each personas}}
+            <div class="item">
+                <h2 style="background-color: {{aspectColor (name)}}; color: white;">{{name}}</h2>
+              {{description}}
+            </div>
+          {{/each}}
+        </div>
+
+      </div>
+    </div>
+
+
+  {{/if}}
+</template>

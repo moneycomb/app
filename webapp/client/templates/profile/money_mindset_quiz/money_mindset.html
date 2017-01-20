@@ -1,0 +1,89 @@
+<template name="MoneyMindsetQuiz">
+    {{# if Template.subscriptionsReady}}
+
+        {{#if complete}}
+            <div class="ui basic center aligned segment"
+                 style="padding: 0px; color: #26969a; font-size: 24px; font-weight: 300;">
+                <h1>Complete!</h1>
+                <div id="to-explain" class="ui teal right labeled icon button">
+                    View Your Results
+                </div>
+            </div>
+        {{else}}
+
+            <div class="ui basic center aligned segment"
+                 style="padding: 0px; color: #26969a; font-size: 24px; font-weight: 300;">
+                {{progressString}}:
+            </div>
+
+            <div class="ui basic segment container">
+                <div class="two ui centered doubling stackable cards">
+                    <div class="ui card">
+
+                        <div class="content">
+
+                            <div class="ui segment question">
+                                {{onboardingQ.question}}
+                            </div>
+
+                            {{#each onboardingChoices}}
+                                {{#if image}}
+                                    <div class="answer-block">
+
+                                        <div id="{{number}}" class="answer quiz-answer"
+                                             style="background-color: {{currentAnswer}};">
+                                            <div class="answer-image">
+                                                <img width="30" height="30" src="/images/ob/{{image}}.png"/>
+                                            </div>
+                                            <div class="answer-text">
+                                                {{choice}}
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                {{else}}
+                                    <div class="answer-block">
+                                        <div id="{{number}}" class="answer quiz-answer"
+                                             style="background-color: {{currentAnswer}};">
+                                            <div class="answer-text">
+                                                {{choice}}
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                {{/if}}
+
+                            {{/each}}
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div align="center" style="padding-left: 0px; padding-right: 0px;" class="ui basic segment">
+                    <button id="backward" class="ui lightgrey button"><i class="left arrow icon"></i> Previous
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        {{/if}}
+
+
+    {{else}}
+        {{> Loading}}
+
+    {{/if}}
+</template>

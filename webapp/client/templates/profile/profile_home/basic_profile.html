@@ -1,0 +1,28 @@
+<template name="BasicProfile">
+    <div class="content">
+        <div class="header">
+        <i class="large circular user icon"></i>
+        Contact Profile</div>
+        <div class="ui divider"></div>
+        <div class="meta">Name, email, mobile number</div>
+    </div>
+
+    {{#autoForm schema="MCUserSchema" collection="Meteor.users" id="updateMCUserProfile" type="update"
+                doc=(currentUser)}}
+        <div class="content">
+
+            {{> afQuickField name='profile.first_name'}}
+            {{> afQuickField name='profile.last_name'}}
+            {{> afQuickField name='profile.email_address' value=(currentUser.primaryemail)}}
+            {{> afQuickField name='profile.mobile_number'}}
+        </div>
+        <div class="ui divider"></div>
+        <div align="center" class="content">
+            <button type="submit" class="ui button">
+                Update Profile
+            </button>
+        </div>
+
+    {{/autoForm}}
+
+</template>

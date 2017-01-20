@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="116px" height="126px" viewBox="0 0 116 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>hex_progress</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Group---Small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="hex_progress" sketch:type="MSLayerGroup" transform="translate(-3.000000, 0.000000)">
+            <text id="text" opacity="0.71641791" sketch:type="MSTextLayer" font-family="Helvetica" font-size="37.8932979" font-weight="260" sketch:alignment="middle" fill="#979797">
+                <tspan x="39.4313264" y="74.958159">50</tspan>
+            </text>
+            <rect id="fill" opacity="0.507462687" fill="#417505" sketch:type="MSShapeGroup" x="14.7947598" y="64.3179916" width="91.9388646" height="53.2468619"></rect>
+            <path d="M3.69868996,0 L118.358079,0 L118.358079,126 L3.69868996,126 L3.69868996,0 Z M60.5,9.33333333 C60.5,9.33333333 81.8206051,21.4129536 92.4809076,27.4527637 C97.6076053,30.357398 107.861001,36.1666667 107.861001,36.1666667 L107.861001,89.8333333 L60.5,116.666667 L13.1389994,89.8333333 L13.1389994,36.1666667 L60.5,9.33333333 Z" id="mask" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M60.2711117,10.0167364 L91.3361905,27.9118553 C96.3160762,30.7805314 106.275848,36.5178835 106.275848,36.5178835 L106.275848,89.5201777 L60.2711117,116.021325 L14.2663755,89.5201777 L14.2663755,36.5178835 L60.2711117,10.0167364 Z" id="innerhex" stroke="#979797" stroke-width="3" sketch:type="MSShapeGroup"></path>
+            <polygon id="outerhex" stroke="#979797" stroke-width="3" sketch:type="MSShapeGroup" points="60.5 2.63598326 112.894537 32.8179916 112.894537 93.1820084 60.5 123.364017 8.10546307 93.1820084 8.10546307 32.8179916 "></polygon>
+        </g>
+    </g>
+</svg>

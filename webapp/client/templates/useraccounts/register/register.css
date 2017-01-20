@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Register: Style */
+/*****************************************************************************/
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(http://res.cloudinary.com/moneycomb/image/upload/q_90/v1478202042/images/MCSnowboarderWebSize.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+.register-form {
+    background-color: #ffffff;
+    opacity: 0.8;
+    max-width: 300px;
+    margin: auto;
+}
+
+#at-btn {
+    background-color: #26a69a;
+    border-width: 0px;
+}
+
+
+
+
+

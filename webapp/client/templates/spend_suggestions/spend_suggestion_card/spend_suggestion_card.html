@@ -1,0 +1,31 @@
+<template name="SpendSuggestionCard">
+  <div class="ui special card">
+    <div style="padding: 4px; color: white; background-color: {{cellColor (cell)}};" class="content">
+      <div style="padding: 4px; color: white; background-color: {{cellColor (cell)}};" class="header">Spend Suggestion</div>
+      {{title}}
+    </div>
+
+    <div class="blurring dimmable image">
+      <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            {{text}}
+          </div>
+        </div>
+      </div>
+      <img src="/images/spend-suggestions/{{image}}.jpg">
+    </div>
+
+
+    <div  class="popup-help content" data-html="<i class='lab icon'></i>
+      <strong>Spend Science</strong><div class='ui divider'></div>{{science_text}}">
+    <span class="right foated">
+      {{>CategoryHex width=25 category=(cell) color=(cellColor (cell))}}<span style="color: {{cellColor(cell)}};">{{cellName (cell)}}</span>
+    </span>
+      <i class="lab icon"></i>
+      View Spend Science
+    </div>
+
+  </div>
+</template>
+

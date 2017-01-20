@@ -1,0 +1,11 @@
+<template name="TradeoffStat">
+  <div class="tradeoff-stat">
+  <div class="value">
+    {{integerString}}
+    {{#if isquarter}}&#188;{{/if}}
+    {{#if ishalf}}&#xBD;{{/if}}
+    {{#if isthreequarters}}&#190;{{/if}}
+  </div>
+    <div class="label">{{label}}</div>
+  </div>
+</template>

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Eating Out",
+    "number": 1,
+    "description": "Includes restaurants, fast food, and fast casual as well as bars and other nightlife",
+    "image": "couple3.png",
+    "icon": "flaticon-eo",
+    "group": 1,
+    "color": "#26A69A",
+    "period": "month",
+    "perioddays": 30,
+    "abbrev": "eo",
+    "occurance": "meals"
+  },
+
+
+  {
+    "name": "Shopping",
+    "number": 6,
+    "description": "Clothes, shoes, decorating your home",
+    "group": 2,
+    "icon": "flaticon-s",
+    "image": "full22.png",
+    "period": "month",
+    "color": "#26A69A",
+    "perioddays": 30,
+    "occurance": "shopping purchases",
+    "abbrev": "s"
+  },
+  {
+    "name": "Digital Services",
+    "number": 2,
+    "description": "Includes phone, internet, and cable bills as well as recurring services such as Netflix",
+    "group": 2,
+    "icon": "flaticon-ds",
+    "image": "cellphone85.png",
+    "period": "month",
+    "perioddays": 30,
+    "color": "#ffca28",
+    "occurance": "purchases",
+    "abbrev": "ds"
+  },
+  {
+    "name": "Recharge",
+    "number": 3,
+    "description": "Includes gym memberships, yoga classes, paintball, and other recreational activities. Also Includes personal care services like spas, massage, hair salons, barbers, manicures, and skin care",
+    "group": 1,
+    "icon": "flaticon-r",
+    "image": "gym16.png",
+    "period": "month",
+    "perioddays": 30,
+    "color": "#FED431",
+    "occurance": "activities",
+    "abbrev": "r"
+  },
+  {
+    "name": "Entertainment",
+    "number": 5,
+    "description": "Includes movie tickets, theatrical productions, music events, museums, and sports venues",
+    "group": 3,
+    "icon": "flaticon-e",
+    "image": "concert1.png",
+    "period": "month",
+    "perioddays": 30,
+    "color": "#00695c",
+    "occurance": "events",
+    "abbrev": "e"
+  },
+  {
+    "name": "Travel",
+    "number": 4,
+    "description": "Vacations and Get-aways, day or longer",
+    "group": 3,
+    "icon": "flaticon-t",
+    "image": "international22.png",
+    "period": "year",
+    "perioddays": 365,
+    "occurance": "travel purchases",
+    "color": "#80cbc4",
+    "abbrev": "t"
+  }
+
+]
+
+
+

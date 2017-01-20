@@ -1,0 +1,16 @@
+<!--- MAKE SURE ALL PICTURES ARE 268 by 236 Pixels to fix correctly ...or at least that same ratio! --->
+
+<template name="PictureHex">
+  <svg width="{{width}}px" viewBox="0 0 300 260" version="1.1" xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Page-27" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+      <g id="picturehex" sketch:type="MSLayerGroup" transform="translate(3.000000, -15.000000)">
+        <image id="insetpic" sketch:type="MSBitmapLayer" x="0" y="16" width="268" height="236" xlink:href="{{image}}"></image>
+            <path d="M0,16 L268,16 L268,252 L0,252 L0,16 Z M268,134 L201,250.047404 L67,250.047404 L0,134 L67,17.9525959 L201,17.9525959 L268,134 Z" id="mask" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <polygon id="hex" stroke="{{bordercolor}}" stroke-width="6" sketch:type="MSShapeGroup"
+               transform="translate(134.000000, 134.000000) rotate(-270.000000) translate(-134.000000, -134.000000) "
+               points="134 5.68434189e-14 250.047404 67 250.047404 201 134 268 17.9525959 201 17.9525959 67 "></polygon>
+      </g>
+    </g>
+  </svg>
+</template>

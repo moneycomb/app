@@ -1,0 +1,108 @@
+<template name="Comp[lexWizardSavings">
+  <div align="center" style="padding: 8px; background-color: #5fb7e5;">
+    <span style="font-size: 24px; color: white;">Set Savings Goals</span>
+  </div>
+
+    <div class="ui container">
+
+      {{#each goals}}
+          <div class="ui icon message">
+              <div class="content">
+                  <p>{{goalStatement}}</p>
+              </div>
+              <i id="{{_id}}" class="action-delete remove circle outline icon"></i>
+          </div>
+  {{/each}}
+
+      <div class="ui center aligned segment">
+
+      <div style="font-size: 1.2em; color: #5fb7e5;">
+        {{> React component=GoalStatement amount=(value) purpose=(goalName) period=(goalPeriod)}}
+      </div>
+
+      <div class="action-add-goal ui blue labeled icon button">
+        Add New Goal
+        <i class="add icon"></i>
+      </div>
+
+      </div>
+
+
+
+        <div class="ui divider">Choose</div>
+
+
+      <div class="ui segments">
+        <div class="ui segment">
+          <h4 style="color: #5fb7e5; text-transform: uppercase;"><a class="ui large blue circular label">1</a> Amount</h4>
+        </div>
+        <div class="ui segment">
+          <h4>I want to save...<span style="color: #9e9e9e">${{value}}</span></h4>
+
+          <div>
+            {{> React component=CellTargetSlider start=(value) min=0 max=(maxvalue) step=(step)}}
+          </div>
+
+              <div id="100" class="set-amount ui medium button">$100</div>
+              <div id="250" class="set-amount ui medium button">$250</div>
+              <div id="500" class="set-amount ui medium button">$500</div>
+              <div id="1000" class="set-amount ui medium button">$1000</div>
+              <div id="5000" class="set-amount ui medium button">$5000</div>
+              <div id="10000" class="set-amount ui medium button">$10000</div>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="ui segments">
+        <div class="ui segment">
+          <h4 style="color: #5fb7e5; text-transform: uppercase;"><a class="ui large blue circular label">2</a> time frame</h4>
+        </div>
+        <div class="ui segment">
+          <h4>every...<span style="color: #9e9e9e">{{goalPeriod}}</span></h4>
+          <div id="year" class="set-period ui medium button">year</div>
+          <div id="month" class="set-period ui medium button">month</div>
+          <div id="week" class="set-period ui medium button">week</div>
+
+          <div class="ui horizontal divider">
+            Or
+          </div>
+
+          <h4>by...<span style="color: #9e9e9e">{{goalBy}}</span></h4>
+          <div>
+          {{> React component=GoalDatePicker}}
+        </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="ui segments">
+        <div class="ui segment">
+          <h4 style="color: #5fb7e5; text-transform: uppercase;"><a class="ui large blue circular label">3</a> Purpose</h4>
+        </div>
+        <div class="ui segment">
+          <h4>for...<span style="color: #9e9e9e">{{goalName}}</span></h4>
+          <div id="a vacation" class="set-goal ui medium button">a vacation</div>
+          <div id="my wedding" class="set-goal ui medium button">my wedding</div>
+          <div id="a car" class="set-goal ui medium button">a car</div>
+          <div id="my Safety Net" class="set-goal ui medium button">my Safety Net</div>
+          <div id="a downpayment on a house" class="set-goal ui medium button">a downpayment on a house</div>
+          <div id="my retirement" class="set-goal ui medium button">my retirement</div>
+          <div id="general savings" class="set-goal ui medium button">general savings</div>
+        </div>
+
+      </div>
+
+
+        <div class="ui basic center aligned segment">
+            <button class="ui large button action-next">DONE ADDING SAVINGS GOALS</button>
+        </div>
+
+        
+    </div>
+</template>

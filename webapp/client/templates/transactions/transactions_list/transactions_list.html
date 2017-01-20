@@ -1,0 +1,39 @@
+<template name="TransactionsList">
+
+  {{#if Template.subscriptionsReady}}
+<!--
+  {{>TransActionBar sortBy=(sortBy) sortDir=(sortDir) filterTimeFrame=(filterTimeFrame) description=(description) color="#ffffff" bgcolor=(bgcolor)}}
+-->
+  <!--{{sortBy}}
+  {{sortDir}}
+  {{filterTimeFrame}} -->
+
+    <div class="five stackable doubling ui cards">
+
+      {{#each transactions (selector)}}
+        {{> TCard}}
+      {{else}}
+
+        <div align="center" class="ui basic segment">
+          <div align="center" class="ui huge header" style="color:#9e9e9e;">No Transactions</div>
+
+        </div>
+
+      {{/each}}
+    </div>
+
+  <div class="ui divider"></div>
+  <div class="ui center aligned basic segment">
+  <div class="load-more ui huge button">Load More</div>
+  </div>
+
+    <!--
+    <button id="next-page" class="ui button" style="background-color: {{bgcolor}}; color: {{color}};"><i
+        class="right arrow icon"></i> Next</button>
+-->
+  {{else}}
+    {{> Loading}}
+
+  {{/if}}
+
+</template>

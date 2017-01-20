@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("/mcicons/flaticon.eot");
+	src: url("/mcicons/flaticon.eot#iefix") format("embedded-opentype"),
+	url("/mcicons/flaticon.woff") format("woff"),
+	url("/mcicons/flaticon.ttf") format("truetype"),
+	url("/mcicons/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        /*font-size: 20px; */
+font-style: normal;
+margin-left: 0px;
+}.flaticon-allocation:before {
+	content: "\e000";
+}
+.flaticon-amex:before {
+	content: "\e001";
+}
+.flaticon-atm:before {
+	content: "\e002";
+}
+.flaticon-balance:before {
+	content: "\e003";
+}
+.flaticon-cc2:before {
+	content: "\e004";
+}
+.flaticon-brain:before {
+	content: "\e005";
+}
+.flaticon-charge:before {
+	content: "\e006";
+}
+.flaticon-ds:before {
+	content: "\e007";
+}
+.flaticon-budget:before {
+	content: "\e008";
+}
+.flaticon-check2:before {
+	content: "\e009";
+}
+.flaticon-check:before {
+	content: "\e00a";
+}
+.flaticon-checking:before {
+	content: "\e00b";
+}
+.flaticon-savings:before {
+	content: "\e00c";
+}
+.flaticon-community:before {
+	content: "\e00d";
+}
+.flaticon-e:before {
+	content: "\e00e";
+}
+.flaticon-eo:before {
+	content: "\e00f";
+}
+.flaticon-credit5:before {
+	content: "\e010";
+}
+.flaticon-creditcards:before {
+	content: "\e011";
+}
+.flaticon-reviewed:before {
+	content: "\e012";
+}
+.flaticon-discover:before {
+	content: "\e013";
+}
+.flaticon-s:before {
+	content: "\e014";
+}
+.flaticon-bargraph:before {
+	content: "\e015";
+}
+.flaticon-r:before {
+	content: "\e016";
+}
+.flaticon-hex:before {
+	content: "\e017";
+}
+.flaticon-hexfilled:before {
+	content: "\e018";
+}
+.flaticon-honeypot:before {
+	content: "\e019";
+}
+.flaticon-mastercard:before {
+	content: "\e01a";
+}
+.flaticon-cash:before {
+	content: "\e01b";
+}
+.flaticon-money153:before {
+	content: "\e01c";
+}
+.flaticon-creditcard:before {
+	content: "\e01d";
+}
+.flaticon-receipt:before {
+	content: "\e01e";
+}
+.flaticon-piggy7:before {
+	content: "\e01f";
+}
+.flaticon-security:before {
+	content: "\e020";
+}
+.flaticon-s:before {
+	content: "\e021";
+}
+.flaticon-spendtrend:before {
+	content: "\e022";
+}
+.flaticon-strategic:before {
+	content: "\e023";
+}
+.flaticon-t:before {
+	content: "\e024";
+}
+.flaticon-trend:before {
+	content: "\e025";
+}
+.flaticon-trend2:before {
+	content: "\e026";
+}
+.flaticon-visa:before {
+	content: "\e027";
+}
+.flaticon-wallet:before {
+	content: "\e028";
+}

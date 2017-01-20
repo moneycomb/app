@@ -1,0 +1,45 @@
+<template name="CallsToAction">
+  {{#if Template.subscriptionsReady}}
+    <div align="center" class="fullcard ui raised segments">
+        <div align="center" class="ui segment calls-to-action">
+
+    {{#if haveUnreviewed}}
+        {{#with current}}
+    <!--
+            {{#if matchCheck}}
+                <img class="ui small image" src="http://res.cloudinary.com/moneycomb/image/upload/v1473426288/cells/merge.png"/>
+                <h1>Match check here!</h1>
+                {{else}} -->
+                <div class="card-small">
+                    {{>TCard}}
+                </div>
+
+                <!-- {{/if}} -->
+          <div class="ui divider"></div>
+          <a href="/review">Review All</a>
+
+        {{/with}}
+    {{else}}
+
+          <h3 style="color: #848484;">Great Job!</h3>
+          <p style="font-size: 18px;">You've been busy as a bee.<br>All spending for last 30 days reviewed!</p>
+          <img class="ui tiny image" src="/images/busybee.png"/>
+          <br>
+          <h3 style="color: #848484;">Done for now.</h3>
+        {{/if}}
+
+        {{> HelpRatingModal}}
+
+      </div>
+
+    </div>
+
+  {{else}}
+    {{> Loading}}
+  {{/if}}
+
+    <!--- <button class="action-test">Test</button> -->
+
+
+
+</template>

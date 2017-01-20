@@ -1,0 +1,107 @@
+<template name="WizardCell">
+  <div align="center" style="padding: 8px; background-color: #848484;">
+    <span style="font-size: 24px; color: white;"><i class="large circular magic icon"></i> Spend Wizard</span>
+  </div>
+
+  <div class="ui basic segment container">
+
+    <div class="ui three centered stackable doubling cards">
+
+      <div class="ui card">
+        <div class="content">
+          {{>CategoryHex color=(cellColor (currentcell)) width="70" category=(currentcell)}}
+          <div class="header">{{title}}</div>
+          <div class="meta">{{cell.description}}.</div>
+          <div class="ui divider"></div>
+          {{#if noactivity (currentcell)}}
+            <div>
+              <p style="font-size: 12px">No recent spending activity in this area based on
+                the accounts
+                you've linked. This may be normal. If transactions are missing, link any additional accounts which
+                capture that spending</p>
+            </div>
+          {{else}}
+            <p>Examples based on your recent spending:</p>
+            {{#each places (currentcell)}}
+              <a style="background-color: {{cellColor (currentcell)}};"
+                 class="ui empty circular label"></a> {{name}}
+              <br>
+            {{/each}}
+          {{/if}}
+
+          <div class="ui divider"></div>
+
+          <div class="ui tiny two statistics">
+            <div class="ui tiny statistic">
+              <div style="color:{{cellColor (currentcell)}};" class="value">
+                {{dollarFormat(currentspend (currentcell))}}
+              </div>
+              <div class="label">
+                YOUR
+                AVERAGE
+              </div>
+            </div>
+            <div class="ui tiny statistic">
+              <div style="color:{{cellColor (currentcell)}};" class="value">
+                {{dollarFormat(currenttarget (currentcell))}}
+              </div>
+              <div class="label">
+                RECOMMENDED
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="ui card">
+
+        <div align="center" class="content">
+          <div class="ui statistic">
+            <div style="color:{{cellColor (currentcell)}};" class="value">
+              ${{value}}
+            </div>
+            <div class="label">
+              OF
+              YOUR {{dollarFormat(newSpendTarget)}} MONTHLY
+              TARGET
+            </div>
+          </div>
+          {{#if allAllocated}}
+            <h1> No More Left!</h1>
+            <button class="ui button action-adjust-total">Adjust Total</button>
+          {{else}}
+            <div align="center">
+              {{> React component=AllocationPie cell=(currentcell) colors=(colors) allocated=(allocated) value=(value) remaining=(remaining)}}
+            </div>
+            <div>
+              {{> React component=CellTargetSlider start=(value) step=5 min=0 max=(maxtarget (currentcell))}}
+            </div>
+          {{/if}}
+
+
+        </div>
+        <div align="center" class="extra content">
+
+          <a style="background-color: #848484;" class="ui empty circular label"></a> Allocated
+          <a style="background-color: {{cellColor (currentcell)}};"
+             class="ui empty circular label"></a> {{title}}
+          <a style="background-color: #9e9e9e;" class="ui empty circular label"></a> Left to allocate
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div align="center">
+      <button class="ui large button action-previous">GO BACK</button>
+      <button class="ui large button action-next">NEXT...</button>
+    </div>
+
+
+  </div>
+</template>

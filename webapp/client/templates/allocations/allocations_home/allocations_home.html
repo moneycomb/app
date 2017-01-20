@@ -1,0 +1,47 @@
+<template name="AllocationsHome">
+    {{> MobileMenuBar icon="ui circular pie chart icon" title="My Plan" color="#26a69a"}}
+  <div class="ui basic segment container">
+      <div class="ui icon message">
+          <i class="large circular magic icon"></i>
+          <div class="content">
+              <div class="header">
+                  Use our Wizard to set your Spending Plan
+              </div>
+              <div class="meta">Walks you through setting your Spending Plan with step by step
+                  guidance
+              </div>
+              <a href="/spendsetter/wizard/start">
+                  <button class="ui button">
+                      Use Spend Wizard
+                  </button>
+              </a>
+
+          </div>
+      </div>
+      <div class="ui center aligned basic segment">
+          <div class="ui horizontal divider">
+              Or
+          </div>
+      </div>
+      <div class="ui icon message">
+          <i class="large circular pie chart icon"></i>
+          <div class="content">
+              <div class="header">
+                  Set your Plan Directly...
+              </div>
+              <div class="meta">Manually set your plan below. Click the hex cell /category heading to lock each category once you
+                  have it set to what you want.
+              </div>
+          </div>
+      </div>
+
+      <div class="ui fluid card">
+          <div class="content">
+              {{>SpendSetter}}
+          </div>
+      </div>
+
+      {{> HelpSpendSetterModal}}
+  </div>
+
+</template>

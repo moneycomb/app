@@ -1,0 +1,13 @@
+<template name="TransactionCategorize">
+  <div class="transaction-categorize secondary yellow inverted ui segment">
+    Categorize
+
+      {{#each cells}}
+          <a class="cell-item">
+            {{> CategoryHex width=50 color="#ffa000" category=abbrev}}
+          </a>
+      {{/each}}
+
+  </div>
+</template>
+

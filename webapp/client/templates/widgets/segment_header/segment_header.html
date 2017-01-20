@@ -1,0 +1,10 @@
+<template name="SegmentHeader">
+  <div style="padding: 8px; position: relative; color: white; background-color:{{calcColor}}; overflow:hidden;" class="ui center aligned segment">
+    <span style="font-size: 16px; font-weight: 300; font-family: Lato;">{{title}}</span>
+    {{#if help}}
+      <a class="{{helplink}} pink ui right corner label">
+        <i class="help icon"></i>
+      </a>
+    {{/if}}
+  </div>
+</template>

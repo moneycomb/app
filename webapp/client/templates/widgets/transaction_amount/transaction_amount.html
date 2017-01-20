@@ -1,0 +1,54 @@
+<template name="TransactionAmount">
+
+  <!--
+  <svg width="{{width}}px" viewBox="0 0 200 58" version="1.1" xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="transaction-amount" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+      <g id="trans-amount" sketch:type="MSLayerGroup" transform="translate(0.000000, -6.000000)">
+        {{#if showbar}}
+
+          <rect id="outer" sketch:type="MSShapeGroup" x="0" y="0" width="116" height="64"></rect>
+          <rect id="bar" fill-opacity="{{used.baropacity}}" fill="{{used.barfill}}" sketch:type="MSShapeGroup" x="100" y="0" width="116"
+                height="21"></rect>
+          <rect id="used" fill="#F6A623" fill-opacity="{{used.used_opacity}}" sketch:type="MSShapeGroup" x="100" y="0" width="{{used.width}}" height="21"></rect>
+          <text id="over-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="16" font-weight="260" sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="6" y="60">{{used.overtext}}</tspan>
+          </text>
+          <text id="amount-text" text-anchor="middle" sketch:type="MSTextLayer" font-family="Helvetica" font-size="30" font-weight="normal"
+                sketch:alignment="middle" fill="{{used.amount_text_color}}">
+            <tspan x="55" y="35">{{widget_amount}}</tspan>
+          </text>
+
+        {{else}}
+
+          <text id="amount-text" text-anchor="middle" sketch:type="MSTextLayer" font-family="Helvetica" font-size="30" font-weight="normal"
+                sketch:alignment="middle" fill="{{used.amount_text_color}}">
+            <tspan x="55" y="44">{{widget_amount}}</tspan>
+          </text>
+
+        {{/if}}
+      </g>
+    </g>
+  </svg>
+  -->
+
+    <svg width="{{width}}" viewBox="0 0 172 67" version="1.1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+      <g id="Page-32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="amountbar" sketch:type="MSLayerGroup" transform="translate(0.000000, -7.000000)">
+          <rect id="bar" fill-opacity="{{used.baropacity}}" fill="{{used.barfill}}" sketch:type="MSShapeGroup" x="0"
+                y="48" width="172" height="26" rx="13" ry="0"></rect>
+          <rect id="used" fill="{{color}}" fill-opacity="{{used.used_opacity}}" sketch:type="MSShapeGroup" x="0" y="48"
+                width="{{used.width}}" height="26" rx="13" ry="0"></rect>
+          <text id="amount" sketch:type="MSTextLayer" font-family="Helvetica" font-size="40" font-weight="bold"
+                sketch:alignment="middle" fill="{{color}}">
+            <tspan x="53.1308594" y="39">{{widget_amount}}</tspan>
+          </text>
+        </g>
+      </g>
+    </svg>
+
+
+</template>
+
+

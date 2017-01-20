@@ -1,0 +1,91 @@
+<template name="OverallStatus">
+
+  <div align="center" class="ui segments">
+    <!-- {{>SegmentHeader title="Sweet Spot Locator" color="#26a69a" help=true helplink="action-help-ssl"}} -->
+
+    <div align="center" class="ui center aligned segment overall-status">
+
+      <div align="center" style="margin: 0px; padding: 7px;" class="ui list">
+        <div style="padding: 0px;" class="item">
+          <div class="ui image cell-icon">
+            <a href="/cells/eo">{{>CategoryHex color=(cellColor "eo") width="40" category="eo"}}</a>
+          </div>
+          <div style="padding-left: 0px; padding-top: 7px;" class="content">
+             {{#if hasTarget "eo"}}
+            {{>SSWidget cell="eo" width="160" ssstart=70 ssend=130 mstart=70 mend=130 current=(speed "eo" (tf))}}
+             {{else}}
+                 <div style="color: #848484; width:200px;">No Target Set</div>
+             {{/if}}
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="ui image cell-icon">
+            <a href="/cells/ds">{{>CategoryHex color=(cellColor "ds") width="40" category="ds"}}</a>
+          </div>
+          <div style="padding-left: 0px; padding-top: 7px;" class="content">
+{{#if hasTarget "ds"}}
+            {{>SSWidget cell="ds" width="160" ssstart=85 ssend=115 mstart=85 mend=115 current=(speed "ds" (tf))}}
+{{else}}
+    <div style="color: #848484; width:200px;">No Target Set</div>
+{{/if}}
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="ui image cell-icon">
+            <a href="/cells/r">{{>CategoryHex color=(cellColor "r") width="40" category="r"}}</a>
+          </div>
+          <div style="padding-left: 0px; padding-top: 7px;" class="content">
+              {{#if hasTarget "r"}}
+            {{>SSWidget cell="r" width="160" ssstart=85 ssend=115 mstart=85 mend=115 current=(speed "r" (tf))}}
+{{else}}
+    <div style="color: #848484; width:200px;">No Target Set</div>
+{{/if}}
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="ui image cell-icon">
+            <a href="/cells/t">{{>CategoryHex color=(cellColor "t") width="40" category="t"}}</a></div>
+          <div style="padding-left: 0px; padding-top: 7px;" class="content">
+              {{#if hasTarget "t"}}
+            {{>SSWidget cell="t" width="160" ssstart=75 ssend=125 mstart=75 mend=125 current=(speed "t" (tf))}}
+{{else}}
+    <div style="color: #848484; width:200px;">No Target Set</div>
+{{/if}}
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="ui image cell-icon">
+            <a href="/cells/e">{{>CategoryHex color=(cellColor "e") width="40" category="e"}}</a></div>
+          <div style="padding-left: 0px; padding-top: 7px;" class="content">
+              {{#if hasTarget "e"}}
+            {{>SSWidget cell="e" width="160" ssstart=70 ssend=130 mstart=70 mend=130 current=(speed "e" (tf))}}
+{{else}}
+    <div style="color: #848484; width:200px;">No Target Set</div>
+{{/if}}
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="ui image cell-icon">
+            <a href="/cells/s">{{>CategoryHex color=(cellColor "s") width="40" category="s"}}</a></div>
+          <div style="padding-left: 0px; padding-top: 9px;" class="content">
+              {{#if hasTarget "s"}}
+            {{>SSWidget cell="s" width="160" ssstart=70 ssend=130 mstart=70 mend=130 current=(speed "s" (tf))}}
+{{else}}
+    <div style="color: #848484; width:200px;">No Target Set</div>
+{{/if}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  {{> HelpSweetSpotLocatorModal}}
+
+</template>

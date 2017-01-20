@@ -1,0 +1,13 @@
+<template name="SpendSuggestions">
+
+  <div class="spend-suggestions ui basic segments">
+    <div class="ui center aligned segment">
+      {{#if featured}}
+      {{> SpendSuggestionCard (featured)}}
+{{/if}}
+    </div>
+
+  </div>
+
+
+</template>

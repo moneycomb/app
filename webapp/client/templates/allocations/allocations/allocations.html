@@ -1,0 +1,262 @@
+<template name="SpendSetter">
+
+    {{#if Template.subscriptionsReady}}
+        <div align="center" class="ui center aligned basic segment grid container">
+
+            <!-- ******* MOBILE ****** -->
+
+            <div class="mobile only row">
+                <div style="margin: 10px;">
+                    <div class="confirm-button ui teal button">
+                        Save
+                    </div>
+
+                    <div class="reset-button ui button">
+                        Set
+                        to
+                        Suggested
+                    </div>
+                </div>
+
+                <div>
+
+
+                    <div class="ui one cards">
+
+                        <div class="ui card">
+                            <div style="margin: 0px; padding: 0px; background-color: {{calcColorTotal}}; color: white;"
+                                 class="lock-total content">
+                                <!-- {{>CategoryHex color=(calcColorTotal) width="50" category=(calcTotalImg)}} -->
+                                <div>TOTAL SPENDING TARGET</div>
+                            </div>
+
+                            <div class="content">
+                                <div class="ui {{disabledTotal}} right labeled huge input">
+                                    <div class="total-subtract {{totallockedStatusColor}} ui label">-</div>
+                                    <input style="width: 120px;" type="text" placeholder="Target..." value="${{total}}">
+                                    <div class="total-add {{totallockedStatusColor}} ui label">+</div>
+                                </div>
+
+                            </div>
+
+                            <div class="extra content">
+                                Monthly Suggested
+                                <div class="right floated meta" style="color: {{calcColorTotal}}; font-weight: 500;">
+                                    {{recommendedTotal}}
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Your Monthly Average
+                                <div class="right floated meta" style="color: {{calcColorTotal}}; font-weight: 500;">
+                                    {{actualTotal30Average}}
+                                </div>
+                            </div>
+                            <!-- <div class="extra content">
+                                U.S. Monthly Average
+                                <div class="right floated meta" style="color: {{calcColorTotal}}; font-weight: 500;">
+                                    {{recommendedTotal}}
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+
+
+
+                    {{#each cells}}
+
+                        <div class="ui card">
+                            <div style="margin: 0px; padding: 0px; background-color:{{calcColor}}; color: white;"
+                                 class="lock-cell content">
+                                <!-- {{>CategoryHex color=(calcColor) width="40" category=(calcCellImg)}} -->
+                                <div>{{calcCellName}}</div>
+                            </div>
+
+                            <div class="content">
+                                <div class="ui {{disabled}} huge right labeled input">
+                                    <div class="subtract-from ui label"
+                                         style="color: white; background-color: {{lockedStatusColor}};">-
+                                    </div>
+                                    <input id="input-{{abbrev}}" style="color: #848484; width: 120px;"
+                                           class="input-number" type="text"
+                                           width="4"
+                                           placeholder="Target..."
+                                           value="${{target}}">
+                                    <div class="add-to ui label"
+                                         style="color: white; background-color: {{lockedStatusColor}};">+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="extra content">
+                                Monthly Suggested
+                                <div class="right floated meta" style="color: {{calcColor}}; font-weight: 500;">
+                                    {{recommended}}
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Your Monthly Average
+                                <div class="right floated meta" style="color: {{calcColor}}; font-weight: 500;">
+                                    {{actual30avg}}
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                U.S. Monthly Average
+                                <div class="right floated meta" style="color: {{calcColor}}; font-weight: 500;">
+                                    {{USAverage}}
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    {{/each}}
+                </div>
+
+
+                <div style="margin-top: 10px;" align="center">
+                    <a href="#top">
+                        <button class="ui large button">Return to Top</button>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <!-- ******* COMPUTER / TABLET ****** -->
+            <div class="computer tablet only row">
+
+                <button class="confirm-button ui orange button">
+                    Save
+                    Targets
+                </button>
+
+                <button class="reset-button ui button">
+                    Set
+                    to
+                    Suggested
+                </button>
+
+                <div style="margin:10px;" class="ui centered stackable grid">
+
+                    <div class="fourteen wide column">
+
+
+                        <table class="ui table">
+                            <thead>
+                            <tr style="padding: 5px;" class="center aligned">
+                                <th style="padding: 5px; background-color: #848484; color: white;"><i
+                                        class="large lock icon"></i></th>
+                                <th style="padding: 5px; background-color: #848484; color: white;">Category</th>
+                                <th class="three wide" style="padding: 5px; background-color: #ffa000; color: white;">
+                                    <strong>SET
+                                        SPENDING</strong><br>
+                                    <i class="large arrow circle down icon"></i> (per 30 days)
+                                </th>
+                                <th class="three wide" style="padding: 5px; background-color: #848484; color: white;"
+                                    data-content="Calculated based on a combination of your past spending and your Money Mindset (quiz results)">
+                                    <i class="star icon"></i> Suggested Monthly
+                                </th>
+                                <th class="three wide" style="padding: 5px; background-color: #848484; color: white;">
+                                    Your Monthly Actual
+                                </th>
+                                <th class="three wide" style="padding: 5px; background-color: #848484; color: white;">
+                                    <i class="users icon"></i> U.S. Monthly Average
+                                </th>
+                            </tr>
+                            </thead>
+
+
+                            <tr style="vertical-align: middle;">
+                                <td class="center aligned" style="padding:5px;">
+                                    <div class="lock-total" align="center">
+                                        {{>CategoryHex color=(calcColorTotal) width="80" category=(calcTotalImg)}}
+                                    </div>
+                                </td>
+                                <td><strong>TOTAL<br>SPENDING</strong></td>
+                                <td class="center aligned" style="padding:5px;">
+                                    <div class="ui {{disabledTotal}} right labeled large input">
+                                        <div class="total-subtract {{totallockedStatusColor}} ui label">-</div>
+                                        <input style="width: 120px;" type="text" width="5" placeholder="Target..."
+                                               value="${{total}}">
+                                        <div class="total-add {{totallockedStatusColor}} ui label">+</div>
+                                    </div>
+                                </td>
+                                <td style="padding:5px;" class="center aligned">
+                                    <a class="ui huge label"
+                                       style="background-color: {{calcColorTotal}}; color: white;">{{recommendedTotal}}</a>
+                                </td>
+                                <td style="padding:5px;" class="center aligned">
+                                    <a class="ui huge label"
+                                       style="background-color: {{calcColorTotal}}; color: white;">{{actualTotal30Average}}</a>
+                                </td>
+                                <td style="padding:5px;" class="center aligned">
+                                    <!--<a class="ui huge label"
+                                       style="background-color: {{calcColorTotal}}; color: white;">{{recommendedTot}}</a> -->
+                                </td>
+                            </tr>
+
+
+                            {{#each cells}}
+                                <tr style="vertical-align: middle; padding:5px;">
+
+                                    <td class="center aligned" style="padding:0px;">
+                                        <div class="lock-cell">
+                                            {{>CategoryHex color=(calcColor) width="60" category=(calcCellImg)}}</div>
+                                    </td>
+                                    <td>
+                                        {{calcCellName}}
+                                    </td>
+                                    <td class="center aligned" style="padding:0px;">
+                                        <div class="ui {{disabled}} right labeled large input">
+                                            <div class="subtract-from ui label"
+                                                 style="background-color: {{lockedStatusColor}};">-
+                                            </div>
+                                            <input id="input-{{abbrev}}" style="width: 120px;" class="input-number"
+                                                   type="text" width="4"
+                                                   placeholder="Target..."
+                                                   value="${{target}}">
+                                            <div class="add-to ui label"
+                                                 style="background-color: {{lockedStatusColor}};">+
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </td>
+                                    <td style="padding:0px;" class="center aligned">
+                                        <a class="ui huge label"
+                                           style="background-color: {{calcColor}}; color: white;">{{recommended}}</a>
+                                    </td>
+                                    <td style="padding:0px;" class="center aligned">
+                                        <a class="ui huge label"
+                                           style="background-color: {{calcColor}}; color: white;">{{actual30avg}}</a>
+                                    </td>
+                                    <td style="padding:0px;" class="center aligned">
+                                        <a class="ui huge label"
+                                           style="background-color: {{calcColor}}; color: white;">{{USAverage}}</a>
+                                    </td>
+
+
+                                </tr>
+
+                            {{/each}}
+
+                        </table>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    {{else}}
+
+        {{> Loading}}
+
+    {{/if}}
+
+
+</template>

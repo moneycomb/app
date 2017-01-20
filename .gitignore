@@ -1,0 +1,7 @@
+.idea
+config
+node_modules
+webapp/node_modules
+webapp/.meteor/local
+# Mac crap
+.DS_Store

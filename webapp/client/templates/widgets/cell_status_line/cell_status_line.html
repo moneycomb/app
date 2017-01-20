@@ -1,0 +1,52 @@
+<template name="CellStatusLine">
+
+    <a class="ui card" href="/cells/{{abbrev}}">
+        <div class="content" align="center" style="padding: 6px; color: white; background-color: {{color}};">
+            <div style="color: white;font-size: 16px;" class="header">{{cell}}</div>
+        </div>
+
+        <div style="padding: 6px;" align="center" class="content">
+
+            {{#if noshowtarget}}
+
+            {{else}}
+                {{#if isOver}}
+                    <div align="center" class="content"
+                         style="border-radius: 5px; padding: 2px; color: white; background-color: {{ouColor}}">
+                        OVER {{dollarFormat(CalcOverUnder)}}
+                    </div>
+                {{else}}
+                    <div align="center" class="content"
+                         style="border-radius: 5px; padding: 2px; color: white; background-color: {{ouColor}}">
+                        UNDER {{dollarFormat(CalcOverUnder)}}
+                    </div>
+                {{/if}}
+            {{/if}}
+
+            <div class="ui small statistic">
+                <div class="label">
+                    Spent
+                </div>
+                <div class="value" style="color: {{color}};">
+                    {{dollarFormat(CalcSpent)}}
+                </div>
+                {{#if noshowtarget}}
+                {{else}}
+                    <div class="label">
+                        of {{dollarFormat(CalcTarget)}}
+                    </div>
+                {{/if}}
+            </div>
+            {{#if noshowtarget}}
+            {{else}}
+                    <div>
+                        {{ > React component=CProgressBar cell="eo" color=(color) value=(CalcSpent) total=(CalcTarget)}}
+                    </div>
+            {{/if}}
+        </div>
+        <div class="content" align="center" style="padding: 6px; color: white; background-color: {{color}};">
+            <div style="color: white;font-size: 14px;">last {{perioddays}} days</div>
+        </div>
+    </a>
+
+</template>

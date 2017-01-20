@@ -1,0 +1,92 @@
+<template name="LoginNavigation">
+  <div style="margin-top: 50px;" class="mysidebar ui right thin sidebar grey inverted vertical menu">
+    <br><br>
+    <a class="closeme tiny-text menu item" href="/dashboard">HOME</a>
+    <a class="closeme tiny-text menu item" href="/spendsetter">MY PLAN</a>
+    <a href="/moneypot" class="closeme tiny-text menu item">ALL CELLS</a>
+    <div class="menu">
+      {{#each cells}}
+        <a href="/cells/{{abbrev}}" class="closeme item">
+          {{name}}
+        </a>
+      {{/each}}
+      <a href="/transactions/other" class="closeme item">Other</a>
+      <a href="/transactions/uncategorized" class="closeme item">Uncategorized</a>
+    </div>
+
+
+    <a class="closeme tiny-text menu item" href="/myprofile">PROFILE</a>
+    <div class="menu">
+      <a class="closeme item" href="/myprofile">Settings</a>
+      <a class="closeme item" href="/accounts">Accounts</a>
+      <a class="closeme item" href="/profile/quiz">Mindset Quiz</a>
+      <a class="closeme item" href="/mindset/explain">Money Mindset</a>
+    </div>
+    <span class="closeme">{{> atNavButton}}</span>
+
+
+  </div>
+
+
+  <div class="ui page grid">
+    <div class="computer tablet only row">
+      <div class="ui grey inverted menu top fixed navbar">
+        <a href="http://www.mymoneycomb.com"><img class="logo" style="padding-left:20px; padding-top: 8px;"
+                                                   align="middle"
+                                                   src="/images/logo.png"
+                                                   width="200"/></a>
+        <div class="right menu">
+          <a class="item" href="/dashboard">HOME</a>
+          <a class="item" href="/spendsetter">MY PLAN</a>
+          <div class="ui dropdown item">CELLS <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="/moneypot" class="closeme item">
+                {{> CategoryHex color="#848484" width=30 category="hp"}} <strong>All Cells</strong>
+              </a>
+              {{#each cells}}
+                <a href="/cells/{{abbrev}}" class="closeme item">
+                  {{> CategoryHex color=(cellColor (abbrev)) width=30 category=(abbrev)}} {{name}}
+                </a>
+              {{/each}}
+              <a href="/transactions/other" class="closeme item">
+                {{> CategoryHex color="#9e9e9e" width=30 category="o"}} Other
+              </a>
+              <a href="/transactions/uncategorized" class="closeme item">
+                {{> CategoryHex color="#848484" width=30 category="unknown"}} Uncategorized
+              </a>
+
+            </div>
+          </div>
+
+
+          <div class="ui dropdown item">PROFILE <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="closeme item" href="/myprofile">Settings</a>
+              <a class="closeme item" href="/accounts">Accounts</a>
+              <a class="closeme item" href="/profile/quiz">Mindset Quiz</a>
+              <a class="closeme item" href="/mindset/explain">Money Mindset</a>
+            </div>
+          </div>
+          {{> atNavButton}}
+        </div>
+      </div>
+    </div>
+    <div class="mobile only narrow row">
+      <div class="ui grey inverted top fixed navbar menu">
+        <a href="http://www.mymoneycomb.com"><img class="logo" style="padding-left:20px; padding-top: 14px;"
+                                                   align="middle"
+                                                   src="/images/logo.png"
+                                                   width="150"/></a>
+        <div class="right menu">
+          <a href="" class="action-sidebar item">
+            <i class=" sidebar icon"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</template>

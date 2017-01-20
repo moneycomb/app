@@ -1,0 +1,23 @@
+.wizard-amounts {
+    display: flex; /* or inline-flex */
+    font-size: 36px;
+    font-weight: 300;
+    background-color: #848484;
+    color: #ffffff;
+}
+
+.wizard-amount-item {
+    flex-grow: 1;
+}
+
+.wizard-amt {
+    font-size: 24px;
+    font-weight: 300;
+    color: #848484;
+}
+
+.wizard-amt-text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #424242;
+}

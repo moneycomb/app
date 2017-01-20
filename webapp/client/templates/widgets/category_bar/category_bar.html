@@ -1,0 +1,12 @@
+<template name="CategoryBar">
+  <svg width="{{width}}" viewBox="0 0 270 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="small-progress" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+      <g id="potprogbar" sketch:type="MSLayerGroup" transform="translate(-25.000000, -15.000000)">
+        <rect id="total" stroke="#979797" fill-opacity="0.199999988" fill="#D8D8D8" sketch:type="MSShapeGroup" x="25" y="15" width="270" height="13" rx="8"></rect>
+        <rect id="left" stroke="#979797" fill-opacity="0.3" fill="#FFA000" sketch:type="MSShapeGroup" x="25" y="15" width="{{left_width}}" height="13" rx="8"></rect>
+        <rect id="used" stroke="#979797" fill="#FFA000" sketch:type="MSShapeGroup" x="{{used_start}}" y="15" width="{{used_width}}" height="13" rx="8"></rect>
+        <rect id="frame" sketch:type="MSShapeGroup" x="0" y="0" width="314" height="43"></rect>
+      </g>
+    </g>
+  </svg>
+</template>

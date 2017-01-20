@@ -1,0 +1,4476 @@
+[
+  {
+    "category_id":10000000,
+    "meta":10,
+    "category":"Bank Fees",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":10001000,
+    "meta":10,
+    "category":"Bank Fees,Overdraft",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":10002000,
+    "meta":10,
+    "category":"Bank Fees,ATM",
+    "type":"special",
+    "subcell": "atm",
+    "cell":"bf"
+  },
+  {
+    "category_id":10003000,
+    "meta":10,
+    "category":"Bank Fees,Late Payment",
+    "type":"special",
+    "subcell": "late",
+    "cell":"bf"
+  },
+  {
+    "category_id":10004000,
+    "meta":10,
+    "category":"Bank Fees,Fraud Dispute",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":10005000,
+    "meta":10,
+    "category":"Bank Fees,Foreign Transaction",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":10006000,
+    "meta":10,
+    "category":"Bank Fees,Wire Transfer",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":10007000,
+    "meta":10,
+    "category":"Bank Fees,Insufficient Funds",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":10008000,
+    "meta":10,
+    "category":"Bank Fees,Cash Advance",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":10009000,
+    "meta":10,
+    "category":"Bank Fees,Excess Activity",
+    "type":"special",
+    "subcell": "",
+    "cell":"bf"
+  },
+  {
+    "category_id":11000000,
+    "meta":11,
+    "category":"Cash Advance",
+    "type":"special",
+    "subcell": "",
+    "cell":"x"
+  },
+  {
+    "category_id":12000000,
+    "meta":12,
+    "category":"Community",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":12001000,
+    "meta":12,
+    "category":"Community,Animal Shelter",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":12002000,
+    "meta":12,
+    "category":"Community,Assisted Living Services",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":12002001,
+    "meta":12,
+    "category":"Community,Assisted Living Services,Facilities and Nursing Homes",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":12002002,
+    "meta":12,
+    "category":"Community,Assisted Living Services,Caretakers",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":12003000,
+    "meta":12,
+    "category":"Community,Cemetery",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":12004000,
+    "meta":12,
+    "category":"Community,Courts",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":12005000,
+    "meta":12,
+    "category":"Community,Day Care and Preschools",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12006000,
+    "meta":12,
+    "category":"Community,Disabled Persons Services",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":12007000,
+    "meta":12,
+    "category":"Community,Drug and Alcohol Services",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":12008000,
+    "meta":12,
+    "category":"Community,Education",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008001,
+    "meta":12,
+    "category":"Community,Education,Vocational Schools",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008002,
+    "meta":12,
+    "category":"Community,Education,Tutoring and Educational Services",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008003,
+    "meta":12,
+    "category":"Community,Education,Primary and Secondary Schools",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008004,
+    "meta":12,
+    "category":"Community,Education,Fraternities and Sororities",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008005,
+    "meta":12,
+    "category":"Community,Education,Driving Schools",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008006,
+    "meta":12,
+    "category":"Community,Education,Dance Schools",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008007,
+    "meta":12,
+    "category":"Community,Education,Culinary Lessons and Schools",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008008,
+    "meta":12,
+    "category":"Community,Education,Computer Training",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008009,
+    "meta":12,
+    "category":"Community,Education,Colleges and Universities",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008010,
+    "meta":12,
+    "category":"Community,Education,Art School",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12008011,
+    "meta":12,
+    "category":"Community,Education,Adult Education",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":12009000,
+    "meta":12,
+    "category":"Community,Government Departments and Agencies",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12010000,
+    "meta":12,
+    "category":"Community,Government Lobbyists",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12011000,
+    "meta":12,
+    "category":"Community,Housing Assistance and Shelters",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":12012000,
+    "meta":12,
+    "category":"Community,Law Enforcement",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12012001,
+    "meta":12,
+    "category":"Community,Law Enforcement,Police Stations",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12012002,
+    "meta":12,
+    "category":"Community,Law Enforcement,Fire Stations",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12012003,
+    "meta":12,
+    "category":"Community,Law Enforcement,Correctional Institutions",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12013000,
+    "meta":12,
+    "category":"Community,Libraries",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12014000,
+    "meta":12,
+    "category":"Community,Military",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12015000,
+    "meta":12,
+    "category":"Community,Organizations and Associations",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12015001,
+    "meta":12,
+    "category":"Community,Organizations and Associations,Youth Organizations",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12015002,
+    "meta":12,
+    "category":"Community,Organizations and Associations,Environmental",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12015003,
+    "meta":12,
+    "category":"Community,Organizations and Associations,Charities and Non-Profits",
+    "type":"place",
+    "subcell": "ch",
+    "cell":"o"
+  },
+  {
+    "category_id":12016000,
+    "meta":12,
+    "category":"Community,Post Offices",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":12017000,
+    "meta":12,
+    "category":"Community,Public and Social Services",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12018000,
+    "meta":12,
+    "category":"Community,Religious",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12018001,
+    "meta":12,
+    "category":"Community,Religious,Temple",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12018002,
+    "meta":12,
+    "category":"Community,Religious,Synagogues",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12018003,
+    "meta":12,
+    "category":"Community,Religious,Mosques",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12018004,
+    "meta":12,
+    "category":"Community,Religious,Churches",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12019000,
+    "meta":12,
+    "category":"Community,Senior Citizen Services",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":12019001,
+    "meta":12,
+    "category":"Community,Senior Citizen Services,Retirement",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":13000000,
+    "meta":13,
+    "category":"Food and Drink",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13001000,
+    "meta":13,
+    "category":"Food and Drink,Bar",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13001001,
+    "meta":13,
+    "category":"Food and Drink,Bar,Wine Bar",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13001002,
+    "meta":13,
+    "category":"Food and Drink,Bar,Sports Bar",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13001003,
+    "meta":13,
+    "category":"Food and Drink,Bar,Hotel Lounge",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13002000,
+    "meta":13,
+    "category":"Food and Drink,Breweries",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13003000,
+    "meta":13,
+    "category":"Food and Drink,Internet Cafes",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13004000,
+    "meta":13,
+    "category":"Food and Drink,Nightlife",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13004001,
+    "meta":13,
+    "category":"Food and Drink,Nightlife,Strip Club",
+    "type":"place",
+    "subcell": "", "cell":"e"
+  },
+  {
+    "category_id":13004002,
+    "meta":13,
+    "category":"Food and Drink,Nightlife,Night Clubs",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13004003,
+    "meta":13,
+    "category":"Food and Drink,Nightlife,Karaoke",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13004004,
+    "meta":13,
+    "category":"Food and Drink,Nightlife,Jazz and Blues Cafe",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13004005,
+    "meta":13,
+    "category":"Food and Drink,Nightlife,Hookah Lounges",
+    "type":"place",
+    "subcell": "", "cell":"e"
+  },
+  {
+    "category_id":13004006,
+    "meta":13,
+    "category":"Food and Drink,Nightlife,Adult Entertainment",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005000,
+    "meta":13,
+    "category":"Food and Drink,Restaurants",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005001,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Winery",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005002,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Vegan and Vegetarian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005003,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Turkish",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005004,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Thai",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005005,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Swiss",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005006,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Sushi",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005007,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Steakhouses",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005008,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Spanish",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005009,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Seafood",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005010,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Scandinavian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005011,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Portuguese",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005012,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Pizza",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005013,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Moroccan",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005014,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Middle Eastern",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005015,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Mexican",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005016,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Mediterranean",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005017,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Latin American",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005018,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Korean",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005019,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Juice Bar",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005020,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Japanese",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005021,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Italian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005022,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Indonesian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005023,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Indian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005024,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Ice Cream",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005025,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Greek",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005026,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,German",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005027,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Gastropub",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005028,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,French",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005029,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Food Truck",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005030,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Fish and Chips",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005031,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Filipino",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005032,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Fast Food",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005033,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Falafel",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005034,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Ethiopian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005035,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Eastern European",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005036,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Donuts",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005037,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Distillery",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005038,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Diners",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005039,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Dessert",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005040,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Delis",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005041,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Cupcake Shop",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005042,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Cuban",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005043,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Coffee Shop",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005044,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Chinese",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005045,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Caribbean",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005046,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Cajun",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005047,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Cafe",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005048,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Burrito",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005049,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Burgers",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005050,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Breakfast Spot",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005051,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Brazilian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005052,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Barbecue",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005053,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Bakery",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005054,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Bagel Shop",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005055,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Australian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005056,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Asian",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005057,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,American",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005058,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,African",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":13005059,
+    "meta":13,
+    "category":"Food and Drink,Restaurants,Afghan",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":14000000,
+    "meta":14,
+    "category":"Healthcare",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001000,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001001,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Psychologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001002,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Pregnancy and Sexual Health",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001003,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,celliatrists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001004,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Physical Therapy",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001005,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Optometrists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001006,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Nutritionists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001007,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Nurses",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001008,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Mental Health",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001009,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Medical Supplies and Labs",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001010,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Hospitals, Clinics and Medical Centers",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001011,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Emergency Services",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001012,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Dentists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001013,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Counseling and Therapy",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001014,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Chiropractors",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001015,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Blood Banks and Centers",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001016,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Alternative Medicine",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14001017,
+    "meta":14,
+    "category":"Healthcare,Healthcare Services,Acupuncture",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002000,
+    "meta":14,
+    "category":"Healthcare,Physicians",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002001,
+    "meta":14,
+    "category":"Healthcare,Physicians,Urologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002002,
+    "meta":14,
+    "category":"Healthcare,Physicians,Respiratory",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002003,
+    "meta":14,
+    "category":"Healthcare,Physicians,Radiologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002004,
+    "meta":14,
+    "category":"Healthcare,Physicians,Psychiatrists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002005,
+    "meta":14,
+    "category":"Healthcare,Physicians,Plastic Surgeons",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002006,
+    "meta":14,
+    "category":"Healthcare,Physicians,Pediatricians",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002007,
+    "meta":14,
+    "category":"Healthcare,Physicians,Pathologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002008,
+    "meta":14,
+    "category":"Healthcare,Physicians,Orthopedic Surgeons",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002009,
+    "meta":14,
+    "category":"Healthcare,Physicians,Ophthalmologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002010,
+    "meta":14,
+    "category":"Healthcare,Physicians,Oncologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002011,
+    "meta":14,
+    "category":"Healthcare,Physicians,Obstetricians and Gynecologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002012,
+    "meta":14,
+    "category":"Healthcare,Physicians,Neurologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002013,
+    "meta":14,
+    "category":"Healthcare,Physicians,Internal Medicine",
+    "type":"place",
+    "subcell": "", "cell":"med"
+  },
+  {
+    "category_id":14002014,
+    "meta":14,
+    "category":"Healthcare,Physicians,General Surgery",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002015,
+    "meta":14,
+    "category":"Healthcare,Physicians,Gastroenterologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002016,
+    "meta":14,
+    "category":"Healthcare,Physicians,Family Medicine",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002017,
+    "meta":14,
+    "category":"Healthcare,Physicians,Ear, Nose and Throat",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002018,
+    "meta":14,
+    "category":"Healthcare,Physicians,Dermatologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002019,
+    "meta":14,
+    "category":"Healthcare,Physicians,Cardiologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":14002020,
+    "meta":14,
+    "category":"Healthcare,Physicians,Anesthesiologists",
+    "type":"place",
+    "subcell": "med",
+    "cell":"o"
+  },
+  {
+    "category_id":15000000,
+    "meta":15,
+    "category":"Interest",
+    "type":"special",
+    "subcell": "inv",
+    "cell":"i"
+  },
+  {
+    "category_id":15001000,
+    "meta":15,
+    "category":"Interest,Interest Earned",
+    "type":"special",
+    "subcell": "inv",
+    "cell":"i"
+  },
+  {
+    "category_id":15002000,
+    "meta":15,
+    "category":"Interest,Interest Charged",
+    "type":"special",
+    "subcell": "int",
+    "cell":"fc"
+  },
+  {
+    "category_id":16000000,
+    "meta":16,
+    "category":"Payment",
+    "type":"special",
+    "subcell": "", "cell":"pay"
+  },
+  {
+    "category_id":16001000,
+    "meta":16,
+    "category":"Payment,Credit Card",
+    "type":"special",
+    "subcell": "", "cell":"pay"
+  },
+  {
+    "category_id":16002000,
+    "meta":16,
+    "category":"Payment,Rent",
+    "type":"special",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":16003000,
+    "meta":16,
+    "category":"Payment,Loan",
+    "type":"special",
+    "subcell": "loan",
+    "cell":"fc"
+  },
+  {
+    "category_id":17000000,
+    "meta":17,
+    "category":"Recreation",
+    "type":"place",
+    "subcell": "", "cell": "r"
+  },
+  {
+    "category_id":17001000,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001001,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Theatrical Productions",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001002,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Symphony and Opera",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001003,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Sports Venues",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001004,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Social Clubs",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001005,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Psychics and Astrologers",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001006,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Party Centers",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001007,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Music and Show Venues",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001008,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Museums",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001009,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Movie Theatres",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001010,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Fairgrounds and Rodeos",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001011,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Entertainment",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001012,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Dance Halls and Saloons",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001013,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Circuses and Carnivals",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001014,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Casinos and Gaming",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001015,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Bowling",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001016,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Billiards and Pool",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001017,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Art Dealers and Galleries",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001018,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Arcades and Amusement Parks",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17001019,
+    "meta":17,
+    "category":"Recreation,Arts and Entertainment,Aquarium",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":17002000,
+    "meta":17,
+    "category":"Recreation,Athletic Fields",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17003000,
+    "meta":17,
+    "category":"Recreation,Baseball",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17004000,
+    "meta":17,
+    "category":"Recreation,Basketball",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17005000,
+    "meta":17,
+    "category":"Recreation,Batting Cages",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17006000,
+    "meta":17,
+    "category":"Recreation,Boating",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17007000,
+    "meta":17,
+    "category":"Recreation,Campgrounds and RV Parks",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17008000,
+    "meta":17,
+    "category":"Recreation,Canoes and Kayaks",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17009000,
+    "meta":17,
+    "category":"Recreation,Combat Sports",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17010000,
+    "meta":17,
+    "category":"Recreation,Cycling",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17011000,
+    "meta":17,
+    "category":"Recreation,Dance",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17012000,
+    "meta":17,
+    "category":"Recreation,Equestrian",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17013000,
+    "meta":17,
+    "category":"Recreation,Football",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17014000,
+    "meta":17,
+    "category":"Recreation,Go Carts",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17015000,
+    "meta":17,
+    "category":"Recreation,Golf",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17016000,
+    "meta":17,
+    "category":"Recreation,Gun Ranges",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17017000,
+    "meta":17,
+    "category":"Recreation,Gymnastics",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17018000,
+    "meta":17,
+    "category":"Recreation,Gyms and Fitness Centers",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17019000,
+    "meta":17,
+    "category":"Recreation,Hiking",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17020000,
+    "meta":17,
+    "category":"Recreation,Hockey",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":17021000,
+    "meta":17,
+    "category":"Recreation,Hot Air Balloons",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17022000,
+    "meta":17,
+    "category":"Recreation,Hunting and Fishing",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17023000,
+    "meta":17,
+    "category":"Recreation,Landmarks",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17023001,
+    "meta":17,
+    "category":"Recreation,Landmarks,Monuments and Memorials",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17023002,
+    "meta":17,
+    "category":"Recreation,Landmarks,Historic Sites",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17023003,
+    "meta":17,
+    "category":"Recreation,Landmarks,Gardens",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17023004,
+    "meta":17,
+    "category":"Recreation,Landmarks,Buildings and Structures",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17024000,
+    "meta":17,
+    "category":"Recreation,Miniature Golf",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17025000,
+    "meta":17,
+    "category":"Recreation,Outdoors",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17025001,
+    "meta":17,
+    "category":"Recreation,Outdoors,Rivers",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17025002,
+    "meta":17,
+    "category":"Recreation,Outdoors,Mountains",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17025003,
+    "meta":17,
+    "category":"Recreation,Outdoors,Lakes",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17025004,
+    "meta":17,
+    "category":"Recreation,Outdoors,Forests",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17025005,
+    "meta":17,
+    "category":"Recreation,Outdoors,Beaches",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17026000,
+    "meta":17,
+    "category":"Recreation,Paintball",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17027000,
+    "meta":17,
+    "category":"Recreation,Parks",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17027001,
+    "meta":17,
+    "category":"Recreation,Parks,Playgrounds",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17027002,
+    "meta":17,
+    "category":"Recreation,Parks,Picnic Areas",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17027003,
+    "meta":17,
+    "category":"Recreation,Parks,Natural Parks",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17028000,
+    "meta":17,
+    "category":"Recreation,Personal Trainers",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17029000,
+    "meta":17,
+    "category":"Recreation,Race Tracks",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17030000,
+    "meta":17,
+    "category":"Recreation,Racquet Sports",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17031000,
+    "meta":17,
+    "category":"Recreation,Racquetball",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17032000,
+    "meta":17,
+    "category":"Recreation,Rafting",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17033000,
+    "meta":17,
+    "category":"Recreation,Recreation Centers",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17034000,
+    "meta":17,
+    "category":"Recreation,Rock Climbing",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17035000,
+    "meta":17,
+    "category":"Recreation,Running",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17036000,
+    "meta":17,
+    "category":"Recreation,Scuba Diving",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17037000,
+    "meta":17,
+    "category":"Recreation,Skating",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17038000,
+    "meta":17,
+    "category":"Recreation,Skydiving",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17039000,
+    "meta":17,
+    "category":"Recreation,Snow Sports",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17040000,
+    "meta":17,
+    "category":"Recreation,Soccer",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17041000,
+    "meta":17,
+    "category":"Recreation,Sports and Recreation Camps",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17042000,
+    "meta":17,
+    "category":"Recreation,Sports Clubs",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17043000,
+    "meta":17,
+    "category":"Recreation,Stadiums and Arenas",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17044000,
+    "meta":17,
+    "category":"Recreation,Swimming",
+    "type":"place",
+    "subcell": "",
+    "cell":"r"
+  },
+  {
+    "category_id":17045000,
+    "meta":17,
+    "category":"Recreation,Tennis",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":17046000,
+    "meta":17,
+    "category":"Recreation,Water Sports",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":17047000,
+    "meta":17,
+    "category":"Recreation,Yoga and Pilates",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":17048000,
+    "meta":17,
+    "category":"Recreation,Zoo",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18000000,
+    "meta":18,
+    "category":"Service",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001000,
+    "meta":18,
+    "category":"Service,Advertising and Marketing",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001001,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Writing, Copywriting and Technical Writing",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001002,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Search Engine Marketing and Optimization",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001003,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Public Relations",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001004,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Promotional Items",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001005,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Print, TV, Radio and Outdoor Advertising",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001006,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Online Advertising",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":18001007,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Market Research and Consulting",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001008,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Direct Mail and Email Marketing Services",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001009,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Creative Services",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18001010,
+    "meta":18,
+    "category":"Service,Advertising and Marketing,Advertising Agencies and Media Buyers",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18003000,
+    "meta":18,
+    "category":"Service,Art Restoration",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18004000,
+    "meta":18,
+    "category":"Service,Audiovisual",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18005000,
+    "meta":18,
+    "category":"Service,Automation and Control Systems",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18006000,
+    "meta":18,
+    "category":"Service,Automotive",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006001,
+    "meta":18,
+    "category":"Service,Automotive,Towing",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006002,
+    "meta":18,
+    "category":"Service,Automotive,Motorcycle, Moped and Scooter Repair",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006003,
+    "meta":18,
+    "category":"Service,Automotive,Maintenance and Repair",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006004,
+    "meta":18,
+    "category":"Service,Automotive,Car Wash and Detail",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006005,
+    "meta":18,
+    "category":"Service,Automotive,Car Appraisers",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006006,
+    "meta":18,
+    "category":"Service,Automotive,Auto Transmission",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006007,
+    "meta":18,
+    "category":"Service,Automotive,Auto Tires",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006008,
+    "meta":18,
+    "category":"Service,Automotive,Auto Smog Check",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18006009,
+    "meta":18,
+    "category":"Service,Automotive,Auto Oil and Lube",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18007000,
+    "meta":18,
+    "category":"Service,Business and Strategy Consulting",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18008000,
+    "meta":18,
+    "category":"Service,Business Services",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18008001,
+    "meta":18,
+    "category":"Service,Business Services,Printing and Publishing",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18009000,
+    "meta":18,
+    "category":"Service,Cable",
+    "type":"special",
+    "subcell": "", "cell":"ds"
+  },
+  {
+    "category_id":18010000,
+    "meta":18,
+    "category":"Service,Chemicals and Gasses",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18011000,
+    "meta":18,
+    "category":"Service,Cleaning",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o",
+    "ask": true
+  },
+  {
+    "category_id":18012000,
+    "meta":18,
+    "category":"Service,Computers",
+    "type":"place",
+    "subcell": "",
+    "cell":"ds"
+  },
+  {
+    "category_id":18012001,
+    "meta":18,
+    "category":"Service,Computers,Maintenance and Repair",
+    "type":"place",
+    "subcell": "",
+    "cell":"ds"
+  },
+  {
+    "category_id":18012002,
+    "meta":18,
+    "category":"Service,Computers,Software Development",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18013000,
+    "meta":18,
+    "category":"Service,Construction",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18013001,
+    "meta":18,
+    "category":"Service,Construction,Specialty",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18013002,
+    "meta":18,
+    "category":"Service,Construction,Roofers",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18013003,
+    "meta":18,
+    "category":"Service,Construction,Painting",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18013004,
+    "meta":18,
+    "category":"Service,Construction,Masonry",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18013005,
+    "meta":18,
+    "category":"Service,Construction,Infrastructure",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18013006,
+    "meta":18,
+    "category":"Service,Construction,Heating, Ventilating and Air Conditioning",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18013007,
+    "meta":18,
+    "category":"Service,Construction,Electricians",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18013008,
+    "meta":18,
+    "category":"Service,Construction,Contractors",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18013009,
+    "meta":18,
+    "category":"Service,Construction,Carpet and Flooring",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18013010,
+    "meta":18,
+    "category":"Service,Construction,Carpenters",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18014000,
+    "meta":18,
+    "category":"Service,Credit Counseling and Bankruptcy Services",
+    "type":"place",
+    "subcell": "", "cell":"fc"
+  },
+  {
+    "category_id":18015000,
+    "meta":18,
+    "category":"Service,Dating and Escort",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":18016000,
+    "meta":18,
+    "category":"Service,Employment Agencies",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18017000,
+    "meta":18,
+    "category":"Service,Engineering",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18018000,
+    "meta":18,
+    "category":"Service,Entertainment",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":18018001,
+    "meta":18,
+    "category":"Service,Entertainment,Media",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":18019000,
+    "meta":18,
+    "category":"Service,Events and Event Planning",
+    "type":"place",
+    "subcell": "",
+    "cell":"e"
+  },
+  {
+    "category_id":18020000,
+    "meta":18,
+    "category":"Service,Financial",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":18020001,
+    "meta":18,
+    "category":"Service,Financial,Taxes",
+    "type":"place",
+    "subcell": "",
+    "cell":""
+  },
+  {
+    "category_id":18020002,
+    "meta":18,
+    "category":"Service,Financial,Student Aid and Grants",
+    "type":"place",
+    "subcell": "ed",
+    "cell":"o"
+  },
+  {
+    "category_id":18020003,
+    "meta":18,
+    "category":"Service,Financial,Stock Brokers",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18020004,
+    "meta":18,
+    "category":"Service,Financial,Loans and Mortgages",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18020005,
+    "meta":18,
+    "category":"Service,Financial,Holding and Investment Offices",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18020006,
+    "meta":18,
+    "category":"Service,Financial,Fund Raising",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18020007,
+    "meta":18,
+    "category":"Service,Financial,Financial Planning and Investments",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18020008,
+    "meta":18,
+    "category":"Service,Financial,Credit Reporting",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18020009,
+    "meta":18,
+    "category":"Service,Financial,Collections",
+    "type":"place",
+    "subcell": "",
+    "cell":"fc"
+  },
+  {
+    "category_id":18020010,
+    "meta":18,
+    "category":"Service,Financial,Check Cashing",
+    "type":"place",
+    "subcell": "", "cell":"fc"
+  },
+  {
+    "category_id":18020011,
+    "meta":18,
+    "category":"Service,Financial,Business Brokers and Franchises",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18020012,
+    "meta":18,
+    "category":"Service,Financial,Banking and Finance",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18020013,
+    "meta":18,
+    "category":"Service,Financial,ATMs",
+    "type":"place",
+    "subcell": "", "cell":"bf"
+  },
+  {
+    "category_id":18020014,
+    "meta":18,
+    "category":"Service,Financial,Accounting and Bookkeeping",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18021000,
+    "meta":18,
+    "category":"Service,Food and Beverage",
+    "type":"place",
+    "subcell": "", "cell":"eo"
+  },
+  {
+    "category_id":18021001,
+    "meta":18,
+    "category":"Service,Food and Beverage,Distribution",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18021002,
+    "meta":18,
+    "category":"Service,Food and Beverage,Catering",
+    "type":"place",
+    "subcell": "", "cell":"e"
+  },
+  {
+    "category_id":18022000,
+    "meta":18,
+    "category":"Service,Funeral Services",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18023000,
+    "meta":18,
+    "category":"Service,Geological",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18024000,
+    "meta":18,
+    "category":"Service,Home Improvement",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024001,
+    "meta":18,
+    "category":"Service,Home Improvement,Upholstery",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024002,
+    "meta":18,
+    "category":"Service,Home Improvement,Tree Service",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024003,
+    "meta":18,
+    "category":"Service,Home Improvement,Swimming Pool Maintenance and Services",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18024004,
+    "meta":18,
+    "category":"Service,Home Improvement,Storage",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024005,
+    "meta":18,
+    "category":"Service,Home Improvement,Roofers",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024006,
+    "meta":18,
+    "category":"Service,Home Improvement,Pools and Spas",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18024007,
+    "meta":18,
+    "category":"Service,Home Improvement,Plumbing",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024008,
+    "meta":18,
+    "category":"Service,Home Improvement,Pest Control",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024009,
+    "meta":18,
+    "category":"Service,Home Improvement,Painting",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024010,
+    "meta":18,
+    "category":"Service,Home Improvement,Movers",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024011,
+    "meta":18,
+    "category":"Service,Home Improvement,Mobile Homes",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024012,
+    "meta":18,
+    "category":"Service,Home Improvement,Lighting Fixtures",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024013,
+    "meta":18,
+    "category":"Service,Home Improvement,Landscaping and Gardeners",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024014,
+    "meta":18,
+    "category":"Service,Home Improvement,Kitchens",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024015,
+    "meta":18,
+    "category":"Service,Home Improvement,Interior Design",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024016,
+    "meta":18,
+    "category":"Service,Home Improvement,Housewares",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024017,
+    "meta":18,
+    "category":"Service,Home Improvement,Home Inspection Services",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024018,
+    "meta":18,
+    "category":"Service,Home Improvement,Home Appliances",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024019,
+    "meta":18,
+    "category":"Service,Home Improvement,Heating, Ventilation and Air Conditioning",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024020,
+    "meta":18,
+    "category":"Service,Home Improvement,Hardware and Services",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024021,
+    "meta":18,
+    "category":"Service,Home Improvement,Fences, Fireplaces and Garage Doors",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024022,
+    "meta":18,
+    "category":"Service,Home Improvement,Electricians",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024023,
+    "meta":18,
+    "category":"Service,Home Improvement,Doors and Windows",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024024,
+    "meta":18,
+    "category":"Service,Home Improvement,Contractors",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024025,
+    "meta":18,
+    "category":"Service,Home Improvement,Carpet and Flooring",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024026,
+    "meta":18,
+    "category":"Service,Home Improvement,Carpenters",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18024027,
+    "meta":18,
+    "category":"Service,Home Improvement,Architects",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18025000,
+    "meta":18,
+    "category":"Service,Household",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18026000,
+    "meta":18,
+    "category":"Service,Human Resources",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18027000,
+    "meta":18,
+    "category":"Service,Immigration",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18028000,
+    "meta":18,
+    "category":"Service,Import and Export",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18029000,
+    "meta":18,
+    "category":"Service,Industrial Machinery and Vehicles",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18030000,
+    "meta":18,
+    "category":"Service,Insurance",
+    "type":"special",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18031000,
+    "meta":18,
+    "category":"Service,Internet Services",
+    "type":"digital",
+    "subcell": "", "cell":"ds"
+  },
+  {
+    "category_id":18032000,
+    "meta":18,
+    "category":"Service,Leather",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18033000,
+    "meta":18,
+    "category":"Service,Legal",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18034000,
+    "meta":18,
+    "category":"Service,Logging and Sawmills",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18035000,
+    "meta":18,
+    "category":"Service,Machine Shops",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18036000,
+    "meta":18,
+    "category":"Service,Management",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037000,
+    "meta":18,
+    "category":"Service,Manufacturing",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037001,
+    "meta":18,
+    "category":"Service,Manufacturing,Apparel and Fabric Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037002,
+    "meta":18,
+    "category":"Service,Manufacturing,Chemicals and Gasses",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037003,
+    "meta":18,
+    "category":"Service,Manufacturing,Computers and Office Machines",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037004,
+    "meta":18,
+    "category":"Service,Manufacturing,Electrical Equipment and Components",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037005,
+    "meta":18,
+    "category":"Service,Manufacturing,Food and Beverage",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037006,
+    "meta":18,
+    "category":"Service,Manufacturing,Furniture and Fixtures",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037007,
+    "meta":18,
+    "category":"Service,Manufacturing,Glass Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037008,
+    "meta":18,
+    "category":"Service,Manufacturing,Industrial Machinery and Equipment",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037009,
+    "meta":18,
+    "category":"Service,Manufacturing,Leather Goods",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037010,
+    "meta":18,
+    "category":"Service,Manufacturing,Metal Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037011,
+    "meta":18,
+    "category":"Service,Manufacturing,Nonmetallic Mineral Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037012,
+    "meta":18,
+    "category":"Service,Manufacturing,Paper Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037013,
+    "meta":18,
+    "category":"Service,Manufacturing,Petroleum",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037014,
+    "meta":18,
+    "category":"Service,Manufacturing,Plastic Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037015,
+    "meta":18,
+    "category":"Service,Manufacturing,Rubber Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037016,
+    "meta":18,
+    "category":"Service,Manufacturing,Service Instruments",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037017,
+    "meta":18,
+    "category":"Service,Manufacturing,Textiles",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037018,
+    "meta":18,
+    "category":"Service,Manufacturing,Tobacco",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037019,
+    "meta":18,
+    "category":"Service,Manufacturing,Transportation Equipment",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18037020,
+    "meta":18,
+    "category":"Service,Manufacturing,Wood Products",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18038000,
+    "meta":18,
+    "category":"Service,Media Production",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18039000,
+    "meta":18,
+    "category":"Service,Metals",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18040000,
+    "meta":18,
+    "category":"Service,Mining",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18040001,
+    "meta":18,
+    "category":"Service,Mining,Coal",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18040002,
+    "meta":18,
+    "category":"Service,Mining,Metal",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18040003,
+    "meta":18,
+    "category":"Service,Mining,Non-Metallic Minerals",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18041000,
+    "meta":18,
+    "category":"Service,News Reporting",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18042000,
+    "meta":18,
+    "category":"Service,Oil and Gas",
+    "type":"place",
+    "subcell": "", "cell":"tr"
+  },
+  {
+    "category_id":18043000,
+    "meta":18,
+    "category":"Service,Packaging",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18044000,
+    "meta":18,
+    "category":"Service,Paper",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18045000,
+    "meta":18,
+    "category":"Service,Personal Care",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045001,
+    "meta":18,
+    "category":"Service,Personal Care,Tattooing",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045002,
+    "meta":18,
+    "category":"Service,Personal Care,Tanning Salons",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045003,
+    "meta":18,
+    "category":"Service,Personal Care,Spas",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045004,
+    "meta":18,
+    "category":"Service,Personal Care,Skin Care",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045005,
+    "meta":18,
+    "category":"Service,Personal Care,Piercing",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045006,
+    "meta":18,
+    "category":"Service,Personal Care,Massage Clinics and Therapists",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045007,
+    "meta":18,
+    "category":"Service,Personal Care,Manicures and Pedicures",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045008,
+    "meta":18,
+    "category":"Service,Personal Care,Laundry and Garment Services",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045009,
+    "meta":18,
+    "category":"Service,Personal Care,Hair Salons and Barbers",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18045010,
+    "meta":18,
+    "category":"Service,Personal Care,Hair Removal",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":18046000,
+    "meta":18,
+    "category":"Service,Petroleum",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18047000,
+    "meta":18,
+    "category":"Service,Photography",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":18048000,
+    "meta":18,
+    "category":"Service,Plastics",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18049000,
+    "meta":18,
+    "category":"Service,Rail",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18050000,
+    "meta":18,
+    "category":"Service,Real Estate",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050001,
+    "meta":18,
+    "category":"Service,Real Estate,Real Estate Development and Title Companies",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050002,
+    "meta":18,
+    "category":"Service,Real Estate,Real Estate Appraiser",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050003,
+    "meta":18,
+    "category":"Service,Real Estate,Real Estate Agents",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050004,
+    "meta":18,
+    "category":"Service,Real Estate,Property Management",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050005,
+    "meta":18,
+    "category":"Service,Real Estate,Corporate Housing",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050006,
+    "meta":18,
+    "category":"Service,Real Estate,Commercial Real Estate",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050007,
+    "meta":18,
+    "category":"Service,Real Estate,Building and Land Surveyors",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050008,
+    "meta":18,
+    "category":"Service,Real Estate,Boarding Houses",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050009,
+    "meta":18,
+    "category":"Service,Real Estate,Apartments, Condos and Houses",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18050010,
+    "meta":18,
+    "category":"Service,Real Estate,Rent",
+    "type":"special",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18051000,
+    "meta":18,
+    "category":"Service,Refrigeration and Ice",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18052000,
+    "meta":18,
+    "category":"Service,Renewable Energy",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18053000,
+    "meta":18,
+    "category":"Service,Repair Services",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":18054000,
+    "meta":18,
+    "category":"Service,Research",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18055000,
+    "meta":18,
+    "category":"Service,Rubber",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18056000,
+    "meta":18,
+    "category":"Service,Scientific",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18057000,
+    "meta":18,
+    "category":"Service,Security and Safety",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18058000,
+    "meta":18,
+    "category":"Service,Shipping and Freight",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18059000,
+    "meta":18,
+    "category":"Service,Software Development",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18060000,
+    "meta":18,
+    "category":"Service,Storage",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18061000,
+    "meta":18,
+    "category":"Service,Subscription",
+    "type":"place",
+    "subcell": "", "cell":"ds",
+    "ask": true
+  },
+  {
+    "category_id":18062000,
+    "meta":18,
+    "category":"Service,Tailors",
+    "type":"place",
+    "subcell": "cl",
+    "cell":"s"
+  },
+  {
+    "category_id":18063000,
+    "meta":18,
+    "category":"Service,Telecommunication Services",
+    "type":"place",
+    "subcell": "", "cell":"ds"
+  },
+  {
+    "category_id":18064000,
+    "meta":18,
+    "category":"Service,Textiles",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18065000,
+    "meta":18,
+    "category":"Service,Tourist Information and Services",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":18066000,
+    "meta":18,
+    "category":"Service,Transportation",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":18067000,
+    "meta":18,
+    "category":"Service,Travel Agents and Tour Operators",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":18068000,
+    "meta":18,
+    "category":"Service,Utilities",
+    "type":"special",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18068001,
+    "meta":18,
+    "category":"Service,Utilities,Water",
+    "type":"special",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18068002,
+    "meta":18,
+    "category":"Service,Utilities,Sanitary and Waste Management",
+    "type":"special",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18068003,
+    "meta":18,
+    "category":"Service,Utilities,Heating, Ventilating, and Air Conditioning",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18068004,
+    "meta":18,
+    "category":"Service,Utilities,Gas",
+    "type":"special",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18068005,
+    "meta":18,
+    "category":"Service,Utilities,Electric",
+    "type":"special",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18069000,
+    "meta":18,
+    "category":"Service,Veterinarians",
+    "type":"place",
+    "subcell": "",
+    "cell":"s"
+  },
+  {
+    "category_id":18070000,
+    "meta":18,
+    "category":"Service,Water and Waste Management",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18071000,
+    "meta":18,
+    "category":"Service,Web Design and Development",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18072000,
+    "meta":18,
+    "category":"Service,Welding",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":18073000,
+    "meta":18,
+    "category":"Service,Agriculture and Forestry",
+    "type":"place",
+    "subcell": "h",
+    "cell":"o"
+  },
+  {
+    "category_id":18073001,
+    "meta":18,
+    "category":"Service,Agriculture and Forestry,Crop Production",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18073002,
+    "meta":18,
+    "category":"Service,Agriculture and Forestry,Forestry",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18073003,
+    "meta":18,
+    "category":"Service,Agriculture and Forestry,Livestock and Animals",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18073004,
+    "meta":18,
+    "category":"Service,Agriculture and Forestry,Services",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":18074000,
+    "meta":18,
+    "category":"Service,Art and Graphic Design",
+    "type":"place",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":19000000,
+    "meta":19,
+    "category":"Shops",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19001000,
+    "meta":19,
+    "category":"Shops,Adult",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19002000,
+    "meta":19,
+    "category":"Shops,Antiques",
+    "type":"place",
+    "subcell": "hf",
+    "cell":"s"
+  },
+  {
+    "category_id":19003000,
+    "meta":19,
+    "category":"Shops,Arts and Crafts",
+    "type":"place",
+    "subcell": "",
+    "cell":"s"
+  },
+  {
+    "category_id":19004000,
+    "meta":19,
+    "category":"Shops,Auctions",
+    "type":"place",
+    "subcell": "hf",
+    "cell":"s"
+  },
+  {
+    "category_id":19005000,
+    "meta":19,
+    "category":"Shops,Automotive",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":19005001,
+    "meta":19,
+    "category":"Shops,Automotive,Used Car Dealers",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":19005002,
+    "meta":19,
+    "category":"Shops,Automotive,Salvage Yards",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19005003,
+    "meta":19,
+    "category":"Shops,Automotive,RVs and Motor Homes",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":19005004,
+    "meta":19,
+    "category":"Shops,Automotive,Motorcycles, Mopeds and Scooters",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":19005005,
+    "meta":19,
+    "category":"Shops,Automotive,Classic and Antique Car",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":19005006,
+    "meta":19,
+    "category":"Shops,Automotive,Car Parts and Accessories",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":19005007,
+    "meta":19,
+    "category":"Shops,Automotive,Car Dealers and Leasing",
+    "type":"place",
+    "subcell": "tr",
+    "cell":"o"
+  },
+  {
+    "category_id":19006000,
+    "meta":19,
+    "category":"Shops,Beauty Products",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19007000,
+    "meta":19,
+    "category":"Shops,Bicycles",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":19008000,
+    "meta":19,
+    "category":"Shops,Boat Dealers",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":19009000,
+    "meta":19,
+    "category":"Shops,Bookstores",
+    "type":"place",
+    "subcell": "", "cell":"r"
+  },
+  {
+    "category_id":19010000,
+    "meta":19,
+    "category":"Shops,Cards and Stationery",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19011000,
+    "meta":19,
+    "category":"Shops,Children",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19012000,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012001,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Women's Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012002,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Swimwear",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012003,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Shoe Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012004,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Men's Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012005,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Lingerie Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012006,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Kids' Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012007,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Boutique",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19012008,
+    "meta":19,
+    "category":"Shops,Clothing and Accessories,Accessories Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19013000,
+    "meta":19,
+    "category":"Shops,Computers and Electronics",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19013001,
+    "meta":19,
+    "category":"Shops,Computers and Electronics,Video Games",
+    "type":"place",
+    "subcell": "", "cell":"e"
+  },
+  {
+    "category_id":19013002,
+    "meta":19,
+    "category":"Shops,Computers and Electronics,Mobile Phones",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19013003,
+    "meta":19,
+    "category":"Shops,Computers and Electronics,Cameras",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19014000,
+    "meta":19,
+    "category":"Shops,Construction Supplies",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19015000,
+    "meta":19,
+    "category":"Shops,Convenience Stores",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19016000,
+    "meta":19,
+    "category":"Shops,Costumes",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19017000,
+    "meta":19,
+    "category":"Shops,Dance and Music",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19018000,
+    "meta":19,
+    "category":"Shops,Department Stores",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19019000,
+    "meta":19,
+    "category":"Shops,Digital Purchase",
+    "type":"digital",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19020000,
+    "meta":19,
+    "category":"Shops,Discount Stores",
+    "type":"place",
+    "subcell": "st", "cell":"s"
+  },
+  {
+    "category_id":19021000,
+    "meta":19,
+    "category":"Shops,Electrical Equipment",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19022000,
+    "meta":19,
+    "category":"Shops,Equipment Rental",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19023000,
+    "meta":19,
+    "category":"Shops,Flea Markets",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19024000,
+    "meta":19,
+    "category":"Shops,Florists",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19025000,
+    "meta":19,
+    "category":"Shops,Food and Beverage Store",
+    "type":"place",
+    "subcell": "fd", "cell":"s"
+  },
+  {
+    "category_id":19025001,
+    "meta":19,
+    "category":"Shops,Food and Beverage Store,Specialty",
+    "type":"place",
+    "subcell": "fd", "cell":"s"
+  },
+  {
+    "category_id":19025002,
+    "meta":19,
+    "category":"Shops,Food and Beverage Store,Health Food",
+    "type":"place",
+    "subcell": "fd", "cell":"s"
+  },
+  {
+    "category_id":19025003,
+    "meta":19,
+    "category":"Shops,Food and Beverage Store,Farmers Markets",
+    "type":"place",
+    "subcell": "fd", "cell":"s"
+  },
+  {
+    "category_id":19025004,
+    "meta":19,
+    "category":"Shops,Food and Beverage Store,Beer, Wine and Spirits",
+    "type":"place",
+    "subcell": "fd", "cell":"s"
+  },
+  {
+    "category_id":19026000,
+    "meta":19,
+    "category":"Shops,Fuel Dealer",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19027000,
+    "meta":19,
+    "category":"Shops,Furniture and Home Decor",
+    "type":"place",
+    "subcell": "hf", "cell":"s"
+  },
+  {
+    "category_id":19028000,
+    "meta":19,
+    "category":"Shops,Gift and Novelty",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19029000,
+    "meta":19,
+    "category":"Shops,Glasses and Optometrist",
+    "type":"place",
+    "subcell": "med", "cell":"o"
+  },
+  {
+    "category_id":19030000,
+    "meta":19,
+    "category":"Shops,Hardware Store",
+    "type":"place",
+    "subcell": "hf", "cell":"s"
+  },
+  {
+    "category_id":19031000,
+    "meta":19,
+    "category":"Shops,Hobby and Collectibles",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19032000,
+    "meta":19,
+    "category":"Shops,Industrial Supplies",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19033000,
+    "meta":19,
+    "category":"Shops,Jewelry and Watches",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19034000,
+    "meta":19,
+    "category":"Shops,Luggage",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19035000,
+    "meta":19,
+    "category":"Shops,Marine Supplies",
+    "type":"place",
+    "subcell": "ho", "cell":"s"
+  },
+  {
+    "category_id":19036000,
+    "meta":19,
+    "category":"Shops,Music, Video and DVD",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19037000,
+    "meta":19,
+    "category":"Shops,Musical Instruments",
+    "type":"place",
+    "subcell": "ho", "cell":"s"
+  },
+  {
+    "category_id":19038000,
+    "meta":19,
+    "category":"Shops,Newsstands",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19039000,
+    "meta":19,
+    "category":"Shops,Office Supplies",
+    "type":"place",
+    "subcell": "st", "cell":"s"
+  },
+  {
+    "category_id":19040000,
+    "meta":19,
+    "category":"Shops,Outlet",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19040001,
+    "meta":19,
+    "category":"Shops,Outlet,Women's Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19040002,
+    "meta":19,
+    "category":"Shops,Outlet,Swimwear",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19040003,
+    "meta":19,
+    "category":"Shops,Outlet,Shoe Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19040004,
+    "meta":19,
+    "category":"Shops,Outlet,Men's Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19040005,
+    "meta":19,
+    "category":"Shops,Outlet,Lingerie Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19040006,
+    "meta":19,
+    "category":"Shops,Outlet,Kids' Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19040007,
+    "meta":19,
+    "category":"Shops,Outlet,Boutique",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19040008,
+    "meta":19,
+    "category":"Shops,Outlet,Accessories Store",
+    "type":"place",
+    "subcell": "cl", "cell":"s"
+  },
+  {
+    "category_id":19041000,
+    "meta":19,
+    "category":"Shops,Pawn Shops",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19042000,
+    "meta":19,
+    "category":"Shops,Pets",
+    "type":"place",
+    "subcell": "st", "cell":"s"
+  },
+  {
+    "category_id":19043000,
+    "meta":19,
+    "category":"Shops,Pharmacies",
+    "type":"place",
+    "subcell": "", "cell":"s",
+    "ask": true
+  },
+  {
+    "category_id":19044000,
+    "meta":19,
+    "category":"Shops,Photos and Frames",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19045000,
+    "meta":19,
+    "category":"Shops,Shopping Centers and Malls",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19046000,
+    "meta":19,
+    "category":"Shops,Sporting Goods",
+    "type":"place",
+    "subcell": "ho", "cell":"s"
+  },
+  {
+    "category_id":19047000,
+    "meta":19,
+    "category":"Shops,Supermarkets and Groceries",
+    "type":"place",
+    "subcell": "fd", "cell":"s"
+  },
+  {
+    "category_id":19048000,
+    "meta":19,
+    "category":"Shops,Tobacco",
+    "type":"place",
+    "subcell": "st", "cell":"s"
+  },
+  {
+    "category_id":19049000,
+    "meta":19,
+    "category":"Shops,Toys",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19050000,
+    "meta":19,
+    "category":"Shops,Vintage and Thrift",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19051000,
+    "meta":19,
+    "category":"Shops,Warehouses and Wholesale Stores",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19052000,
+    "meta":19,
+    "category":"Shops,Wedding and Bridal",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19053000,
+    "meta":19,
+    "category":"Shops,Wholesale",
+    "type":"place",
+    "subcell": "", "cell":"s"
+  },
+  {
+    "category_id":19054000,
+    "meta":19,
+    "category":"Shops,Lawn and Garden",
+    "type":"place",
+    "subcell": "hf", "cell":"s"
+  },
+  {
+    "category_id":20000000,
+    "meta":20,
+    "category":"Tax",
+    "type":"special",
+    "subcell": "", "cell":""
+  },
+  {
+    "category_id":20001000,
+    "meta":20,
+    "category":"Tax,Refund",
+    "type":"special",
+    "subcell": "", "cell":"i"
+  },
+  {
+    "category_id":20002000,
+    "meta":20,
+    "category":"Tax,Payment",
+    "type":"special",
+    "subcell": "", "cell":"pay"
+  },
+  {
+    "category_id":21000000,
+    "meta":21,
+    "category":"Transfer",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21001000,
+    "meta":21,
+    "category":"Transfer,Internal Account Transfer",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21002000,
+    "meta":21,
+    "category":"Transfer,ACH",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21003000,
+    "meta":21,
+    "category":"Transfer,Billpay",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21004000,
+    "meta":21,
+    "category":"Transfer,Check",
+    "type":"special",
+    "subcell": "", "cell":"",
+    "ask": true
+  },
+  {
+    "category_id":21005000,
+    "meta":21,
+    "category":"Transfer,Credit",
+    "type":"special",
+    "subcell": "", "cell":"i"
+  },
+  {
+    "category_id":21006000,
+    "meta":21,
+    "category":"Transfer,Debit",
+    "type":"special",
+    "subcell": "", "cell":"x",
+    "ask": true
+  },
+  {
+    "category_id":21007000,
+    "meta":21,
+    "category":"Transfer,Deposit",
+    "type":"special",
+    "subcell": "", "cell":"i"
+  },
+  {
+    "category_id":21007001,
+    "meta":21,
+    "category":"Transfer,Deposit,Check",
+    "type":"special",
+    "subcell": "", "cell":"i",
+    "ask": true
+  },
+  {
+    "category_id":21007002,
+    "meta":21,
+    "category":"Transfer,Deposit,ATM",
+    "type":"special",
+    "subcell": "", "cell":"i",
+    "ask": true
+  },
+  {
+    "category_id":21008000,
+    "meta":21,
+    "category":"Transfer,Keep the Change Savings Program",
+    "type":"special",
+    "subcell": "", "cell":"sv"
+  },
+  {
+    "category_id":21009000,
+    "meta":21,
+    "category":"Transfer,Payroll",
+    "type":"special",
+    "subcell": "sal", "cell":"i"
+  },
+  {
+    "category_id":21009001,
+    "meta":21,
+    "category":"Transfer,Payroll,Benefits",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21010000,
+    "meta":21,
+    "category":"Transfer,Third Party",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21010001,
+    "meta":21,
+    "category":"Transfer,Third Party,Venmo",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21010002,
+    "meta":21,
+    "category":"Transfer,Third Party,Square Cash",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21010003,
+    "meta":21,
+    "category":"Transfer,Third Party,Square",
+    "type":"special",
+    "subcell": "", "cell":"x",
+    "ask": true
+  },
+  {
+    "category_id":21010004,
+    "meta":21,
+    "category":"Transfer,Third Party,PayPal",
+    "type":"special",
+    "subcell": "", "cell":"x",
+    "ask": true
+  },
+  {
+    "category_id":21010005,
+    "meta":21,
+    "category":"Transfer,Third Party,Dwolla",
+    "type":"special",
+    "subcell": "", "cell":"x",
+    "ask": true
+  },
+  {
+    "category_id":21010006,
+    "meta":21,
+    "category":"Transfer,Third Party,Coinbase",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21010007,
+    "meta":21,
+    "category":"Transfer,Third Party,Chase QuickPay",
+    "type":"special",
+    "subcell": "", "cell":"x",
+    "ask": true
+  },
+  {
+    "category_id":21010008,
+    "meta":21,
+    "category":"Transfer,Third Party,Acorns",
+    "type":"special",
+    "subcell": "", "cell":"sv"
+  },
+  {
+    "category_id":21010009,
+    "meta":21,
+    "category":"Transfer,Third Party,Digit",
+    "type":"special",
+    "subcell": "", "cell":"sv"
+  },
+  {
+    "category_id":21010010,
+    "meta":21,
+    "category":"Transfer,Third Party,Betterment",
+    "type":"special",
+    "subcell": "", "cell":"sv"
+  },
+  {
+    "category_id":21010011,
+    "meta":21,
+    "category":"Transfer,Third Party,Plaid",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21011000,
+    "meta":21,
+    "category":"Transfer,Wire",
+    "type":"special",
+    "subcell": "", "cell":"x"
+  },
+  {
+    "category_id":21012000,
+    "meta":21,
+    "category":"Transfer,Withdrawal",
+    "type":"special",
+    "subcell": "", "cell":"ca"
+  },
+  {
+    "category_id":21012001,
+    "meta":21,
+    "category":"Transfer,Withdrawal,Check",
+    "type":"special",
+    "subcell": "", "cell":"",
+    "ask": true
+  },
+  {
+    "category_id":21012002,
+    "meta":21,
+    "category":"Transfer,Withdrawal,ATM",
+    "type":"special",
+    "subcell": "", "cell":"ca"
+  },
+  {
+    "category_id":21013000,
+    "meta":21,
+    "category":"Transfer,Save As You Go",
+    "type":"special",
+    "subcell": "", "cell":"sv"
+  },
+  {
+    "category_id":22000000,
+    "meta":22,
+    "category":"Travel",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22001000,
+    "meta":22,
+    "category":"Travel,Airlines and Aviation Services",
+    "type":"special",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22002000,
+    "meta":22,
+    "category":"Travel,Airports",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22003000,
+    "meta":22,
+    "category":"Travel,Boat",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22004000,
+    "meta":22,
+    "category":"Travel,Bus Stations",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22005000,
+    "meta":22,
+    "category":"Travel,Car and Truck Rentals",
+    "type":"place",
+    "subcell": "tr", "cell":"o"
+  },
+  {
+    "category_id":22006000,
+    "meta":22,
+    "category":"Travel,Car Service",
+    "type":"place",
+    "subcell": "tr", "cell":"o"
+  },
+  {
+    "category_id":22006001,
+    "meta":22,
+    "category":"Travel,Car Service,Ride Share",
+    "type":"special",
+    "subcell": "tr", "cell":"o"
+  },
+  {
+    "category_id":22007000,
+    "meta":22,
+    "category":"Travel,Charter Buses",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22008000,
+    "meta":22,
+    "category":"Travel,Cruises",
+    "type":"special",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22009000,
+    "meta":22,
+    "category":"Travel,Gas Stations",
+    "type":"place",
+    "subcell": "gas", "cell":"s"
+  },
+  {
+    "category_id":22010000,
+    "meta":22,
+    "category":"Travel,Heliports",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22011000,
+    "meta":22,
+    "category":"Travel,Limos and Chauffeurs",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22012000,
+    "meta":22,
+    "category":"Travel,Lodging",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22012001,
+    "meta":22,
+    "category":"Travel,Lodging,Resorts",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22012002,
+    "meta":22,
+    "category":"Travel,Lodging,Lodges and Vacation Rentals",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22012003,
+    "meta":22,
+    "category":"Travel,Lodging,Hotels and Motels",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22012004,
+    "meta":22,
+    "category":"Travel,Lodging,Hostels",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22012005,
+    "meta":22,
+    "category":"Travel,Lodging,Cottages and Cabins",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22012006,
+    "meta":22,
+    "category":"Travel,Lodging,Bed and Breakfasts",
+    "type":"place",
+    "subcell": "", "cell":"t"
+  },
+  {
+    "category_id":22013000,
+    "meta":22,
+    "category":"Travel,Parking",
+    "type":"place",
+    "subcell": "tr", "cell":"o",
+    "ask": true
+  },
+  {
+    "category_id":22014000,
+    "meta":22,
+    "category":"Travel,Public Transportation Services",
+    "type":"place",
+    "subcell": "tr", "cell":"o"
+  },
+  {
+    "category_id":22015000,
+    "meta":22,
+    "category":"Travel,Rail",
+    "type":"place",
+    "subcell": "tr", "cell":"o"
+  },
+  {
+    "category_id":22016000,
+    "meta":22,
+    "category":"Travel,Taxi",
+    "type":"special",
+    "subcell": "tr", "cell":"o",
+    "ask": true
+  },
+  {
+    "category_id":22017000,
+    "meta":22,
+    "category":"Travel,Tolls and Fees",
+    "type":"special",
+    "subcell": "tr", "cell":"o"
+  },
+  {
+    "category_id":22018000,
+    "meta":22,
+    "category":"Travel,Transportation Centers",
+    "type":"place",
+    "subcell": "tr", "cell":"o"
+  }
+]

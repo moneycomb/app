@@ -1,0 +1,73 @@
+<template name="ExplainQuizResults">
+    {{#if Template.subscriptionsReady}}
+
+        {{> MobileMenuBar title="Your Top Money Mindset" color="#9e9e9e"}}
+
+        <div class="ui basic segment container">
+            <div class="two ui stacked doubling centered cards">
+                <div class="ui card">
+                    <div class="content">
+                        {{> MobileMenuBar title=(primaryaspect.aspect1) color=(aspectColor (primaryaspect.aspect1))}}
+                        </div>
+                    <div align="center" class="content">
+                        <img class="ui tiny image" src="/images/mmsicons/{{aspectIcons(primaryaspect.aspect1)}}"/>
+                        <div class="meta">{{primeDescription}}</div>
+                    </div>
+                    <div class="centered content">
+                        {{> MobileMenuBar title="Complete Picture" color="#9e9e9e"}}
+                        {{>QuizDonut}}
+                    </div>
+
+                </div>
+
+            </div>
+
+
+                <!--
+            <div style="margin: 10px;" align="center">
+                <p style="color:{{aspectColor (primaryaspect.aspect1)}}; font-weight: 500;">PASSION CATEGORIES</p>
+                {{> CategoryLabel icon=(aspectPassionCategory1 (primaryaspect.aspect1)) color=(aspectColor (primaryaspect.aspect1))}}
+                    {{> CategoryLabel icon=(aspectPassionCategory2 (primaryaspect.aspect1)) color=(aspectColor (primaryaspect.aspect1))}}
+            </div>
+-->
+
+
+            <div class="full-width">
+
+            </div>
+            <!-- {{> MMSGraphic width=100 profile=([1,3,4,5,6,7])}} -->
+            <div style="font-size: 18px; margin: 10px;" align="center">
+
+                <div class="ui message">
+                    MoneyComb: a new kind of personal
+                    finance and budgeting experience.
+                    Sign Up for MoneyComb and get
+                    a free custom spending plan. 
+                    The average MoneyComb user has
+                    saved over <strong>$200 per month</strong> compared
+                    to their own recent spending.
+
+
+                </div>
+                 
+
+                <div>
+                    <a href="/register">
+                        <button class="ui large teal button">Sign Up for Free Now</button>
+                    </a>
+                </div>
+                <div style="padding: 5px;">
+                    <a href="http://www.mymoneycomb.com/how-it-works">
+                        <button class="ui large teal button">Learn More</button>
+                    </a>
+
+                </div>
+
+
+                <br>
+            </div>
+        </div>
+    {{else}}
+        {{>Loading}}
+    {{/if}}
+</template>

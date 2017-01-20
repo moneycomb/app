@@ -1,0 +1,11 @@
+<template name="TransactionItem">
+
+   <tr class="select-row">
+        <td>{{> TransactionHex cell=(cell) color=(calcColor) size=50}}</td>
+      <td><span class="header">{{cleanName}}</span></td>
+      <td>{{prettyDate}}</td>
+      <td class="right aligned">{{> TransactionAmount showbar=true width=100 target=(target_for_cell) remaining=(remaining_for_cell) amount=(roundedAmount)}}</td>
+
+    </tr>
+
+</template>

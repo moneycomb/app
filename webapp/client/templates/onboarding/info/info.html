@@ -1,0 +1,39 @@
+<template name="Info">
+  <div class="ui segments">
+    {{> MobileMenuBar title="Step 1 of 2 - Info about you" color="#26a69a"}}
+    <div class="ui segment info">
+
+      <div align="center" class="center aligned content">
+
+
+        {{#autoForm collection="FinancialProfile" id="insertFinProfile" type="insert"}}
+          {{> afQuickField name='userId' value=(currentUser._id)}}
+          <div class="form-line">
+            <span class="form-text">I am a</span>
+            <span class="form-field">{{> afQuickField label=false placeholder="Age" name='age'}}</span>
+            <span class="form-text">year old</span>
+            <span class="form-field">{{> afQuickField label=false options="allowed" name='status'}}</span>
+            <span class="form-field">{{> afQuickField label=false options="allowed" name='gender'}}</span>
+          </div>
+
+          <div class="form-line">
+            <span class="form-text">I earn $</span>
+            <span class="form-field" style="width:150px;">{{> afQuickField label=false placeholder="Income" name='income'}}</span>
+            <span class="form-field">{{> afQuickField label=false options=periodOptions name='pay_period'}}</span>
+          </div>
+
+          <div class="form-line">
+            <span class="form-text">and live in U.S. Zip Code</span>
+            <span class="form-field" style="width:150px">{{> afQuickField label=false placeholder="5 digit zip" name='zipcode'}}</span>
+          </div>
+          <div align="center">
+            <button type="submit" class="ui large teal button approve">Next Step</button>
+          </div>
+        {{/autoForm}}
+
+
+      </div>
+    </div>
+  </div>
+
+</template>

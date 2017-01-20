@@ -1,0 +1,67 @@
+<template name="OldMoneyMindset">
+  <div class="ui container money-mindset">
+
+    <div class="ui segments">
+
+      <div class="ui secondary grey center aligned inverted segment">
+        <div class="ui inverted secondary grey menu">
+          <a class="item action-profile">
+            <i class="user icon"></i> Profile >
+          </a>
+          <a class="active item"><i class="flaticon-brain"></i> Learn Your Money Mindset!</a>
+        </div>
+
+      </div>
+
+      <div class="ui center aligned segment">
+        <div class="question-progess">Question {{step}} of
+        {{totalQ}}</div>
+        <div id="quiz" data-value="1" data-total="14" class="ui blue progress">
+          <div class="bar"></div>
+        </div>
+        <!--<p>{{>Obprogress width=200 step=(step)}}</p> -->
+      </div>
+
+
+      <div class="ui center aligned blue inverted segment">
+        <h4>{{onboardingQ.question}}</h4>
+      </div>
+
+      <div class="ui center aligned segment">
+
+        <div class="ui five stackable cards">
+        {{#each onboardingQ.choices}}
+          <div id="{{number}}" class="ui card quiz-answer">
+            {{#if image}}
+            <div class="image" style="padding:25px;">
+              <img class="ui small rounded image" src="/images/ob/{{image}}.png"/>
+              </div>
+              {{/if}}
+            <div class="content" style="color:white; background-color: {{currentAnswerColor}}">
+              <h4>{{choice}}</h4>
+            </div>
+            {{#if currentAnswer}}
+              <div class="content">CURRENT ANSWER</div>
+              {{/if}}
+
+          </div>
+        {{/each}}
+
+          </div>
+
+      </div>
+
+      <div class="ui center aligned segment">
+
+        {{#if not_first_question}}
+        <button id="backward" class="ui huge {{button_color}} button">Previous Question</button>
+          {{/if}}
+
+        <button id="advance" class="ui huge {{button_color}} button">{{button_text}}</button>
+
+      </div>
+
+
+    </div>
+  </div>
+</template>

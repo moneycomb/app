@@ -1,0 +1,17 @@
+.mobile-menu-bar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 22px;
+    align-items: stretch;
+    color: white;
+    background-color: #26a69a;
+    flex-grow: 1;
+    padding: 12px;
+}
+
+.mobile-menu-item {
+    flex-grow: 1;
+    align-items: stretch;
+    align-self: center;
+}

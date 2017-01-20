@@ -1,0 +1,31 @@
+<template name="FinancialProfile">
+    <div class="content">
+        <div class="header">
+            <i class="large circular dollar icon"></i>
+            Financial Profile</div>
+        <div class="ui divider"></div>
+        <div class="meta">Age, income, status, etc.</div>
+    </div>
+
+    {{#autoForm collection="FinancialProfile" id="updateFinProfile" type="update" doc=(fp)}}
+        <div class="content">
+            {{> afQuickField name='userId'}}
+            {{> afQuickField placeholder="Age" name='age'}}
+            {{> afQuickField options="allowed" placeholder="Status" name='status'}}
+            {{> afQuickField options="allowed" placeholder="Gender" name='gender'}}
+            {{> afQuickField placeholder="Income" name='income'}}
+            {{> afQuickField options=periodOptions name='pay_period'}}
+            {{> afQuickField placeholder="5 digit zip" name='zipcode'}}
+
+        </div>
+        <div class="ui divider"></div>
+        <div align="center" class="content">
+            <button type="submit" class="ui button">
+                Update Profile
+            </button>
+        </div>
+
+    {{/autoForm}}
+
+
+</template>

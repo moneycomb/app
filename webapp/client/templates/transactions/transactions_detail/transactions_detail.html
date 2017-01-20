@@ -1,0 +1,10 @@
+<template name="TransactionsDetail">
+    <div class="ui basic center aligned segment container">
+
+        <div class="four ui centered stackable doubling cards">
+            {{#with transaction }}
+                {{> TCard}}
+            {{/with}}
+        </div>
+    </div>
+</template>

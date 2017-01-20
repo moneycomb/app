@@ -1,0 +1,50 @@
+<template name="AccountsList">
+  <script src="https://cdn.plaid.com/link/stable/link-initialize.js"></script>
+  {{> MobileMenuBar title="Your Linked Accounts" color="#26a69a"}}
+
+  <div class="ui basic segment container">
+
+      {{#if Template.subscriptionsReady}}
+
+        <div class="center aligned ui basic segment">
+          <div class="ui large button action-sync-all">
+              <i class="spinner {{syncingAll}} icon"></i>
+          Sync All Accounts</div>
+        </div>
+
+          <div class="ui basic segment">
+
+
+            <div class="ui four stackable cards">
+
+              {{#each credit_accounts}}
+                {{> AccountItem}}
+              {{/each}}
+
+              {{#each checking_accounts}}
+                {{> AccountItem}}
+              {{/each}}
+
+
+              {{#each savings_accounts}}
+                {{> AccountItem}}
+              {{/each}}
+
+              {{> AccountsAdd}}
+
+            </div>
+
+          </div>
+
+
+
+
+      {{else}}
+        {{> Loading}}
+
+      {{/if}}
+
+
+  </div>
+
+</template>

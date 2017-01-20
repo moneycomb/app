@@ -1,0 +1,13 @@
+/*****************************************************************************/
+/* Step1b: Style */
+/*****************************************************************************/
+.step1b {
+}
+
+.full-width {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+}

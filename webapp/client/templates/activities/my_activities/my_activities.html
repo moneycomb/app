@@ -1,0 +1,19 @@
+<template name="MyActivities">
+  <div class="ui container">
+
+    <div class="ui secondary grey center aligned inverted segment">
+      {{>ProfileNav activeFlag="activities"}}
+    </div>
+
+    {{#if currentUser}}
+      <div class="ui segment activity-feed">
+        <div class="ui feed">
+          {{#each activities}}
+            {{>ActivityFeedItem}}
+          {{/each}}
+        </div>
+      </div>
+    {{/if}}
+  </div>
+
+</template>

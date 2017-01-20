@@ -1,0 +1,31 @@
+<template name="NewTransactions">
+  <div class="ui container">
+    {{>EvaluateNav activeFlag="new"}}
+
+    {{#if Template.subscriptionsReady}}
+
+      <div class="ui large message">
+        <div class="ui divided items">
+          <div class="item">
+            <div class="content">
+              {{> CategoryHex color="#848484" width=60 category="new"}}
+            </div>
+            <div class="middle aligned content">
+              <h1 style="color: #848484;">New Transactions</h1>
+              <p>These are the new and recent transactions we've pulled in from your accounts. Take a few minutes
+                to review them. Are they correctly categorized?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui seven stackable cards">
+        {{#each newTransactions}}
+          {{>TransactionCard}}
+        {{/each}}
+      </div>
+    {{else}}
+      {{>Loading}}
+    {{/if}}
+  </div>
+</template>

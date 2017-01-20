@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="346px" height="231px" viewBox="0 0 346 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>cellstatus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="3" dy="-7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="cellstatus-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="cellstatus" sketch:type="MSLayerGroup" transform="translate(-16.000000, -18.000000)">
+            <rect id="frame" sketch:type="MSShapeGroup" x="0" y="0" width="377" height="270"></rect>
+            <rect id="fill" stroke="#F6A623" fill-opacity="0.6" fill="#FFA000" sketch:type="MSShapeGroup" x="108" y="30" width="250" height="206"></rect>
+            <rect id="backgroundfill" stroke="#F6A623" fill-opacity="0.2" fill="#FFA000" sketch:type="MSShapeGroup" x="108" y="30" width="250" height="214"></rect>
+            <path d="M358,133.267949 L358,21 L108,21 L108,249 L358,249 L358,136.732051 L296.5,243.253175 L171.5,243.253175 L109,135 L171.5,26.7468245 L296.5,26.7468245 L358,133.267949 Z" id="mask" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <polygon id="hex-inner" stroke="#FFA000" stroke-width="12" sketch:type="MSShapeGroup" transform="translate(230.000000, 133.000000) rotate(-270.000000) translate(-230.000000, -133.000000) " points="230 8 338.253175 70.5 338.253175 195.5 230 258 121.746825 195.5 121.746825 70.5 "></polygon>
+            <text id="remain" opacity="0.5" sketch:type="MSTextLayer" font-family="Helvetica" font-size="18" font-weight="260" sketch:alignment="middle" fill="#000000">
+                <tspan x="199.976" y="185">of $500</tspan>
+                <tspan x="190.157" y="207">remaining</tspan>
+            </text>
+            <text id="budget" sketch:type="MSTextLayer" font-family="Helvetica" font-size="64" font-weight="260" sketch:alignment="middle" fill="#F6A623">
+                <tspan x="155.332" y="152">$250</tspan>
+            </text>
+            <polygon id="smallhex" stroke="#FFA000" stroke-width="12" fill="#FFA000" filter="url(#filter-1)" sketch:type="MSShapeGroup" transform="translate(85.500000, 133.500000) rotate(-270.000000) translate(-85.500000, -133.500000) " points="85.5 71 139.626588 102.25 139.626588 164.75 85.5 196 31.3734123 164.75 31.3734123 102.25 "></polygon>
+            <image id="image" sketch:type="MSBitmapLayer" x="47" y="98" width="76" height="76" xlink:href="data:image/png;base64,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"></image>
+        </g>
+    </g>
+</svg>

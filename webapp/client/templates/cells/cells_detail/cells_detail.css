@@ -1,0 +1,28 @@
+/*****************************************************************************/
+/* CellsDetail: Style */
+/*****************************************************************************/
+.cells-detail {
+}
+
+.spend-narrative {
+    font-size: 18px;
+    color: #424242;
+    font-weight:300;
+}
+
+.cell-header {
+    padding: 8px;
+}
+
+.narrow {
+    padding: 12px;
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat-item {
+
+}

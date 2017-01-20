@@ -1,0 +1,27 @@
+/*****************************************************************************/
+/* CellStatusLine: Style */
+/*****************************************************************************/
+.cell-status-line {
+}
+
+.cell-status-line-name {
+    font-size: 14px;
+    display: inline;
+    text-align: left;
+}
+
+.cell-status-line-spent {
+    font-size: 14px;
+    display: inline;
+}
+
+.cell-status-line-target {
+    font-size: 14px;
+    display: inline;
+}
+
+.cell-status-line-status {
+    font-size: 14px;
+    display: inline;
+}
+

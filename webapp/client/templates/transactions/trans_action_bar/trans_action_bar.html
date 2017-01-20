@@ -1,0 +1,78 @@
+<template name="TransActionBar">
+
+  <div class="ui segments">
+    <div class="ui segment">
+
+      <div class="ui compact tiny buttons">
+
+        <div class="ui compact floating dropdown button">
+          <span class="text">30 d</span><i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="header">
+              <i class="calendar icon"></i>
+              Time Frame<i class="dropdown icon"></i>
+            </div>
+            <div class="divider"></div>
+            <div id="tf-7" class="filter-time-frame item" data-text="7 days">last
+            7
+            d
+            </div>
+            <div id="tf-30" class="filter-time-frame active item" data-text="30 days">last
+            30
+            d
+            </div>
+            <div id="tf-60" class="filter-time-frame item" data-text="60 days">last
+            60
+            d
+            </div>
+            <div id="tf-90" class="filter-time-frame item" data-text="90 days">last
+            90
+            d
+            </div>
+            <div id="tf-365" class="filter-time-frame item" data-text="365 days">last
+            365
+            d
+            </div>
+          </div>
+        </div>
+
+        <div class="ui compact floating dropdown small button">
+          <!--<i class="{{sortByIcon}} icon"></i> -->
+          <span class="text"><i class="calendar icon"></i>date</span><i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="header">
+              <i class="calendar icon"></i>
+              Sort by
+            </div>
+            <div class="divider"></div>
+            <div id="by-date" class="sort-by active item"><i
+                class="calendar icon"></i>date
+            </div>
+            <div id="by-amount" class="sort-by item"><i
+                class="dollar icon"></i>amount
+            </div>
+            <div id="by-rating" class="sort-by item"><i
+                class="star icon"></i>rating
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="ui compact floating dropdown small button">
+          <span class="text"><i class="sort content descending icon"></i></span><i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="header">
+              Direction
+            </div>
+            <div class="divider"></div>
+            <div id="dir-ascending" class="sort-dir item"><i class="sort content ascending icon"></i></div>
+            <div id="dir-descending" class="sort-dir active item"><i class="sort content descending icon"></i></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>

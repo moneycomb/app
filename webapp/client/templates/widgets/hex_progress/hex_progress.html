@@ -1,0 +1,25 @@
+<template name="HexProgress">
+  <svg viewBox="0 0 239 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Hex-Status-Fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+      <g id="HexStatus" sketch:type="MSLayerGroup">
+        <rect id="fill" stroke="{{bar.color}}" stroke-width="2" fill-opacity="0.6" fill="{{bar.color}}"
+              sketch:type="MSShapeGroup" x="5" y="{{bar.y}}" width="229" height="{{bar.height}}"></rect>
+        <path
+            d="M11,-11 L228,-11 L228,228 L11,228 L11,-11 Z M118.5,6.7037037 C118.5,6.7037037 158.850567,29.6166342 179.02585,41.0730995 L208.133629,57.6018519 L208.133629,159.398148 L118.5,210.296296 L28.8663707,159.398148 L28.8663707,57.6018519 L118.5,6.7037037 Z"
+            id="mask" fill="#FFFFFF" sketch:type="MSShapeGroup"
+            transform="translate(119.500000, 108.500000) rotate(-270.000000) translate(-119.500000, -108.500000) "></path>
+        <path
+            d="M118.536098,7.5307169 C118.536098,7.5307169 157.731156,30.1599942 177.328685,41.4746329 C186.753427,46.9160105 205.602912,57.7987658 205.602912,57.7987658 L205.602912,158.334864 L118.536098,208.602912 L31.4692831,158.334864 L31.4692831,57.7987658 L118.536098,7.5307169 Z"
+            id="innerhex" stroke="{{color}}" stroke-width="10" sketch:type="MSShapeGroup"
+
+            transform="translate(118.536098, 108.066815) rotate(-270.000000) translate(-118.536098, -108.066815) "></path>
+        <image id="caticon" sketch:type="MSBitmapLayer" x="74" y="63" width="91" height="91"
+               xlink:href="/images/teal/{{category}}.png"></image>
+      </g>
+    </g>
+  </svg>
+</template>
+
+
+

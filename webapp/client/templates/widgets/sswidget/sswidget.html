@@ -1,0 +1,21 @@
+<template name="SSWidget">
+  <svg width="{{width}}" viewBox="0 0 632 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Page-1" class="sswidget" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" data-html="<a class='ui circular label'>{{current}}</a>" sketch:type="MSPage">
+      <g id="ssbar" sketch:type="MSLayerGroup">
+        <rect id="excessive" fill="#FF4081" sketch:type="MSShapeGroup" x="326" y="1" width="306" height="61" rx="30" ry="30"></rect>
+        <rect id="thebasics" fill="#5FB7E5" sketch:type="MSShapeGroup" x="0" y="1" width="321" height="61" rx="30" ry="30"></rect>
+        <rect id="middle" fill="#FFC400" sketch:type="MSShapeGroup" x="{{middleStart}}" y="1" width="{{middleWidth}}" height="61" rx="30" ry="30"></rect>
+        <rect id="sweetspot" stroke="#FFA000" stroke-width="8" fill="#FFFFFF" sketch:type="MSShapeGroup" x="{{ssStart}}" y="4" width="{{ssWidth}}" height="54" rx="30" ry="30"></rect>
+        {{#if actual}}
+        <rect id="actual" fill-opacity="0.5" fill="#9B9B9B" sketch:type="MSShapeGroup" x="{{actualStart}}" y="14" width="{{actualWidth}}" height="34" rx="17" ry="17"></rect>
+            {{/if}}
+            <circle id="previous" fill-opacity="0.4" fill="#4A4A4A" sketch:type="MSShapeGroup" cx="{{previousPos}}" cy="31" r="17"></circle>
+        <circle id="mark-{{cell}}"
+                class="current-mark"
+                fill-opacity="1.0"
+                fill="#4A4A4A"
+                cx="{{currentPos}}" cy="31" r="17"></circle>
+      </g>
+    </g>
+  </svg>
+</template>

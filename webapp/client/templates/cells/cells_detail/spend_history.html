@@ -1,0 +1,14 @@
+
+<template name="SpendHistory">
+  <div style="height: 460px;" class="ui center aligned segments">
+    {{>SegmentHeader title="Spend Trend" color="#848484"}}
+
+    <div class="ui center aligned segment">
+
+      {{> SpendTrend color=(color) sDate=(sDate) eDate=(eDate) sTgt=0 eTgt=(eTgt) periodInDays=(periodInDays) spend=(spend) interaction=true}}
+
+    </div>
+
+  </div>
+
+</template>

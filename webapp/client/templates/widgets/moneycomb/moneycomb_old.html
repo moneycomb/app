@@ -1,0 +1,182 @@
+<!--
+<template name="Moneycomb">
+
+  <svg width="{{width}}px" viewBox="0 0 274 285" version="1.1" xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+      <g id="dashboard_hex" sketch:type="MSLayerGroup" transform="translate(4.000000, 3.000000)">
+        <g id="center-g" class="select-moneypot" transform="translate(79.310606, 92.328767)">
+          <path
+              d="M104.378788,47.1712329 L79.2840909,90.6207951 L29.094697,90.6207951 L4,47.1712329 L29.094697,3.72167067 L79.2840909,3.72167067 L104.378788,47.1712329 L104.378788,47.1712329 Z"
+              id="center-back" stroke="{{center.stroke}}" stroke-width="6" fill="{{center.bg}}" fill-opacity="{{center.bgopacity}}" sketch:type="MSShapeGroup"></path>
+          <rect id="center-fill" stroke="{{center.stroke}}" fill-opacity="{{center.fill.opacity}}" fill="{{center.fill.color}}" sketch:type="MSShapeGroup"
+                x="5.68939394" y="{{center.fill.position}}" width="96" height="{{center.fill.height}}"></rect>
+          <path
+              d="M0.689393939,0.671232877 L108.689394,0.671232877 L108.689394,93.6712329 L0.689393939,93.6712329 L0.689393939,0.671232877 Z M104.378788,47.4495622 L79.2840909,90.8991244 L29.094697,90.8991244 L4,47.4495622 L29.094697,4 L79.2840909,4 L104.378788,47.4495622 Z"
+              id="mask" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+          <image id="icon" style="{{center.icon}}" sketch:type="MSBitmapLayer" x="29" y="22" width="51" height="51"
+                 xlink:href="/images/teal/mp.png"></image>
+          <path
+              d="M104.378788,47.1712329 L79.2840909,90.6207951 L29.094697,90.6207951 L4,47.1712329 L29.094697,3.72167067 L79.2840909,3.72167067 L104.378788,47.1712329 L104.378788,47.1712329 Z"
+              id="center-hex" stroke="{{center.stroke}}" stroke-width="6" fill-opacity="0.6" fill="{{center.color}}"
+              sketch:type="MSShapeGroup"></path>
+          <text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+                sketch:alignment="middle" fill="#222222">
+            <tspan x="19.14" y="53">{{moneypotSpend}}</tspan>
+          </text>
+        </g>
+        <g id="s" class="select-cell" transform="translate(0.000000, 48.000000)">
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-back" stroke="#26A69A" stroke-width="6" fill-opacity="{{s.bgopacity}}" fill="{{flagcolor.s}}"
+              sketch:type="MSShapeGroup"></path>
+          <g id="r-status" transform="translate(19.000000, 0.000000)" sketch:type="MSShapeGroup">
+            <path d="M-6.66133815e-15,74 L63,74 L53.8095438,90 L9.19045623,90 L-6.43929354e-15,74 Z" fill="{{flagcolor.s}}" id="bot"></path>
+            <path d="M-6.66133815e-15,0 L63,0 L53.8095438,14 L9.19045623,14 L-4.6629367e-15,8.8817842e-16 Z" fill="{{s.top}}" id="top"
+                  transform="translate(31.500000, 7.000000) rotate(-180.000000) translate(-31.500000, -7.000000) "></path>
+          </g>
+          <text id="r-status-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="6" font-weight="bold"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="36.6704102" y="{{text2_y}}">{{s.text2}}</tspan>
+          </text>
+          <image id="r-i" style="{{s.icon}}" sketch:type="MSBitmapLayer" x="28" y="22" width="44" height="44"
+                 xlink:href="{{s.iconimage}}"></image>
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-hex" stroke="{{flagcolor.s}}" stroke-width="6" sketch:type="MSShapeGroup"></path>
+          <text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="24.312" y="51">{{s.text1}}</tspan>
+          </text>
+        </g>
+        <g id="e" class="select-cell" transform="translate(0.000000, 143.000000)">
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-back" stroke="#26A69A" stroke-width="6" fill-opacity="{{e.bgopacity}}" fill="{{flagcolor.e}}"
+              sketch:type="MSShapeGroup"></path>
+          <g id="r-status" transform="translate(19.000000, 0.000000)" sketch:type="MSShapeGroup">
+            <path d="M-6.66133815e-15,74 L63,74 L53.8095438,90 L9.19045623,90 L-6.43929354e-15,74 Z" fill="{{flagcolor.e}}" id="bot"></path>
+            <path d="M-6.66133815e-15,0 L63,0 L53.8095438,14 L9.19045623,14 L-4.6629367e-15,8.8817842e-16 Z" fill="{{e.top}}" id="top"
+                  transform="translate(31.500000, 7.000000) rotate(-180.000000) translate(-31.500000, -7.000000) "></path>
+          </g>
+          <text id="r-status-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="6" font-weight="bold"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="30.3305664" y="{{text2_y}}">{{e.text2}}</tspan>
+          </text>
+          <image id="r-i" style="{{e.icon}}" sketch:type="MSBitmapLayer" x="28" y="22" width="44" height="44"
+                 xlink:href="{{e.iconimage}}"></image>
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-hex" stroke="{{flagcolor.e}}" stroke-width="6" sketch:type="MSShapeGroup"></path>
+          <text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="24.312" y="51">{{e.text1}}</tspan>
+          </text>
+        </g>
+        <g id="t" class="select-cell" transform="translate(83.000000, 191.000000)">
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-back" stroke="#26A69A" stroke-width="6" fill-opacity="{{t.bgopacity}}" fill="{{flagcolor.t}}"
+              sketch:type="MSShapeGroup"></path>
+          <g id="r-status" transform="translate(19.000000, 0.000000)" sketch:type="MSShapeGroup">
+            <path d="M-6.66133815e-15,74 L63,74 L53.8095438,90 L9.19045623,90 L-6.43929354e-15,74 Z" fill="{{flagcolor.t}}" id="bot"></path>
+            <path d="M-6.66133815e-15,0 L63,0 L53.8095438,14 L9.19045623,14 L-4.6629367e-15,8.8817842e-16 Z" fill="{{t.top}}" id="top"
+                  transform="translate(31.500000, 7.000000) rotate(-180.000000) translate(-31.500000, -7.000000) "></path>
+          </g>
+          <text id="r-status-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="6" font-weight="bold"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="41.8251953" y="{{text2_y}}">{{t.text2}}</tspan>
+          </text>
+          <image id="r-i" style="{{t.icon}}" sketch:type="MSBitmapLayer" x="28" y="22" width="44" height="44"
+                 xlink:href="{{t.iconimage}}"></image>
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-hex" stroke="{{flagcolor.t}}" stroke-width="6" sketch:type="MSShapeGroup"></path>
+          <text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="24.312" y="51">{{t.text1}}</tspan>
+          </text>
+        </g>
+        <g id="r" class="select-cell" transform="translate(166.000000, 143.000000)">
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-back" stroke="#26A69A" stroke-width="6" fill-opacity="{{r.bgopacity}}" fill="{{flagcolor.r}}"
+              sketch:type="MSShapeGroup"></path>
+          <g id="r-status" transform="translate(19.000000, 0.000000)" sketch:type="MSShapeGroup">
+            <path d="M-6.66133815e-15,74 L63,74 L53.8095438,90 L9.19045623,90 L-6.43929354e-15,74 Z" fill="{{flagcolor.r}}" id="bot"></path>
+            <path d="M-6.66133815e-15,0 L63,0 L53.8095438,14 L9.19045623,14 L-4.6629367e-15,8.8817842e-16 Z" fill="{{r.top}}" id="top"
+                  transform="translate(31.500000, 7.000000) rotate(-180.000000) translate(-31.500000, -7.000000) "></path>
+          </g>
+          <text id="r-status-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="6" font-weight="bold"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="35.828125" y="{{text2_y}}">{{r.text2}}</tspan>
+          </text>
+          <image id="r-i" style="{{r.icon}}" sketch:type="MSBitmapLayer" x="28" y="22" width="44" height="44"
+                 xlink:href="{{r.iconimage}}"/>
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="r-hex" stroke="{{flagcolor.r}}" stroke-width="6" sketch:type="MSShapeGroup"></path>
+          <text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="23.312" y="51">{{r.text1}}</tspan>
+          </text>
+        </g>
+        <g id="ds" class="select-cell" transform="translate(166.000000, 48.000000)">
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="backhex" stroke="#26A69A" stroke-width="6" fill-opacity="{{ds.bgopacity}}" fill="{{flagcolor.ds}}"
+              sketch:type="MSShapeGroup"></path>
+          <g id="status" transform="translate(19.000000, 0.000000)" sketch:type="MSShapeGroup">
+            <path d="M-6.66133815e-15,74 L63,74 L53.8095438,90 L9.19045623,90 L-6.43929354e-15,74 Z" fill="{{flagcolor.ds}}" id="bot"></path>
+            <path d="M-6.66133815e-15,0 L63,0 L53.8095438,14 L9.19045623,14 L-4.6629367e-15,8.8817842e-16 Z" fill="{{ds.top}}" id="top"
+                  transform="translate(31.500000, 7.000000) rotate(-180.000000) translate(-31.500000, -7.000000) "></path>
+          </g>
+          <text id="status-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="6" font-weight="bold"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="30" y="{{text2_y}}">{{ds.text2}}</tspan>
+          </text>
+          <image id="ds-icon" style="{{ds.icon}}" sketch:type="MSBitmapLayer" x="28" y="22" width="44" height="44"
+                 xlink:href="{{ds.iconimage}}"></image>
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="ds-hex" stroke="{{flagcolor.ds}}" stroke-width="6" sketch:type="MSShapeGroup"></path>
+          <text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="24.312" y="51">{{ds.text1}}</tspan>
+          </text>
+        </g>
+        <g id="eo" class="select-cell" transform="translate(83.000000, 0.000000)">
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="backhex" stroke="#26A69A" stroke-width="6" fill-opacity="{{eo.bgopacity}}" fill="{{flagcolor.eo}}"
+              sketch:type="MSShapeGroup"></path>
+          <g id="status" transform="translate(19.000000, 0.000000)" sketch:type="MSShapeGroup">
+            <path d="M-6.66133815e-15,74 L63,74 L53.8095438,90 L9.19045623,90 L-6.43929354e-15,74 Z" fill="{{flagcolor.eo}}" id="bot"></path>
+            <path d="M-6.66133815e-15,0 L63,0 L53.8095438,14 L9.19045623,14 L-4.6629367e-15,8.8817842e-16 Z" fill="{{eo.top}}" id="top"
+                  transform="translate(31.500000, 7.000000) rotate(-180.000000) translate(-31.500000, -7.000000) "></path>
+          </g>
+          <text id="status-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="6" font-weight="bold"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="35.3344727" y="{{text2_y}}">{{eo.text2}}</tspan>
+          </text>
+          <image id="icon" style="{{eo.icon}}" sketch:type="MSBitmapLayer" x="28" y="22" width="44" height="44"
+                 xlink:href="{{eo.iconimage}}"/>
+
+          <path
+              d="M100.378788,44.1712329 L75.2840909,87.6207951 L25.094697,87.6207951 L0,44.1712329 L25.094697,0.721670666 L75.2840909,0.721670666 L100.378788,44.1712329 L100.378788,44.1712329 Z"
+              id="hex" stroke="{{flagcolor.eo}}" stroke-width="6" sketch:type="MSShapeGroup"></path>
+          <text id="center-text" sketch:type="MSTextLayer" font-family="Helvetica" font-size="24" font-weight="260"
+                sketch:alignment="middle" fill="#FFFFFF">
+            <tspan x="24.312" y="51">{{eo.text1}}</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+
+</template>
+
+-->
+
+
+

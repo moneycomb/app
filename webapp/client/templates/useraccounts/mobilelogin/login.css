@@ -1,0 +1,40 @@
+/*****************************************************************************/
+/* Login: Style */
+/*****************************************************************************/
+.mobilelogin {
+    background: url(/images/MCSnowboarder.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.login-form {
+    background: #FBFBFB;
+    max-width: 480px;
+    opacity: 1;
+    margin: auto;
+}
+
+.tiny-text: {
+    font-size: 0.375em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#at-btn {
+    background: #ffa000;
+    border-width: 0px;
+}
+
+
+/* the following -- move it? */
+
+a {
+    color: ##ffa000;
+}
+
+

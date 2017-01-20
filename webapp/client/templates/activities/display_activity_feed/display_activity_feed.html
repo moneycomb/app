@@ -1,0 +1,11 @@
+<template name="DisplayActivityFeed">
+
+
+  <div class="ui segment activity-feed">
+    <div class="ui feed">
+      {{#each activityfeed}}
+        {{>ActivityFeedItem}}
+      {{/each}}
+    </div>
+  </div>
+</template>

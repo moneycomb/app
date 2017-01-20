@@ -1,0 +1,22 @@
+<template name="DebtsAdd">
+  <div class="card debts-add">
+
+    {{#if addDebt}}
+      {{> insertDebtForm}}
+    {{else}}
+      <div class="content">
+
+        <i class="action-add huge circular tertiary grey inverted add icon"></i>
+        <div class="header">Add
+        Loan / Debt</div>
+
+      </div>
+
+    {{/if}}
+
+  </div>
+
+</template>
+
+
+

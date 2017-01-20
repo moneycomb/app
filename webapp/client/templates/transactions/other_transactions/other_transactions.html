@@ -1,0 +1,30 @@
+<template name="OtherTransactions">
+  {{> MobileMenuBar title="Necessity Spending" color="#848484"}}
+
+  <div class="ui basic segment container">
+
+      <div class="ui message">
+          <img class="ui medium image" src="http://res.cloudinary.com/moneycomb/image/upload/v1473627849/images/core_explode.png"/>
+          What is "Necessity" spending? Simply put it spending you have little choice in or have little opportunity to change. It is the cost
+          of your living. Mortage, Rent, Insurance, Groceries, Gas, School costs, and (yech!) Taxes.  While Moneycomb does not focus on these
+          transactions, we need someplace to put it. That place is here.
+      </div>
+      <div class="ui divider"></div>
+
+    {{#if Template.subscriptionsReady}}
+
+
+      <div class="ui five stackable cards">
+        {{#each otherTransactions}}
+          {{>TCard}}
+        {{/each}}
+      </div>
+        <div class="ui divider"></div>
+        <div class="ui center aligned basic segment">
+            <div class="load-more ui huge button">Load More</div>
+        </div>
+    {{else}}
+      {{>Loading}}
+    {{/if}}
+  </div>
+</template>

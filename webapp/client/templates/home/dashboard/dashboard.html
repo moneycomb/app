@@ -1,0 +1,113 @@
+<template name="Dashboard">
+  <div  class="flex-column-bar">
+    <div style="background-color:#848484;" class="flex-row-item">
+      <div align="center">{{> CellHeader width=250 title="My MoneyComb" cell="hp" color="#848484"}}</div>
+    </div>
+    <div style="padding: 14px; color: white; background-color: #424242;" class="flex-column-item">
+      This is your total "MoneyComb" spending amount - the sum of all six actionable spending Categories
+    </div>
+  </div>
+  <div class="ui container">
+
+{{#if currentUser}}
+
+
+  {{#if Template.subscriptionsReady}}
+
+      <div class="ui segments">
+        <div class="ui inverted segment" style="vertical-align: baseline; background-color: #eeeeee;">
+
+          <div class="ui grid cell-header">
+
+
+            <div class="ten wide column cell-header">
+              {{> StatSquare bgcolor="#848484" prefix="$" header="SPENT" value=(actualT30Spend) label="last 30 days" color="white"}}
+              {{> StatSquare bgcolor="#848484" prefix="$" header="TARGET" value=(targetMoneyPot) label="per 30 days" color="white"}}
+              {{> StatSquare bgcolor=(totalOverUnderColor) prefix="$" header=(headerLabel) labelWeight=300 label="last 30 days" value=(totalremaining) color="white"}}
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ui stackable centered grid container">
+          <div class="five wide center aligned column">
+            <div class="ui basic segments">
+              <div class="ui inverted center aligned tertiary grey segment">
+                <h5>Spend Status</h5>
+              </div>
+              <div class="ui center aligned segment animated fadeIn" style="vertical-align: middle;">
+                {{> Moneycomb (moneyCombOptions)}}
+              </div>
+            </div>
+          </div>
+          <div class="five wide center aligned column">
+            <div class="ui center aligned basic segments">
+              <div class="ui inverted center aligned tertiary grey segment">
+                <div class="ui grid">
+                  <div class="eleven wide column">
+                    <h5>Spend Speed</h5>
+                  </div>
+                  <div class="two wide column">
+                    {{> SpendSpeedText speed=(mpSpendSpeed)}}
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="ui center aligned segment">
+
+                {{> Speedometer speed=(mpSpendSpeed)}}
+
+              </div>
+
+              <div class="ui inverted center aligned tertiary secondary grey segment">
+                <h5>Spend Statistics</h5>
+              </div>
+
+
+              <div class="ui center aligned horizontal segments" style="background-color: {{color}}; color:white;">
+                <div class="ui segment" style="background-color: {{color}}; color:white;">
+                  {{> SquareDiv width="100" text=(targetPD) subtext="target rate per day" color=(color)}}
+                </div>
+                <div class="ui segment" style="background-color: {{color}}; color:white;">
+                  {{> SquareDiv width="100" text=(actualPD) subtext="actual per day" color=(color)}}
+                </div>
+
+              </div>
+              <div class="ui center aligned horizontal segments" style="background-color: {{color}}; color:white;">
+
+                <div class="ui segment">
+                  {{> SquareDiv width="100" text=(tcount) subtext="purchases" color=(color)}}
+                </div>
+                <div class="ui segment" style="background-color: {{color}}; color:white;">
+                  {{> SquareDiv width="100" text=(average) subtext="average purchase" color=(color)}}
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="six wide center aligned column">
+            {{> SpendHistory color="#848484" sDate=(sDate) eDate=(eDate) sTgt=0 eTgt=(targetMoneyPot) periodInDays=30 spend=(mpSpend)}}
+         </div>
+        </div>
+
+      </div>
+
+      <div class="six stackable doubling ui cards">
+        {{#each cells}}
+          {{>CellStatusLine cell=(name) abbrev=(abbrev) overunder=(remaining (abbrev)) spent=(spent (abbrev)) spent60=(spent60 (abbrev)) spent90=(spent90 (abbrev)) color=(CColor) occurance=(occurance) countLast30=(countLast30) ouColor=(overUnderColor (abbrev)) target=(target (abbrev))}}
+        {{/each}}
+      </div>
+
+    {{else}}
+
+      {{> Loading}}
+
+    {{/if}}
+
+  {{/if}}
+
+  </div>
+
+</template>

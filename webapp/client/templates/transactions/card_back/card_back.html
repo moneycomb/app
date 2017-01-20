@@ -1,0 +1,29 @@
+<template name="CardBack">
+  <div style="height: 150px; background-color: #9e9e9e;">
+    <div class="content">
+      <i class="action-hide {{hideUnhideIcon}}"></i>
+
+      <div id="recat-{{_id}}" class="recat-box center aligned content"
+           style="padding: 1px; display: none; background-color: #9e9e9e">
+        {{> RecategorizeSelector tid=(_id)}}
+      </div>
+
+      {{#if eligibleToRate}}
+        Rating:
+        <div class="ui small star rating" data-rating="{{rating}}" data-max-rating="5">
+          <i id="1" class="action-rate star icon"></i>
+          <i id="2" class="action-rate star icon"></i>
+          <i id="3" class="action-rate star icon"></i>
+          <i id="4" class="action-rate star icon"></i>
+          <i id="5" class="action-rate star icon"></i>
+        </div>
+      {{/if}}
+
+      {{>Level2Categorize cell="eo"}}
+    </div>
+    <div class="ui bottom attached label"><i class="calendar icon"></i> {{humanDate}}
+      <a class="right floated ui label"><i class="action-flip retweet icon"></i></a>
+      <a class="right floated ui label"><i class="action-flip-back retweet icon"></i></a>
+    </div>
+  </div>
+</template>

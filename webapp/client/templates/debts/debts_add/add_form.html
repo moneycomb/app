@@ -1,0 +1,12 @@
+<template name="insertDebtForm">
+  {{#autoForm collection="Debts" id="insertDebtForm" type="insert"}}
+      {{> afQuickField type='hidden' name='userId' value=(currentUser._id)}}
+      {{> afQuickField name='name'}}
+      {{> afQuickField name='balance' rows=6}}
+      {{> afQuickField name='limit'}}
+      {{> afQuickField name='interest_rate'}}
+      {{> afQuickField name='current_payment'}}
+      {{> afQuickField type='date' name='payoff_date'}}
+    <button type="submit" class="btn btn-primary">Add</button>
+  {{/autoForm}}
+</template>

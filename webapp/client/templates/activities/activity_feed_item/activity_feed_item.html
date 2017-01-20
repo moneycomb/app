@@ -1,0 +1,18 @@
+<template name="ActivityFeedItem">
+  <div class="event">
+    <div class="label">
+      <i class="{{typeIcon (type)}}"></i>
+    </div>
+    <div class="content">
+      <div class="summary">
+         {{title}}
+        <div class="date">
+          {{humanDate (date)}}
+        </div>
+      </div>
+      <div class="extra text">
+        {{text}}
+      </div>
+    </div>
+  </div>
+</template>

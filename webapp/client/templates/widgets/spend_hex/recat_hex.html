@@ -1,0 +1,58 @@
+<template name="SpendHex">
+  <svg viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="recatHex" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+      <g sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">
+        <circle id="frame" stroke="#979797" sketch:type="MSShapeGroup" cx="79" cy="79" r="79"></circle>
+        <g id="spend-r" class="closeme recathex" transform="translate(95.000000, 77.000000)">
+          <polygon id="r-hex" fill="{{recatIColor 'r'}}" sketch:type="MSShapeGroup"
+                   transform="translate(25.000000, 25.000000) rotate(-270.000000) translate(-25.000000, -25.000000) "
+                   points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5 "></polygon>
+          <image id="r-i" sketch:type="MSBitmapLayer" x="14" y="14" width="22" height="22"
+                 xlink:href="/images/white/r.png"/>
+        </g>
+        <g id="spend-eo" class="closeme recathex" transform="translate(54.000000, 8.000000)">
+            <polygon id="eo-hex" fill="{{recatIColor 'eo'}}" sketch:type="MSShapeGroup"
+                   transform="translate(25.000000, 22.000000) rotate(-270.000000) translate(-25.000000, -22.000000) "
+                   points="25 -3 46.6506351 9.5 46.6506351 34.5 25 47 3.34936491 34.5 3.34936491 9.5 "></polygon>
+          <image sketch:type="MSBitmapLayer" x="15" y="12" width="20" height="20" xlink:href="/images/white/eo.png"/>
+        </g>
+        <g id="spend-ds" class="closeme recathex" transform="translate(95.000000, 29.000000)">
+          <polygon id="ds-hex" fill="{{recatIColor 'ds'}}" sketch:type="MSShapeGroup"
+                   transform="translate(25.000000, 25.000000) rotate(-270.000000) translate(-25.000000, -25.000000) "
+                   points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5 "></polygon>
+          <image id="ds-i" sketch:type="MSBitmapLayer" x="15" y="15" width="20" height="20"
+                 xlink:href="/images/white/ds.png"/>
+        </g>
+        <g id="spend-t" class="closeme recathex" transform="translate(54.000000, 101.000000)">
+          <polygon id="t-hex" fill="{{recatIColor 't'}}" sketch:type="MSShapeGroup"
+                   transform="translate(25.000000, 25.000000) rotate(-270.000000) translate(-25.000000, -25.000000) "
+                   points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5 "></polygon>
+          <image id="t-i" sketch:type="MSBitmapLayer" x="15" y="15" width="20" height="20"
+                 xlink:href="/images/white/t.png"/>
+        </g>
+        <g id="spend-e" class="closeme recathex" transform="translate(13.000000, 77.000000)">
+          <polygon id="e-hex" fill="{{recatIColor 'e'}}" sketch:type="MSShapeGroup"
+                   transform="translate(25.000000, 25.000000) rotate(-270.000000) translate(-25.000000, -25.000000) "
+                   points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5 "></polygon>
+          <image id="e-i" sketch:type="MSBitmapLayer" x="15" y="14" width="21" height="21" xlink:href="/images/white/e.png"/>
+          </g>
+            <g id="spend-s" class="closeme recathex" transform="translate(13.000000, 29.000000)">
+          <polygon id="s-hex" fill="{{recatIColor 's'}}" sketch:type="MSShapeGroup"
+                   transform="translate(25.000000, 25.000000) rotate(-270.000000) translate(-25.000000, -25.000000) "
+                   points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5 "></polygon>
+          <image id="s-i" sketch:type="MSBitmapLayer" x="15" y="14" width="20" height="20" xlink:href="
+                /images/white/s.png"/>
+        </g>
+        <g id="spend-o" class="closeme recathex" transform="translate(54.000000, 53.000000)">
+          <polygon id="center-hex" stroke="#848484" stroke-width="3" fill="{{recatIColor 'o'}}" sketch:type="MSShapeGroup"
+                   transform="translate(25.000000, 25.000000) rotate(-270.000000) translate(-25.000000, -25.000000) "
+                   points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5 "></polygon>
+          <image id="center-i" sketch:type="MSBitmapLayer" x="13" y="14" width="23" height="23"
+                 xlink:href="/images/white/o.png"/>
+        </g>
+      </g>
+    </g>
+  </svg><br>
+    <span style="font-size: 10px;">{{recatLabel}}</span>
+</template>

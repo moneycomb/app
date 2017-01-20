@@ -1,0 +1,27 @@
+<template name="Uncategorized">
+  {{> MobileMenuBar icon="ui circular help icon" title="Uncategorized Transactions" color="#848484"}}
+
+    <div class="ui basic segment container">
+
+        <div class="ui message">
+            <i class="ui circular info icon"></i>
+            These transactions were not categorized automatically.
+            Take a few moments to categorize them. Mark them as Other if they do not fall into our 6 broad Moneycomb categories.
+        </div>
+        <div class="ui divider"></div>
+    {{#if Template.subscriptionsReady}}
+      <div class="ui five stackable cards">
+        {{#each transactions}}
+          {{>TCard}}
+        {{/each}}
+      </div>
+        <div class="ui divider"></div>
+        <div class="ui center aligned basic segment">
+            <div class="load-more ui huge button">Load More</div>
+        </div>
+    {{else}}
+      {{>Loading}}
+    {{/if}}
+  </div>
+
+</template>

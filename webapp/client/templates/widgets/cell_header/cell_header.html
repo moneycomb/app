@@ -1,0 +1,24 @@
+<template name="CellHeader">
+    <svg style="padding: 1px;" class="cell-header" width="{{width}}" viewBox="0 0 800 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+        <defs>
+            <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+                <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+                <feMerge>
+                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+            </filter>
+        </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g id="cellheader" sketch:type="MSLayerGroup" transform="translate(18.000000, -1.000000)">
+                <polygon id="hex" stroke="{{color}}" stroke-width="6" fill="{{color}}" fill-opacity="1.0" filter="url(#filter-1)" sketch:type="MSShapeGroup" transform="translate(61.000000, 61.000000) rotate(-270.000000) translate(-61.000000, -61.000000) " points="61 1.42108547e-14 113.82755 30.5 113.82755 91.5 61 122 8.17245037 91.5 8.17245037 30.5 "></polygon>
+                <image id="image" sketch:type="MSBitmapLayer" x="24" y="24" width="74" height="74" xlink:href="/images/white/{{cell}}.png"/>
+                <text id="text" sketch:type="MSTextLayer" font-family="Lato" font-size="80" font-weight="400" fill="#ffffff">
+                    <tspan x="147" y="86">{{title}}</tspan>
+                </text>
+            </g>
+        </g>
+    </svg>
+</template>
