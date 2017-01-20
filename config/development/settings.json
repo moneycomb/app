@@ -1,0 +1,21 @@
+{
+  "public": {
+    "environment": "development",
+    "plaid_public_key": "505704614c705498646afea6bffe29",
+    "plaid_api_endpoint": "https://api.plaid.com/",
+    "plaid_env": "production",
+    "staleSessionInactivityTimeout": 1200000,
+    "staleSessionHeartbeatInterval": 180000,
+    "staleSessionPurgeInterval": 60000,
+    "staleSessionActivityEvents": "mousemove click keydown",
+    "persistent_session": {
+      "default_method": "permanent"
+    }
+  },
+  "TWILIO": {
+    "FROM": "+19192464462",
+    "SID": "AC70772c53ce4732ae06f6b75a0b37ab32",
+    "TOKEN": "d42ca32ad5de993d41a12d864146b0af"
+  }
+}
+

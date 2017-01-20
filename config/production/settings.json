@@ -1,0 +1,27 @@
+{
+  "public": {
+    "environment": "development",
+    "plaid_public_key": "505704614c705498646afea6bffe29",
+    "plaid_api_endpoint": "https://api.plaid.com/",
+    "plaid_env": "production",
+    "persistent_session": {
+      "default_method": "permanent"
+    }
+  },
+  "TWILIO": {
+    "FROM": "+19192464462",
+    "SID": "AC70772c53ce4732ae06f6b75a0b37ab32",
+    "TOKEN": "d42ca32ad5de993d41a12d864146b0af"
+  },
+  "galaxy.meteor.com": {
+    "env": {
+      "ROOT_URL": "https://app.mymoneycomb.com",
+      "MONGO_URL": "mongodb://glenn:L1beration64@candidate.21.mongolayer.com:11057,candidate.37.mongolayer.com:11079/production?replicaSet=set-5641699de9bf3797d9000015",
+      "PLAID_PUBLIC_KEY": "505704614c705498646afea6bffe29",
+      "PLAID_API_ENDPOINT": "https://tartan.plaid.com/",
+      "PLAID_ENV": "plaid.environments.production",
+      "PLAID_CLIENT_ID": "5616c9f51abbf9e13f581fb2",
+      "PLAID_SECRET": "488760dbd0560fbb10d5845bf03a24"
+    }
+  }
+}

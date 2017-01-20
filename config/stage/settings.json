@@ -1,0 +1,31 @@
+{
+  "public": {
+    "environment": "development",
+    "plaid_public_key": "505704614c705498646afea6bffe29",
+    "plaid_api_endpoint": "https://api.plaid.com/",
+    "plaid_env": "production",
+    "persistent_session": {
+      "default_method": "permanent"
+    }
+  },
+  "TWILIO": {
+    "FROM": "+19192464462",
+    "SID": "AC70772c53ce4732ae06f6b75a0b37ab32",
+    "TOKEN": "d42ca32ad5de993d41a12d864146b0af"
+  },
+  "galaxy.meteor.com": {
+    "env": {
+      "ROOT_URL": "https://pollo.moneycomb.co",
+      "MONGO_URL": "mongodb://glenn:L1beration64@candidate.21.mongolayer.com:11057,candidate.37.mongolayer.com:11079/stage-db?replicaSet=set-5641699de9bf3797d9000015",
+      "MONGO_OPLOG_URL": "mongodb://oploguser:L1beration64@candidate.37.mongolayer.com:11079/local?authSource=stage-db",
+      "PLAID_PUBLIC_KEY": "505704614c705498646afea6bffe29",
+      "PLAID_API_ENDPOINT": "https://tartan.plaid.com/",
+      "PLAID_ENV": "plaid.environments.tartan",
+      "PLAID_CLIENT_ID": "5616c9f51abbf9e13f581fb2",
+      "PLAID_SECRET": "488760dbd0560fbb10d5845bf03a24",
+      "KADIRA_APP_SECRET":"8f1d604e-84f2-4ad5-8afc-87b7e4cff4da",
+      "KADIRA_APP_ID":"r38Ba4S85MzSY9exa",
+      "PLAID_SERVER":"https://tartan.plaid.com"
+    }
+  }
+}
