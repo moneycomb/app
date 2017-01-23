@@ -1,9 +1,9 @@
 {
   "public": {
-    "environment": "development",
+    "environment": "tartan",
     "plaid_public_key": "505704614c705498646afea6bffe29",
-    "plaid_api_endpoint": "https://api.plaid.com/",
-    "plaid_env": "production",
+    "plaid_api_endpoint": "https://tartan.plaid.com/",
+    "plaid_env": "tartan",
     "staleSessionInactivityTimeout": 1200000,
     "staleSessionHeartbeatInterval": 180000,
     "staleSessionPurgeInterval": 60000,
