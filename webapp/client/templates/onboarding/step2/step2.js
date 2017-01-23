@@ -52,7 +52,7 @@ Template.Step2.events({
       var plaidlinkHandler = Plaid.create({
         env: Meteor.settings.public.plaid_env,
         clientName: 'your Moneycomb account',
-        key: '505704614c705498646afea6bffe29',   // 505704614c705498646afea6bffe29
+        key: '505704614c705498646afea6bffe29',  
         product: 'connect',
         longtail: true,
         onSuccess: function (public_token) {
