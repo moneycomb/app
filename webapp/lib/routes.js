@@ -69,11 +69,9 @@ Router.route('/myactivities', function () {
     this.render('MyActivities');
 });
 
-
 Router.route('/income', function () {
     this.render('Income');
 });
-
 
 Router.route('/ob/info', function () {
     this.layout('OnboardingLayout');
@@ -138,7 +136,6 @@ Router.route('/spend', function () {
     this.render('AddTransaction');
 });
 
-
 Router.route('/spendsetter/wizard/summary', function () {
     this.render('WizardSummary');
 });
@@ -147,14 +144,10 @@ Router.route('/spendsetter', function () {
     this.render('AllocationsHome');
 });
 
-Router.route('/ad/actions', function () {
-    this.render('Actions');
-});
 
 Router.route('/analysis', function () {
     this.render('Analysis');
 });
-
 
 Router.route('/insights', function () {
     this.render('InsightsHome');
@@ -190,14 +183,6 @@ Router.route('/accounts', {
     where: 'client'
 });
 
-/*
-Router.route('/cells/:_abbrev', {
-    name: 'cells.detail',
-    controller: 'CellsController',
-    action: 'detailbyabbrev',
-    where: 'client'
-});
-*/
 Router.route('/cells/:_abbrev', function () {
     this.wait(Meteor.subscribe('cells'));
 
@@ -263,10 +248,3 @@ Router.route('/', function () {
     this.layout('OnboardingLayout');
     this.render('Home');
 });
-
-
-
-
-
-
-

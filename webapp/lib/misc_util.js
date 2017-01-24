@@ -1,5 +1,21 @@
-try {
+distanceBetween = function(lat1,lon1,lat2,lon2) {
 
+  var R = 6371000; // metres
+  var LA1 = lat1* Math.PI / 180;
+  var LA2 = lat2* Math.PI / 180;
+  var deltaOne = (lat2-lat1)* Math.PI / 180;
+  var deltaTwo = (lon2-lon1)* Math.PI / 180;
+
+  var a = Math.sin(deltaOne/2) * Math.sin(deltaOne/2) +
+    Math.cos(LA1) * Math.cos(LA2) *
+    Math.sin(deltaTwo/2) * Math.sin(deltaTwo/2);
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+  var d = R * c;
+
+  return d;
+
+}
 
 
 indexofMax = function (arr) {
@@ -107,8 +123,4 @@ untilPhrase = function(numdays) {
 
   return (phrases[numdays] != undefined ? phrases[numdays] : "over a month...")
 
-}
-
-}catch(err) {
-  console.log(err);
 }
