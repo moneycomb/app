@@ -2,6 +2,9 @@ Meteor.startup(function () {
   MyPurchasePlaces._ensureIndex({ "name": 1});
   MyPurchasePlaces._ensureIndex({ "cell": 1});
   MyPurchasePlaces._ensureIndex({ "multiple": 1});
+  MyPurchasePlaces._ensureIndex({ "userId": 1, "name": 1});
+  MyPurchasePlaces._ensureIndex({ "userId": 1, "cell": 1});
+  MyPurchasePlaces._ensureIndex({ "userId": 1, "multiple": 1});
 });
 
 // Transaction Publications

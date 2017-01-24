@@ -16,6 +16,7 @@
     "env": {
       "ROOT_URL": "https://app.mymoneycomb.com",
       "MONGO_URL": "mongodb://glenn:L1beration64@candidate.21.mongolayer.com:11057,candidate.37.mongolayer.com:11079/production?replicaSet=set-5641699de9bf3797d9000015",
+      "MONGO_OPLOG_URL":"mongodb://glenn:L1beration64@candidate.21.mongolayer.com:11057,candidate.37.mongolayer.com:11079/local?authSource=production?replicaSet=set-5641699de9bf3797d9000015",
       "PLAID_PUBLIC_KEY": "505704614c705498646afea6bffe29",
       "PLAID_API_ENDPOINT": "https://api.plaid.com/",
       "PLAID_SERVER": "https://api.plaid.com/",

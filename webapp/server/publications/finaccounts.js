@@ -1,4 +1,7 @@
-// Account Publications
+Meteor.startup(function () {
+  FinAccounts._ensureIndex({ "userId": 1});
+  FinAccounts._ensureIndex({ "userId": 1, "type": 1});
+});
 
 Meteor.publish('account', function (id) {
 

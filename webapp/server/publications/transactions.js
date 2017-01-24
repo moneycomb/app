@@ -1,13 +1,9 @@
-// DATABASE INDEX STUFF
-// See:
-
 Meteor.startup(function () {
   Transactions._ensureIndex({ "userId": 1, "cell": 1});
   Transactions._ensureIndex({ "userId": 1, "date": 1});
   Transactions._ensureIndex({ "userId": 1, "toReview": 1});
-  Transactions._ensureIndex({ "rating": 1});
-  Transactions._ensureIndex({ "amount": 1});
-  Transactions._ensureIndex({ "cell": 1, "ignore": 1, "date": 1});
+  Transactions._ensureIndex({ "userId": 1, "amount": 1});
+  Transactions._ensureIndex({ "userId": 1, "cell": 1, "ignore": 1, "date": 1});
 });
 
 
